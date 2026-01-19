@@ -22,7 +22,7 @@ const FEATURED_MAGNET: MagnetItem = {
   title: 'Lab31',
   author: '@alimox',
   created_at: new Date().toISOString(),
-  status_url: 'https://theforkiverse.com/@alimox',
+  status_url: 'https://theforkiverse.com/@alimox/115923976085710052',
   sticker_id: 'lightning',
   matched_keyword: 'fast',
   rank: -1,
