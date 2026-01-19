@@ -5,7 +5,10 @@ function App() {
   return (
     <div className="app">
       <header className="app-header">
-        <h1>#Vibecoding our way through the Forkiverse</h1>
+        <h1>
+          <span className="title-hashtag">#vibecoding</span>
+          <span className="title-subtitle">through the Forkiverse</span>
+        </h1>
       </header>
 
       <main>

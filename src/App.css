@@ -15,15 +15,25 @@
 
 .app-header h1 {
   margin: 0;
-  font-size: 2rem;
-  font-weight: 700;
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
 }
 
-.app-header p {
-  margin: 8px 0 0;
+.title-hashtag {
+  font-family: 'Pacifico', cursive;
+  font-size: 3rem;
+  font-weight: 400;
+  text-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
+  line-height: 1.1;
+}
+
+.title-subtitle {
+  font-size: 1.1rem;
+  font-weight: 400;
   opacity: 0.9;
-  font-size: 1rem;
+  letter-spacing: 0.5px;
 }
 
 /* Main Content */
@@ -75,9 +85,12 @@ main {
     padding: 16px 16px 0;
   }
 
-  .app-header h1 {
-    font-size: 1.25rem;
-    line-height: 1.3;
+  .title-hashtag {
+    font-size: 2.2rem;
+  }
+
+  .title-subtitle {
+    font-size: 0.95rem;
   }
 
   main {
@@ -97,7 +110,11 @@ main {
 
 /* Very small screens */
 @media (max-width: 360px) {
-  .app-header h1 {
-    font-size: 1.1rem;
+  .title-hashtag {
+    font-size: 1.9rem;
+  }
+
+  .title-subtitle {
+    font-size: 0.85rem;
   }
 }
