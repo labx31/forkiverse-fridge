@@ -50,10 +50,9 @@ export function AboutModal({ isOpen, onClose }: AboutModalProps) {
         <div className="faq-item">
           <h3>What are the requirements?</h3>
           <ul>
-            <li>Must include <code>#vibecoding</code></li>
+            <li>Must include <code>#fridge</code> or <code>#vibecoding</code></li>
             <li>Must include a project URL</li>
             <li>Original posts only (no boosts/replies)</li>
-            <li>Add <code>#fridge</code> for priority placement</li>
           </ul>
         </div>
 
