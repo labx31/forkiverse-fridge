@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-01-19T20:22:24.375Z",
+  "generated_at": "2026-01-19T21:11:20.344Z",
   "source": {
     "instance": "https://theforkiverse.com",
     "required_hashtag": "vibecoding",
@@ -46,6 +46,19 @@
       "rank": 2
     },
     {
+      "id": "1a1c20e3bb23",
+      "url": "https://flagcalendar.com",
+      "title": "Since everyone is talking about # vibecoding , here’s my ...",
+      "author": "@git",
+      "author_avatar": "https://theforkiverse.com/avatars/original/missing.png",
+      "created_at": "2026-01-19T09:59:12.294Z",
+      "status_url": "https://theforkiverse.com/@git/115921174678220909",
+      "preview_image": "https://cdn.masto.host/theforkiversecom/media_attachments/files/115/921/172/509/123/323/small/b65f391759efa6df.png",
+      "sticker_id": "game-over",
+      "matched_keyword": "over",
+      "rank": 3
+    },
+    {
       "id": "b1548000ff7d",
       "url": "https://alexn.org/blog/2025/10/27/ai-sucks-the-joy-out-of-programming/",
       "title": "'AI' Sucks the Joy Out of Programming",
@@ -56,7 +69,7 @@
       "preview_image": "https://cdn.masto.host/theforkiversecom/cache/preview_cards/images/000/099/741/original/59ab7d21a94a3cf7.jpg",
       "sticker_id": "cat-teal",
       "matched_keyword": "github",
-      "rank": 3
+      "rank": 4
     },
     {
       "id": "ebee3a628e4f",
@@ -69,7 +82,7 @@
       "preview_image": "https://cdn.masto.host/theforkiversecom/cache/preview_cards/images/000/098/375/original/8bfc0fcd0a881b18.jpg",
       "sticker_id": "game-over",
       "matched_keyword": "pixel",
-      "rank": 4
+      "rank": 5
     },
     {
       "id": "59b5262d7a09",
@@ -82,7 +95,7 @@
       "preview_image": "https://cdn.masto.host/theforkiversecom/media_attachments/files/115/918/901/451/286/905/small/96379280e381a32a.png",
       "sticker_id": "alien-head",
       "matched_keyword": "ai",
-      "rank": 5
+      "rank": 6
     },
     {
       "id": "9b7d127e7611",
@@ -95,7 +108,20 @@
       "preview_image": null,
       "sticker_id": "lightning",
       "matched_keyword": "netlify",
-      "rank": 6
+      "rank": 7
+    },
+    {
+      "id": "5dc5760644d2",
+      "url": "https://speaking.app",
+      "title": "Hey @ kevin @ Casey 👋 Heard you&#39;re looking for vibe-...",
+      "author": "@Bjarte",
+      "author_avatar": "https://cdn.masto.host/theforkiversecom/accounts/avatars/115/913/193/226/634/896/original/16c64b403601ca15.jpg",
+      "created_at": "2026-01-18T23:04:28.218Z",
+      "status_url": "https://theforkiverse.com/@Bjarte/115918600156933787",
+      "preview_image": "https://cdn.masto.host/theforkiversecom/media_attachments/files/115/918/535/355/023/617/small/b6d14faa8bb318c8.png",
+      "sticker_id": "alien-head",
+      "matched_keyword": "chatgpt",
+      "rank": 8
     },
     {
       "id": "a2181b5471f0",
@@ -108,7 +134,20 @@
       "preview_image": "https://cdn.masto.host/theforkiversecom/cache/preview_cards/images/000/096/842/original/ba294536e011f3ec.jpg",
       "sticker_id": "too-far-lost",
       "matched_keyword": "remote",
-      "rank": 7
+      "rank": 9
+    },
+    {
+      "id": "0467062aeffb",
+      "url": "https://burrbuilder.itch.io/burrbuilder",
+      "title": "Here&#39;s my vibe coding project that I&#39;ve been work...",
+      "author": "@Johan",
+      "author_avatar": "https://cdn.masto.host/theforkiversecom/accounts/avatars/115/881/871/989/618/299/original/89f609d8efd9fdd2.png",
+      "created_at": "2026-01-18T20:02:55.323Z",
+      "status_url": "https://theforkiverse.com/@Johan/115917886280432440",
+      "preview_image": "https://cdn.masto.host/theforkiversecom/media_attachments/files/115/917/895/270/988/327/small/3447d13d5d2f35f7.png",
+      "sticker_id": "planet-ring",
+      "matched_keyword": "3d",
+      "rank": 10
     },
     {
       "id": "10923c8daa5a",
@@ -121,7 +160,7 @@
       "preview_image": null,
       "sticker_id": "smile-blob",
       "matched_keyword": "happy",
-      "rank": 8
+      "rank": 11
     },
     {
       "id": "6a08e4fd91a9",
@@ -134,7 +173,7 @@
       "preview_image": null,
       "sticker_id": "alien-head",
       "matched_keyword": "ai",
-      "rank": 9
+      "rank": 12
     },
     {
       "id": "f424a486c89e",
@@ -147,7 +186,7 @@
       "preview_image": "https://cdn.masto.host/theforkiversecom/cache/preview_cards/images/000/090/616/original/c7cba7d5596faf80.gif",
       "sticker_id": "lightning",
       "matched_keyword": "app",
-      "rank": 10
+      "rank": 13
     },
     {
       "id": "eff6c8474570",
@@ -160,7 +199,7 @@
       "preview_image": null,
       "sticker_id": "heart-red",
       "matched_keyword": "workout",
-      "rank": 11
+      "rank": 14
     },
     {
       "id": "91511edc8696",
@@ -173,7 +212,7 @@
       "preview_image": "https://cdn.masto.host/theforkiversecom/cache/preview_cards/images/000/087/678/original/e40c72a9acace18e.png",
       "sticker_id": "radioactive",
       "matched_keyword": "python",
-      "rank": 12
+      "rank": 15
     },
     {
       "id": "3e56c85de156",
@@ -186,7 +225,7 @@
       "preview_image": "https://cdn.masto.host/theforkiversecom/cache/preview_cards/images/000/083/981/original/d78d2c56838c662b.png",
       "sticker_id": "tea-cup",
       "matched_keyword": "coffee",
-      "rank": 13
+      "rank": 16
     },
     {
       "id": "2c199988802d",
@@ -199,7 +238,7 @@
       "preview_image": "https://cdn.masto.host/theforkiversecom/cache/preview_cards/images/000/082/843/original/55e78104051d5614.webp",
       "sticker_id": "alien-head",
       "matched_keyword": "ai",
-      "rank": 14
+      "rank": 17
     },
     {
       "id": "eb1f425c736e",
@@ -212,11 +251,11 @@
       "preview_image": null,
       "sticker_id": "speech-bubble-green",
       "matched_keyword": "social",
-      "rank": 15
+      "rank": 18
     },
     {
-      "id": "05f9ebb43ddb",
-      "url": "https://github.com/tldraw/tldraw/issues/7695",
+      "id": "4a0933131166",
+      "url": "https://indieweb.social/tags/tldraw",
       "title": "Contributions policy · Issue #7695 · tldraw/tldraw",
       "author": "@jbz@indieweb.social",
       "author_avatar": "https://cdn.masto.host/theforkiversecom/cache/accounts/avatars/114/586/879/783/964/528/original/18c1fdac63bef496.png",
@@ -225,7 +264,7 @@
       "preview_image": "https://cdn.masto.host/theforkiversecom/cache/preview_cards/images/000/069/053/original/05e4dd2abf7ca8e5.png",
       "sticker_id": "cat-teal",
       "matched_keyword": "github",
-      "rank": 16
+      "rank": 19
     },
     {
       "id": "12b115f47ba7",
@@ -238,7 +277,7 @@
       "preview_image": null,
       "sticker_id": "alien-head",
       "matched_keyword": "ai",
-      "rank": 17
+      "rank": 20
     },
     {
       "id": "4e443ada3dc1",
@@ -251,7 +290,7 @@
       "preview_image": "https://cdn.masto.host/theforkiversecom/cache/media_attachments/files/115/904/644/777/395/972/small/14232059b5636d2d.png",
       "sticker_id": "alien-head",
       "matched_keyword": "ai",
-      "rank": 18
+      "rank": 21
     },
     {
       "id": "d5f3a15f2b2c",
@@ -264,7 +303,7 @@
       "preview_image": "https://cdn.masto.host/theforkiversecom/cache/preview_cards/images/000/071/517/original/0b69d8e52a2bab17.png",
       "sticker_id": "alien-head",
       "matched_keyword": "ai",
-      "rank": 19
+      "rank": 22
     },
     {
       "id": "ea416136eb98",
@@ -277,7 +316,20 @@
       "preview_image": null,
       "sticker_id": "alien-head",
       "matched_keyword": "llm",
-      "rank": 20
+      "rank": 23
+    },
+    {
+      "id": "e9a84d91ce92",
+      "url": "https://www.platformer.news/",
+      "title": "I’ve had a ChatGPT plus account since its release, and be...",
+      "author": "@Smcnall",
+      "author_avatar": "https://cdn.masto.host/theforkiversecom/accounts/avatars/115/868/049/721/962/201/original/5aba7c19cd58618b.png",
+      "created_at": "2026-01-15T19:07:13.365Z",
+      "status_url": "https://theforkiverse.com/@Smcnall/115900680330436999",
+      "preview_image": null,
+      "sticker_id": "planet-ring",
+      "matched_keyword": "go",
+      "rank": 24
     },
     {
       "id": "9752ffa837a8",
@@ -290,7 +342,7 @@
       "preview_image": null,
       "sticker_id": "speech-bubble-green",
       "matched_keyword": "social",
-      "rank": 21
+      "rank": 25
     },
     {
       "id": "fe72a91f97cc",
@@ -303,7 +355,7 @@
       "preview_image": null,
       "sticker_id": "speech-bubble-green",
       "matched_keyword": "social",
-      "rank": 22
+      "rank": 26
     },
     {
       "id": "47850d20ee2d",
@@ -316,7 +368,7 @@
       "preview_image": "https://cdn.masto.host/theforkiversecom/cache/media_attachments/files/115/890/246/607/948/883/small/0a2a31050370de4c.png",
       "sticker_id": "game-over",
       "matched_keyword": "game",
-      "rank": 23
+      "rank": 27
     },
     {
       "id": "00659b6bbce6",
@@ -329,7 +381,7 @@
       "preview_image": null,
       "sticker_id": "alien-head",
       "matched_keyword": "ai",
-      "rank": 24
+      "rank": 28
     },
     {
       "id": "2ffdc837a719",
@@ -342,7 +394,7 @@
       "preview_image": null,
       "sticker_id": "speech-bubble-green",
       "matched_keyword": "social",
-      "rank": 25
+      "rank": 29
     },
     {
       "id": "b3dddcaa5a5a",
@@ -355,7 +407,7 @@
       "preview_image": "https://cdn.masto.host/theforkiversecom/cache/preview_cards/images/000/025/324/original/f5417e6a06062f77.png",
       "sticker_id": "alien-head",
       "matched_keyword": "ai",
-      "rank": 26
+      "rank": 30
     },
     {
       "id": "893fcbf003fc",
@@ -368,7 +420,7 @@
       "preview_image": "https://cdn.masto.host/theforkiversecom/cache/preview_cards/images/000/022/903/original/4a4a3791a8b9d791.jpg",
       "sticker_id": "alien-head",
       "matched_keyword": "ai",
-      "rank": 27
+      "rank": 31
     },
     {
       "id": "1698ef0982cc",
@@ -381,7 +433,7 @@
       "preview_image": "https://cdn.masto.host/theforkiversecom/cache/media_attachments/files/115/867/771/933/789/781/small/65b9d11f7874593c.jpeg",
       "sticker_id": "alien-head",
       "matched_keyword": "ai",
-      "rank": 28
+      "rank": 32
     },
     {
       "id": "cc359cd2da4b",
@@ -391,10 +443,10 @@
       "author_avatar": "https://cdn.masto.host/theforkiversecom/cache/accounts/avatars/115/878/974/091/713/084/original/84f5dddd5f47c7e8.jpg",
       "created_at": "2025-11-05T11:24:29.000Z",
       "status_url": "https://mastodon.social/@federatedreader/115496836728932231",
-      "preview_image": "https://theforkiverse.com/media_proxy/115878974260579040/small",
+      "preview_image": "https://cdn.masto.host/theforkiversecom/cache/media_attachments/files/115/878/974/260/579/040/small/1a6a5996020dd436.jpg",
       "sticker_id": "alien-head",
       "matched_keyword": "ai",
-      "rank": 29
+      "rank": 33
     },
     {
       "id": "672106f7618c",
@@ -407,7 +459,7 @@
       "preview_image": null,
       "sticker_id": "alien-head",
       "matched_keyword": "ai",
-      "rank": 30
+      "rank": 34
     },
     {
       "id": "fcf4a6eb41c5",
@@ -420,7 +472,7 @@
       "preview_image": null,
       "sticker_id": "lightning",
       "matched_keyword": "javascript",
-      "rank": 31
+      "rank": 35
     }
   ]
 }

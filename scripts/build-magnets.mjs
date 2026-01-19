@@ -72,11 +72,55 @@ async function fetchAllStatuses() {
 }
 
 /**
- * Extract the first URL from HTML content
+ * Extract all URLs from HTML content
  */
-function extractUrlFromContent(html) {
-  const match = html.match(/href="(https?:\/\/[^"]+)"/);
-  return match ? match[1] : null;
+function extractUrlsFromContent(html) {
+  const matches = html.matchAll(/href="(https?:\/\/[^"]+)"/g);
+  return Array.from(matches, m => m[1]);
+}
+
+/**
+ * Source code hosting domains (deprioritize these - we want the deployed project)
+ */
+const SOURCE_CODE_DOMAINS = [
+  'github.com',
+  'gitlab.com',
+  'bitbucket.org',
+  'codeberg.org',
+  'sr.ht',
+];
+
+/**
+ * Check if URL is from a source code hosting site
+ */
+function isSourceCodeUrl(url) {
+  try {
+    const hostname = new URL(url).hostname.toLowerCase();
+    return SOURCE_CODE_DOMAINS.some(domain =>
+      hostname === domain || hostname.endsWith('.' + domain)
+    );
+  } catch {
+    return false;
+  }
+}
+
+/**
+ * Find the best project URL from a list
+ * Prioritizes deployed projects over source code repos
+ */
+function findBestProjectUrl(urls) {
+  if (urls.length === 0) return null;
+
+  // Filter out internal Forkiverse links
+  const externalUrls = urls.filter(url => !url.includes('theforkiverse.com'));
+  if (externalUrls.length === 0) return null;
+
+  // Prefer non-source-code URLs (the actual deployed project)
+  const projectUrl = externalUrls.find(url => !isSourceCodeUrl(url));
+  if (projectUrl) return projectUrl;
+
+  // Fall back to source code URL if that's all we have
+  return externalUrls[0];
 }
 
 /**
@@ -91,9 +135,9 @@ function isValidStatus(status) {
 
   // Must have a URL (card or in content)
   const hasCard = status.card && status.card.url;
-  const hasUrlInContent = extractUrlFromContent(status.content);
+  const urlsInContent = extractUrlsFromContent(status.content);
 
-  return hasCard || hasUrlInContent;
+  return hasCard || urlsInContent.length > 0;
 }
 
 /**
@@ -131,19 +175,16 @@ function hashUrl(url) {
  * Extract project data from a status
  */
 function extractProject(status) {
-  // Get URL - prefer card, fallback to content
-  let url = status.card?.url || extractUrlFromContent(status.content);
-  if (!url) return null;
-
-  // Skip internal Forkiverse links
-  if (url.includes('theforkiverse.com')) {
-    const contentUrl = extractUrlFromContent(status.content);
-    if (contentUrl && !contentUrl.includes('theforkiverse.com')) {
-      url = contentUrl;
-    } else {
-      return null;
-    }
+  // Gather all URLs: from card and from content
+  const allUrls = [];
+  if (status.card?.url) {
+    allUrls.push(status.card.url);
   }
+  allUrls.push(...extractUrlsFromContent(status.content));
+
+  // Find the best project URL (prefers deployed projects over source code)
+  const url = findBestProjectUrl(allUrls);
+  if (!url) return null;
 
   const canonicalUrl = canonicalizeUrl(url);
 
