@@ -39,6 +39,7 @@ export function AboutModal({ isOpen, onClose }: AboutModalProps) {
         <div className="faq-item">
           <h3>How do I get my project on the fridge?</h3>
           <ul>
+            <li>Post on <a href="https://theforkiverse.com" target="_blank" rel="noopener noreferrer">The Forkiverse</a></li>
             <li>Must include <code>#fridge</code> or <code>#vibecoding</code></li>
             <li>Must include a project URL</li>
             <li>Original posts only (no boosts/replies)</li>
