@@ -62,6 +62,11 @@ export function AboutModal({ isOpen, onClose }: AboutModalProps) {
         </div>
 
         <div className="faq-item">
+          <h3>How often does it update?</h3>
+          <p>Every 5 minutes.</p>
+        </div>
+
+        <div className="faq-item">
           <h3>Why can't I preview some projects?</h3>
           <p>Some sites block embedding. Click "Open Project" to view them directly.</p>
         </div>

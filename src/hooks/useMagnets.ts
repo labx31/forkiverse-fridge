@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import type { MagnetsData, MagnetItem, MagnetPosition } from '../types';
 
-const MAGNETS_URL = '/data/magnets.json';
+const MAGNETS_URL = `${import.meta.env.BASE_URL}data/magnets.json`;
 
 // Featured magnet - always center, always largest
 const FEATURED_MAGNET: MagnetItem = {
@@ -11,8 +11,8 @@ const FEATURED_MAGNET: MagnetItem = {
   author: '@alimox',
   created_at: new Date().toISOString(),
   status_url: 'https://theforkiverse.com/@alimox',
-  sticker_id: 'star-burst', // Special sticker for featured
-  matched_keyword: 'featured',
+  sticker_id: 'lightning',
+  matched_keyword: 'fast', // Maps to lightning bolt icon
   rank: -1, // Special rank
 };
 

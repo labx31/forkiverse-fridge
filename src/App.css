@@ -157,3 +157,23 @@
     font-size: 1.4rem;
   }
 }
+
+/* Lab31 Footer */
+.lab31-footer {
+  position: fixed;
+  bottom: 12px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.lab31-footer a {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  font-size: 0.8rem;
+  transition: color 0.15s ease;
+}
+
+.lab31-footer a:hover {
+  color: rgba(255, 255, 255, 0.8);
+}

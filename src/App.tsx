@@ -34,6 +34,12 @@ function App() {
       </div>
 
       <AboutModal isOpen={showAbout} onClose={() => setShowAbout(false)} />
+
+      <footer className="lab31-footer">
+        <a href="https://lab31.xyz" target="_blank" rel="noopener noreferrer">
+          A Lab31 vibe
+        </a>
+      </footer>
     </div>
   )
 }
