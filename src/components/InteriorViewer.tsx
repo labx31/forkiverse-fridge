@@ -150,16 +150,19 @@ export function InteriorViewer({ magnet, isVisible, onClose }: InteriorViewerPro
           </div>
         )}
 
-        <iframe
-          ref={iframeRef}
-          src={magnet.url}
-          title={magnet.title}
-          className={`viewer-iframe ${iframeStatus === 'loaded' ? 'visible' : ''}`}
-          onLoad={handleIframeLoad}
-          onError={handleIframeError}
-          sandbox="allow-scripts allow-same-origin allow-popups allow-forms"
-          loading="lazy"
-        />
+        {/* Only render iframe if not failed - prevents it from blocking fallback clicks */}
+        {iframeStatus !== 'failed' && (
+          <iframe
+            ref={iframeRef}
+            src={magnet.url}
+            title={magnet.title}
+            className={`viewer-iframe ${iframeStatus === 'loaded' ? 'visible' : ''}`}
+            onLoad={handleIframeLoad}
+            onError={handleIframeError}
+            sandbox="allow-scripts allow-same-origin allow-popups allow-forms"
+            loading="lazy"
+          />
+        )}
       </div>
 
       {/* View on Forkiverse link */}
