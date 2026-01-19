@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="2" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <g filter="url(#shadow)">
+    
+    <polygon points="50,5 90,27.5 90,72.5 50,95 10,72.5 10,27.5" fill="#85C1E9" />
+    <text x="50" y="55" text-anchor="middle" fill="white" font-size="8" font-family="sans-serif">say-yes</text>
+  
+  </g>
+</svg>

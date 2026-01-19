@@ -1,0 +1,686 @@
+{
+  "$schema": "sticker-manifest-schema",
+  "version": "1.0",
+  "description": "Sticker definitions with keyword mappings for Forkiverse Fridge magnets",
+  "stickers": [
+    {
+      "id": "cat-teal",
+      "source": "funny-set-lovely-stickers",
+      "description": "Cute teal cat face with big eyes",
+      "keywords": ["cat", "kitten", "pet", "meow", "feline", "kitty", "purr", "whiskers", "animal", "cute", "kawaii"]
+    },
+    {
+      "id": "watermelon",
+      "source": "funny-set-lovely-stickers",
+      "description": "Watermelon slice",
+      "keywords": ["watermelon", "fruit", "summer", "fresh", "melon", "juicy", "snack", "tropical", "refreshing"]
+    },
+    {
+      "id": "ok-bubble",
+      "source": "funny-set-lovely-stickers",
+      "description": "Speech bubble saying OK",
+      "keywords": ["ok", "okay", "yes", "approve", "confirm", "accept", "agree", "done", "check", "valid", "success", "pass"]
+    },
+    {
+      "id": "heart-red",
+      "source": "funny-set-lovely-stickers",
+      "description": "Classic red heart",
+      "keywords": ["love", "heart", "like", "favorite", "romance", "dating", "relationship", "passion", "care", "health", "wellness", "emotion"]
+    },
+    {
+      "id": "lightning",
+      "source": "funny-set-lovely-stickers",
+      "description": "Yellow lightning bolt",
+      "keywords": ["lightning", "bolt", "fast", "speed", "quick", "electric", "power", "energy", "flash", "thunder", "storm", "performance", "turbo", "boost", "zap"]
+    },
+    {
+      "id": "rainbow-clouds",
+      "source": "funny-set-lovely-stickers",
+      "description": "Rainbow with clouds",
+      "keywords": ["rainbow", "color", "pride", "lgbtq", "weather", "hope", "happy", "joy", "colorful", "spectrum", "diversity", "inclusive", "bright"]
+    },
+    {
+      "id": "popsicle",
+      "source": "funny-set-lovely-stickers",
+      "description": "Ice cream popsicle bar",
+      "keywords": ["ice", "cream", "popsicle", "frozen", "dessert", "treat", "summer", "cool", "sweet", "cold", "chill", "refreshing"]
+    },
+    {
+      "id": "strawberry",
+      "source": "funny-set-lovely-stickers",
+      "description": "Red strawberry",
+      "keywords": ["strawberry", "berry", "fruit", "sweet", "red", "garden", "fresh", "organic", "natural", "healthy"]
+    },
+    {
+      "id": "skull-cute",
+      "source": "funny-set-lovely-stickers",
+      "description": "Cute purple/blue skull",
+      "keywords": ["skull", "death", "skeleton", "spooky", "halloween", "goth", "punk", "edgy", "dark", "horror", "bones", "danger", "warning"]
+    },
+    {
+      "id": "just-cool-it",
+      "source": "pack-modern-stickers",
+      "description": "Text: Just Cool It",
+      "keywords": ["cool", "chill", "relax", "calm", "easy", "smooth", "casual", "laid-back", "ice", "freeze"]
+    },
+    {
+      "id": "what-shakin",
+      "source": "pack-modern-stickers",
+      "description": "Text: What Shakin?",
+      "keywords": ["shake", "vibrate", "hello", "greeting", "sup", "whatsup", "hey", "social", "chat", "conversation", "music", "dance", "move"]
+    },
+    {
+      "id": "slightly-censored",
+      "source": "pack-modern-stickers",
+      "description": "Text: Slightly Censored",
+      "keywords": ["censored", "nsfw", "adult", "mature", "filter", "blur", "hidden", "secret", "redacted", "private", "explicit"]
+    },
+    {
+      "id": "sorry-not-sorry",
+      "source": "pack-modern-stickers",
+      "description": "Text: Sorry Not Sorry",
+      "keywords": ["sorry", "apology", "unapologetic", "bold", "confident", "sass", "attitude", "proud", "defiant", "opinion"]
+    },
+    {
+      "id": "outstanding",
+      "source": "pack-modern-stickers",
+      "description": "Text: Outstanding",
+      "keywords": ["outstanding", "excellent", "amazing", "great", "awesome", "fantastic", "brilliant", "impressive", "remarkable", "exceptional", "superb", "best", "top", "premier"]
+    },
+    {
+      "id": "tbt",
+      "source": "pack-modern-stickers",
+      "description": "Text: TBT (Throwback Thursday)",
+      "keywords": ["throwback", "tbt", "nostalgia", "retro", "vintage", "old", "classic", "memory", "remember", "past", "history", "legacy"]
+    },
+    {
+      "id": "get-lost",
+      "source": "pack-modern-stickers",
+      "description": "Text: Get Lost",
+      "keywords": ["lost", "explore", "adventure", "wander", "travel", "journey", "map", "navigation", "discover", "hike", "outdoor", "wilderness", "nature"]
+    },
+    {
+      "id": "what-question",
+      "source": "pack-modern-stickers",
+      "description": "Text: What?",
+      "keywords": ["what", "question", "confused", "huh", "curious", "wonder", "ask", "inquiry", "mystery", "puzzle", "unknown"]
+    },
+    {
+      "id": "take-a-hike",
+      "source": "pack-modern-stickers",
+      "description": "Text: Take a Hike",
+      "keywords": ["hike", "hiking", "walk", "trail", "mountain", "outdoor", "nature", "trek", "backpack", "camping", "fitness", "exercise"]
+    },
+    {
+      "id": "spray-bottle",
+      "source": "sticker-icons-hand-drawn-doodle",
+      "description": "Spray bottle with heart",
+      "keywords": ["clean", "spray", "cleaning", "sanitize", "wash", "hygiene", "fresh", "sparkle", "tidy", "organize", "home", "household"]
+    },
+    {
+      "id": "donut-purple",
+      "source": "sticker-icons-hand-drawn-doodle",
+      "description": "Purple frosted donut",
+      "keywords": ["donut", "doughnut", "sweet", "dessert", "bakery", "treat", "sugar", "sprinkles", "breakfast", "snack", "coffee", "pastry"]
+    },
+    {
+      "id": "sunflower",
+      "source": "sticker-icons-hand-drawn-doodle",
+      "description": "Yellow sunflower",
+      "keywords": ["sunflower", "flower", "sun", "garden", "plant", "nature", "yellow", "bloom", "spring", "summer", "grow", "botanical", "floral"]
+    },
+    {
+      "id": "tea-cup",
+      "source": "sticker-icons-hand-drawn-doodle",
+      "description": "Tea/coffee cup with lime",
+      "keywords": ["tea", "coffee", "cup", "drink", "beverage", "hot", "cozy", "morning", "cafe", "relax", "brew", "mug", "warm"]
+    },
+    {
+      "id": "battery-low",
+      "source": "sticker-icons-hand-drawn-doodle",
+      "description": "20% battery indicator",
+      "keywords": ["battery", "power", "charge", "energy", "low", "drain", "electric", "phone", "device", "tired", "exhausted", "recharge"]
+    },
+    {
+      "id": "sunshine-text",
+      "source": "sticker-icons-hand-drawn-doodle",
+      "description": "Text: You Are My Sunshine",
+      "keywords": ["sunshine", "sun", "bright", "happy", "positive", "cheerful", "warm", "light", "morning", "optimistic", "love", "affection"]
+    },
+    {
+      "id": "worth-it",
+      "source": "sticker-icons-hand-drawn-doodle",
+      "description": "Text: You Are Worth It",
+      "keywords": ["worth", "value", "motivational", "inspire", "encourage", "self-care", "confidence", "affirmation", "positive", "worthy", "deserve"]
+    },
+    {
+      "id": "typewriter",
+      "source": "sticker-icons-hand-drawn-doodle",
+      "description": "Vintage typewriter",
+      "keywords": ["typewriter", "write", "writing", "author", "story", "blog", "text", "document", "vintage", "retro", "journalist", "novel", "book", "content", "editor", "markdown"]
+    },
+    {
+      "id": "pig-cute",
+      "source": "sticker-icons-hand-drawn-doodle",
+      "description": "Cute pink pig",
+      "keywords": ["pig", "piggy", "oink", "farm", "animal", "cute", "pink", "bacon", "savings", "bank", "money", "invest"]
+    },
+    {
+      "id": "radioactive",
+      "source": "sticker-icons-hand-drawn-doodle",
+      "description": "Radioactive/nuclear symbol",
+      "keywords": ["radioactive", "nuclear", "hazard", "danger", "warning", "toxic", "science", "radiation", "atom", "physics", "energy", "power", "reactor"]
+    },
+    {
+      "id": "flying-heart",
+      "source": "love-fashion-stickers-set",
+      "description": "Pink heart with wings",
+      "keywords": ["fly", "wing", "angel", "love", "heart", "freedom", "soar", "dream", "float", "heaven", "spirit", "soul", "cupid"]
+    },
+    {
+      "id": "cherries",
+      "source": "love-fashion-stickers-set",
+      "description": "Red cherries",
+      "keywords": ["cherry", "cherries", "fruit", "sweet", "red", "pair", "duo", "couple", "slot", "jackpot", "lucky", "casino", "game"]
+    },
+    {
+      "id": "sleepy-heart",
+      "source": "love-fashion-stickers-set",
+      "description": "Heart with closed eyes",
+      "keywords": ["sleep", "sleepy", "tired", "rest", "dream", "nap", "relax", "peaceful", "calm", "bedtime", "night", "cozy"]
+    },
+    {
+      "id": "purple-cloud",
+      "source": "love-fashion-stickers-set",
+      "description": "Smiling purple cloud",
+      "keywords": ["cloud", "sky", "weather", "fluffy", "dream", "storage", "upload", "download", "sync", "server", "aws", "azure", "gcp", "hosting", "deploy", "infrastructure"]
+    },
+    {
+      "id": "speech-bubble-green",
+      "source": "love-fashion-stickers-set",
+      "description": "Green speech bubble",
+      "keywords": ["chat", "message", "talk", "speak", "conversation", "comment", "reply", "discuss", "communication", "text", "sms", "bubble", "dialog"]
+    },
+    {
+      "id": "cat-purple",
+      "source": "love-fashion-stickers-set",
+      "description": "Purple grumpy cat face",
+      "keywords": ["cat", "grumpy", "angry", "mood", "pet", "feline", "attitude", "sass", "annoyed", "cranky", "mad"]
+    },
+    {
+      "id": "arrow-heart",
+      "source": "love-fashion-stickers-set",
+      "description": "Arrow with heart tip",
+      "keywords": ["arrow", "direction", "point", "target", "aim", "goal", "navigate", "link", "redirect", "flow", "path", "route", "cupid"]
+    },
+    {
+      "id": "heart-lollipop",
+      "source": "love-fashion-stickers-set",
+      "description": "Heart-shaped lollipop",
+      "keywords": ["lollipop", "candy", "sweet", "sugar", "treat", "love", "valentine", "dessert", "stick", "pop"]
+    },
+    {
+      "id": "donut-pink",
+      "source": "love-fashion-stickers-set",
+      "description": "Pink donut with hole",
+      "keywords": ["donut", "doughnut", "pink", "sweet", "bakery", "hole", "breakfast", "snack", "sprinkles", "frosting"]
+    },
+    {
+      "id": "eye-colorful",
+      "source": "love-fashion-stickers-set",
+      "description": "Colorful eye",
+      "keywords": ["eye", "see", "look", "watch", "view", "vision", "observe", "monitor", "dashboard", "analytics", "tracking", "insight", "visible"]
+    },
+    {
+      "id": "ice-cream-cone",
+      "source": "love-fashion-stickers-set",
+      "description": "Ice cream cone",
+      "keywords": ["ice", "cream", "cone", "dessert", "sweet", "summer", "frozen", "treat", "vanilla", "chocolate", "scoop", "gelato"]
+    },
+    {
+      "id": "wing-purple",
+      "source": "love-fashion-stickers-set",
+      "description": "Purple wing",
+      "keywords": ["wing", "fly", "bird", "angel", "freedom", "soar", "feather", "flight", "aviation", "air"]
+    },
+    {
+      "id": "candy-wrapper",
+      "source": "love-fashion-stickers-set",
+      "description": "Wrapped candy",
+      "keywords": ["candy", "sweet", "wrapper", "treat", "sugar", "snack", "confection", "bonbon", "taffy", "caramel"]
+    },
+    {
+      "id": "jellyfish",
+      "source": "love-fashion-stickers-set",
+      "description": "Blue jellyfish",
+      "keywords": ["jellyfish", "ocean", "sea", "marine", "water", "aquatic", "swim", "float", "underwater", "beach", "wave", "tentacle"]
+    },
+    {
+      "id": "music-notes",
+      "source": "love-fashion-stickers-set",
+      "description": "Purple music notes",
+      "keywords": ["music", "note", "song", "sound", "audio", "melody", "tune", "beat", "rhythm", "spotify", "playlist", "podcast", "radio", "listen", "headphone", "speaker", "mp3", "streaming"]
+    },
+    {
+      "id": "mustache",
+      "source": "love-fashion-stickers-set",
+      "description": "Pink mustache",
+      "keywords": ["mustache", "facial", "hair", "gentleman", "hipster", "vintage", "barber", "style", "fashion", "disguise", "movember"]
+    },
+    {
+      "id": "crown",
+      "source": "love-fashion-stickers-set",
+      "description": "Orange crown",
+      "keywords": ["crown", "king", "queen", "royal", "premium", "pro", "vip", "gold", "winner", "champion", "leader", "best", "top", "elite", "luxury"]
+    },
+    {
+      "id": "diamond",
+      "source": "love-fashion-stickers-set",
+      "description": "Pink diamond gem",
+      "keywords": ["diamond", "gem", "jewel", "precious", "valuable", "luxury", "premium", "sparkle", "shine", "crystal", "bling", "rare", "treasure"]
+    },
+    {
+      "id": "shooting-star",
+      "source": "love-fashion-stickers-set",
+      "description": "Rainbow shooting star",
+      "keywords": ["star", "shooting", "wish", "meteor", "space", "cosmic", "sparkle", "magic", "dream", "night", "sky", "astro", "stellar"]
+    },
+    {
+      "id": "eye-drip",
+      "source": "set-cute-stickers",
+      "description": "Eye with colorful drips",
+      "keywords": ["eye", "art", "drip", "paint", "artistic", "creative", "visual", "design", "psychedelic", "trippy", "surreal", "abstract"]
+    },
+    {
+      "id": "cat-stretching",
+      "source": "set-cute-stickers",
+      "description": "Teal cat stretching",
+      "keywords": ["cat", "stretch", "yoga", "flexible", "relax", "exercise", "pet", "lazy", "morning", "wake", "lounge"]
+    },
+    {
+      "id": "apple-red",
+      "source": "set-cute-stickers",
+      "description": "Red apple",
+      "keywords": ["apple", "fruit", "healthy", "teacher", "education", "learn", "school", "mac", "ios", "iphone", "swift", "xcode", "macos"]
+    },
+    {
+      "id": "feather",
+      "source": "set-cute-stickers",
+      "description": "Purple feather",
+      "keywords": ["feather", "light", "soft", "bird", "write", "quill", "gentle", "float", "delicate", "nature", "plume"]
+    },
+    {
+      "id": "super-badge",
+      "source": "set-cute-stickers",
+      "description": "Super! badge",
+      "keywords": ["super", "hero", "amazing", "great", "excellent", "fantastic", "awesome", "incredible", "badge", "achievement", "power"]
+    },
+    {
+      "id": "girl-power",
+      "source": "set-cute-stickers",
+      "description": "Girl Power text",
+      "keywords": ["girl", "power", "woman", "women", "feminist", "strong", "empower", "equality", "female", "lady", "queen"]
+    },
+    {
+      "id": "leaf-branch",
+      "source": "set-cute-stickers",
+      "description": "Blue leaf branch",
+      "keywords": ["leaf", "plant", "nature", "green", "eco", "environment", "organic", "tree", "branch", "grow", "garden", "sustainable"]
+    },
+    {
+      "id": "flower-simple",
+      "source": "set-cute-stickers",
+      "description": "Simple teal flower",
+      "keywords": ["flower", "bloom", "petal", "garden", "spring", "nature", "plant", "pretty", "floral", "blossom"]
+    },
+    {
+      "id": "camera",
+      "source": "set-cute-stickers",
+      "description": "Purple and orange camera",
+      "keywords": ["camera", "photo", "picture", "image", "photography", "snapshot", "capture", "shoot", "instagram", "selfie", "album", "gallery", "lens", "film", "video"]
+    },
+    {
+      "id": "planet-ring",
+      "source": "set-cute-stickers",
+      "description": "Planet with ring (Saturn-like)",
+      "keywords": ["planet", "space", "saturn", "ring", "orbit", "cosmic", "universe", "astronomy", "galaxy", "solar", "sci-fi", "alien", "nasa", "rocket", "mars", "moon"]
+    },
+    {
+      "id": "do-it",
+      "source": "set-cute-stickers",
+      "description": "Do It text",
+      "keywords": ["do", "action", "motivation", "start", "go", "begin", "execute", "run", "launch", "ship", "deploy", "just", "now"]
+    },
+    {
+      "id": "melted-globe",
+      "source": "retro-stickers-with-ufo-mushroom-dinosaur",
+      "description": "Melted globe - MELTED text",
+      "keywords": ["melt", "globe", "world", "earth", "climate", "hot", "warm", "global", "international", "worldwide", "map", "geography"]
+    },
+    {
+      "id": "lost-love",
+      "source": "retro-stickers-with-ufo-mushroom-dinosaur",
+      "description": "Lost Love 90s style",
+      "keywords": ["lost", "love", "breakup", "sad", "emotion", "feeling", "heartbreak", "romance", "relationship", "miss", "search", "find"]
+    },
+    {
+      "id": "cool-shades",
+      "source": "retro-stickers-with-ufo-mushroom-dinosaur",
+      "description": "Character with sunglasses",
+      "keywords": ["cool", "sunglasses", "shades", "chill", "relax", "smooth", "confident", "style", "fashion", "summer", "beach", "vacation"]
+    },
+    {
+      "id": "too-far-lost",
+      "source": "retro-stickers-with-ufo-mushroom-dinosaur",
+      "description": "Too Far Lost text with character",
+      "keywords": ["far", "lost", "distance", "remote", "away", "explore", "wander", "journey", "adventure", "unknown", "deep"]
+    },
+    {
+      "id": "skull-retro",
+      "source": "retro-stickers-with-ufo-mushroom-dinosaur",
+      "description": "Colorful retro skull",
+      "keywords": ["skull", "retro", "death", "skeleton", "vintage", "punk", "rock", "metal", "edgy", "bones", "danger"]
+    },
+    {
+      "id": "good-night",
+      "source": "retro-stickers-with-ufo-mushroom-dinosaur",
+      "description": "Good Night with moon",
+      "keywords": ["night", "sleep", "moon", "dark", "evening", "bedtime", "dream", "stars", "midnight", "late", "rest"]
+    },
+    {
+      "id": "hate-you",
+      "source": "retro-stickers-with-ufo-mushroom-dinosaur",
+      "description": "Angry character - Hate You",
+      "keywords": ["hate", "angry", "mad", "upset", "annoyed", "frustration", "rage", "emotion", "negative", "grumpy"]
+    },
+    {
+      "id": "goodbye-phone",
+      "source": "retro-stickers-with-ufo-mushroom-dinosaur",
+      "description": "Phone saying Goodbye",
+      "keywords": ["goodbye", "bye", "phone", "call", "hang", "end", "finish", "close", "exit", "leave", "farewell"]
+    },
+    {
+      "id": "shot-camera",
+      "source": "retro-stickers-with-ufo-mushroom-dinosaur",
+      "description": "Camera - SHOT!",
+      "keywords": ["shot", "camera", "photo", "picture", "snap", "capture", "click", "flash", "photography", "image"]
+    },
+    {
+      "id": "game-over",
+      "source": "retro-stickers-with-ufo-mushroom-dinosaur",
+      "description": "Game Over on device",
+      "keywords": ["game", "over", "gaming", "play", "arcade", "console", "retro", "video", "player", "controller", "nintendo", "playstation", "xbox", "steam", "unity", "godot", "unreal"]
+    },
+    {
+      "id": "taco-character",
+      "source": "retro-stickers-with-ufo-mushroom-dinosaur",
+      "description": "Happy taco/burger character",
+      "keywords": ["taco", "burger", "food", "eat", "hungry", "meal", "lunch", "dinner", "fast", "restaurant", "delivery", "mexican", "snack"]
+    },
+    {
+      "id": "lucky-rainbow",
+      "source": "retro-stickers-with-ufo-mushroom-dinosaur",
+      "description": "Lucky with rainbow",
+      "keywords": ["lucky", "luck", "fortune", "chance", "random", "rainbow", "win", "jackpot", "odds", "probability", "gamble"]
+    },
+    {
+      "id": "smile-blob",
+      "source": "hand-drawn-retro-sticker-set",
+      "description": "Purple blob saying SMILE",
+      "keywords": ["smile", "happy", "joy", "grin", "positive", "cheerful", "friendly", "face", "expression", "mood", "emoji", "emoticon"]
+    },
+    {
+      "id": "omg-rainbow",
+      "source": "hand-drawn-retro-sticker-set",
+      "description": "OMG in rainbow letters",
+      "keywords": ["omg", "wow", "amazing", "surprise", "shock", "excited", "react", "expression", "exclaim", "unbelievable", "incredible"]
+    },
+    {
+      "id": "happiness-mushroom",
+      "source": "hand-drawn-retro-sticker-set",
+      "description": "Mushroom character - HAPPINESS",
+      "keywords": ["happy", "happiness", "mushroom", "fun", "joy", "cheerful", "positive", "smile", "delight", "pleased", "content", "fungi"]
+    },
+    {
+      "id": "growing-stronger",
+      "source": "hand-drawn-retro-sticker-set",
+      "description": "Flower - Growing Stronger",
+      "keywords": ["grow", "growth", "strong", "strength", "improve", "progress", "develop", "evolve", "level", "up", "better", "flower", "bloom"]
+    },
+    {
+      "id": "chill-out",
+      "source": "hand-drawn-retro-sticker-set",
+      "description": "Chill Out text pink",
+      "keywords": ["chill", "relax", "calm", "easy", "cool", "laid-back", "peace", "rest", "zen", "meditation", "stress-free", "lounge"]
+    },
+    {
+      "id": "good-luck",
+      "source": "hand-drawn-retro-sticker-set",
+      "description": "Good Luck clover badge",
+      "keywords": ["luck", "lucky", "clover", "fortune", "wish", "hope", "chance", "shamrock", "irish", "green", "four-leaf", "blessing"]
+    },
+    {
+      "id": "money-globes",
+      "source": "gradient-rave-party-sticker",
+      "description": "MONEY with holographic globes",
+      "keywords": ["money", "cash", "finance", "dollar", "currency", "bank", "pay", "payment", "invest", "crypto", "bitcoin", "eth", "web3", "nft", "defi", "trading", "stocks", "fintech"]
+    },
+    {
+      "id": "asterisk-holo",
+      "source": "gradient-rave-party-sticker",
+      "description": "Holographic asterisk",
+      "keywords": ["asterisk", "star", "symbol", "code", "password", "wildcard", "regex", "pattern", "special", "mark", "note", "footnote"]
+    },
+    {
+      "id": "alien-head",
+      "source": "gradient-rave-party-sticker",
+      "description": "Holographic alien head",
+      "keywords": ["alien", "ufo", "space", "extraterrestrial", "sci-fi", "future", "cosmic", "weird", "strange", "otherworldly", "invasion", "x-files"]
+    },
+    {
+      "id": "globe-holo",
+      "source": "gradient-rave-party-sticker",
+      "description": "Holographic globe sphere",
+      "keywords": ["globe", "world", "earth", "global", "international", "web", "internet", "network", "worldwide", "sphere", "3d", "planet"]
+    },
+    {
+      "id": "rings-loop",
+      "source": "gradient-rave-party-sticker",
+      "description": "Holographic interlocking rings",
+      "keywords": ["ring", "loop", "circle", "connect", "link", "chain", "infinite", "cycle", "repeat", "sync", "integration", "api", "oauth", "workflow"]
+    },
+    {
+      "id": "rave-on-badge",
+      "source": "gradient-rave-party-sticker",
+      "description": "RAVE ON badge with barbed wire",
+      "keywords": ["rave", "party", "dance", "edm", "electronic", "dj", "club", "nightlife", "festival", "techno", "house", "bass", "beat"]
+    },
+    {
+      "id": "smiley-rave",
+      "source": "gradient-rave-party-sticker",
+      "description": "Smiley face RAVE ON circle",
+      "keywords": ["smiley", "face", "happy", "rave", "party", "acid", "house", "90s", "emoji", "yellow", "grin", "positive"]
+    },
+    {
+      "id": "melted-smiley",
+      "source": "gradient-rave-party-sticker",
+      "description": "Melted/warped smiley face",
+      "keywords": ["melt", "melted", "smiley", "trippy", "psychedelic", "weird", "warp", "distort", "glitch", "surreal", "acid", "abstract"]
+    },
+    {
+      "id": "say-yes",
+      "source": "gradient-rave-party-sticker",
+      "description": "SAY YES vortex",
+      "keywords": ["yes", "agree", "accept", "confirm", "positive", "affirmative", "approve", "ok", "sure", "definitely", "absolutely", "commit"]
+    },
+    {
+      "id": "star-burst",
+      "source": "gradient-rave-party-sticker",
+      "description": "Holographic 4-point star burst",
+      "keywords": ["star", "burst", "sparkle", "shine", "twinkle", "bright", "glow", "new", "feature", "highlight", "special", "premium", "pro"]
+    }
+  ],
+  "fallback_stickers": [
+    "lightning",
+    "star-burst",
+    "rainbow-clouds",
+    "do-it",
+    "super-badge",
+    "omg-rainbow",
+    "outstanding",
+    "shooting-star"
+  ],
+  "tech_keyword_overrides": {
+    "react": "lightning",
+    "vue": "leaf-branch",
+    "angular": "radioactive",
+    "svelte": "lightning",
+    "nextjs": "lightning",
+    "node": "leaf-branch",
+    "python": "radioactive",
+    "javascript": "lightning",
+    "typescript": "lightning",
+    "rust": "radioactive",
+    "go": "planet-ring",
+    "docker": "jellyfish",
+    "kubernetes": "rings-loop",
+    "k8s": "rings-loop",
+    "aws": "purple-cloud",
+    "azure": "purple-cloud",
+    "gcp": "purple-cloud",
+    "vercel": "lightning",
+    "netlify": "lightning",
+    "github": "cat-teal",
+    "gitlab": "cat-purple",
+    "git": "rings-loop",
+    "api": "rings-loop",
+    "graphql": "diamond",
+    "rest": "rings-loop",
+    "database": "radioactive",
+    "sql": "radioactive",
+    "mongodb": "leaf-branch",
+    "postgres": "radioactive",
+    "redis": "lightning",
+    "ai": "alien-head",
+    "ml": "alien-head",
+    "gpt": "alien-head",
+    "llm": "alien-head",
+    "chatgpt": "alien-head",
+    "claude": "alien-head",
+    "openai": "alien-head",
+    "anthropic": "alien-head",
+    "tensorflow": "alien-head",
+    "pytorch": "alien-head",
+    "huggingface": "alien-head",
+    "bot": "alien-head",
+    "automation": "rings-loop",
+    "cli": "typewriter",
+    "terminal": "typewriter",
+    "bash": "typewriter",
+    "shell": "typewriter",
+    "vscode": "eye-colorful",
+    "vim": "typewriter",
+    "neovim": "typewriter",
+    "ide": "eye-colorful",
+    "figma": "camera",
+    "sketch": "camera",
+    "design": "camera",
+    "ui": "eye-colorful",
+    "ux": "eye-colorful",
+    "css": "rainbow-clouds",
+    "tailwind": "rainbow-clouds",
+    "sass": "rainbow-clouds",
+    "animation": "rainbow-clouds",
+    "three.js": "planet-ring",
+    "webgl": "planet-ring",
+    "3d": "planet-ring",
+    "ar": "planet-ring",
+    "vr": "planet-ring",
+    "xr": "planet-ring",
+    "game": "game-over",
+    "gaming": "game-over",
+    "unity": "game-over",
+    "godot": "game-over",
+    "unreal": "game-over",
+    "pixel": "game-over",
+    "sprite": "game-over",
+    "crypto": "money-globes",
+    "bitcoin": "money-globes",
+    "ethereum": "money-globes",
+    "web3": "money-globes",
+    "nft": "money-globes",
+    "blockchain": "money-globes",
+    "defi": "money-globes",
+    "wallet": "money-globes",
+    "solana": "money-globes",
+    "stripe": "money-globes",
+    "fintech": "money-globes",
+    "payment": "money-globes",
+    "ios": "apple-red",
+    "swift": "apple-red",
+    "xcode": "apple-red",
+    "macos": "apple-red",
+    "iphone": "apple-red",
+    "ipad": "apple-red",
+    "android": "leaf-branch",
+    "kotlin": "leaf-branch",
+    "flutter": "leaf-branch",
+    "mobile": "lightning",
+    "app": "lightning",
+    "pwa": "lightning",
+    "music": "music-notes",
+    "audio": "music-notes",
+    "sound": "music-notes",
+    "podcast": "music-notes",
+    "spotify": "music-notes",
+    "playlist": "music-notes",
+    "synth": "music-notes",
+    "midi": "music-notes",
+    "photo": "camera",
+    "image": "camera",
+    "gallery": "camera",
+    "video": "camera",
+    "youtube": "camera",
+    "stream": "camera",
+    "twitch": "camera",
+    "todo": "ok-bubble",
+    "task": "ok-bubble",
+    "productivity": "ok-bubble",
+    "calendar": "ok-bubble",
+    "schedule": "ok-bubble",
+    "tracker": "ok-bubble",
+    "dashboard": "eye-colorful",
+    "analytics": "eye-colorful",
+    "chart": "eye-colorful",
+    "graph": "eye-colorful",
+    "visualize": "eye-colorful",
+    "data": "eye-colorful",
+    "search": "eye-colorful",
+    "weather": "purple-cloud",
+    "map": "globe-holo",
+    "location": "globe-holo",
+    "geo": "globe-holo",
+    "travel": "get-lost",
+    "recipe": "taco-character",
+    "food": "taco-character",
+    "cook": "taco-character",
+    "restaurant": "taco-character",
+    "health": "heart-red",
+    "fitness": "heart-red",
+    "workout": "heart-red",
+    "meditation": "chill-out",
+    "mindfulness": "chill-out",
+    "journal": "typewriter",
+    "notes": "typewriter",
+    "markdown": "typewriter",
+    "blog": "typewriter",
+    "cms": "typewriter",
+    "chat": "speech-bubble-green",
+    "message": "speech-bubble-green",
+    "social": "speech-bubble-green",
+    "community": "speech-bubble-green",
+    "forum": "speech-bubble-green",
+    "email": "speech-bubble-green",
+    "newsletter": "speech-bubble-green"
+  }
+}

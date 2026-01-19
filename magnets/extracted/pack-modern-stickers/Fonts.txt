@@ -1,0 +1,9 @@
+Fonts used in this design:
+
+Font: Aleo
+Author: Alessio Laiso
+Url: http://www.fontsquirrel.com/fonts/aleo
+
+Font: Bebas
+Author: Flat-it
+Url: http://www.fontsquirrel.com/fonts/bebas

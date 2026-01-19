@@ -1,0 +1,325 @@
+/* Interior Viewer Container */
+.interior-viewer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background: #1a1a1a;
+  border-radius: 6px;
+  overflow: hidden;
+  animation: fade-in 0.3s ease;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Header */
+.viewer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 12px;
+  background: #252525;
+  border-bottom: 1px solid #333;
+  gap: 12px;
+}
+
+.viewer-title-section {
+  flex: 1;
+  min-width: 0;
+}
+
+.viewer-title {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.viewer-author {
+  font-size: 11px;
+  color: #888;
+}
+
+.viewer-actions {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.action-btn {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 10px;
+  background: #333;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.action-btn:hover {
+  background: #444;
+}
+
+.open-btn {
+  background: #2563eb;
+}
+
+.open-btn:hover {
+  background: #1d4ed8;
+}
+
+.close-btn {
+  padding: 6px;
+}
+
+.close-btn:hover {
+  background: #ef4444;
+}
+
+/* Content Area */
+.viewer-content {
+  flex: 1;
+  position: relative;
+  min-height: 0;
+}
+
+.viewer-iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: #fff;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.viewer-iframe.visible {
+  opacity: 1;
+}
+
+/* Loading State */
+.viewer-loading {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: #888;
+}
+
+.viewer-loading .loading-spinner {
+  width: 32px;
+  height: 32px;
+  border: 2px solid #333;
+  border-top-color: #666;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Failed State */
+.viewer-failed {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 20px;
+  color: #888;
+  text-align: center;
+}
+
+/* Fallback Magnet Display */
+.fallback-magnet {
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: drop-shadow(3px 5px 10px rgba(0, 0, 0, 0.4));
+  animation: magnet-pop 0.4s ease;
+}
+
+@keyframes magnet-pop {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  70% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.fallback-magnet-icon {
+  font-size: 56px;
+  color: white;
+  filter: drop-shadow(1px 2px 3px rgba(0, 0, 0, 0.3));
+}
+
+/* Fallback magnet shape variations */
+.fallback-magnet-shape-circle {
+  border-radius: 50%;
+}
+
+.fallback-magnet-shape-rounded-square {
+  border-radius: 20%;
+}
+
+.fallback-magnet-shape-hexagon {
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.fallback-magnet-shape-star {
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+.fallback-magnet-shape-blob {
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+}
+
+.fallback-title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  max-width: 80%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.fallback-message {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.preview-image {
+  max-width: 80%;
+  max-height: 40%;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.open-project-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  background: #2563eb;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s ease, transform 0.15s ease;
+}
+
+.open-project-btn:hover {
+  background: #1d4ed8;
+  transform: scale(1.02);
+}
+
+/* Footer */
+.viewer-footer {
+  padding: 8px 12px;
+  background: #252525;
+  border-top: 1px solid #333;
+  text-align: center;
+}
+
+.forkiverse-link {
+  font-size: 11px;
+  color: #666;
+  text-decoration: none;
+}
+
+.forkiverse-link:hover {
+  color: #888;
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .viewer-header {
+    padding: 10px;
+    gap: 8px;
+  }
+
+  .viewer-title {
+    font-size: 12px;
+  }
+
+  .viewer-author {
+    font-size: 10px;
+  }
+
+  .action-btn {
+    padding: 5px 8px;
+    font-size: 11px;
+  }
+
+  .close-btn {
+    padding: 5px;
+  }
+
+  .fallback-magnet {
+    width: 90px;
+    height: 90px;
+  }
+
+  .fallback-magnet-icon {
+    font-size: 42px;
+  }
+
+  .fallback-title {
+    font-size: 16px;
+  }
+
+  .fallback-message {
+    font-size: 12px;
+  }
+
+  .open-project-btn {
+    padding: 10px 18px;
+    font-size: 13px;
+  }
+
+  .viewer-footer {
+    padding: 6px 10px;
+  }
+
+  .forkiverse-link {
+    font-size: 10px;
+  }
+}
