@@ -53,18 +53,21 @@ main {
   font-size: 0.875rem;
 }
 
-.app-footer p {
-  margin: 0;
+.footer-button {
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: inherit;
+  font-family: inherit;
+  cursor: pointer;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: background 0.15s, color 0.15s;
 }
 
-.app-footer a {
+.footer-button:hover {
+  background: rgba(255, 255, 255, 0.1);
   color: white;
-  text-decoration: underline;
-  text-underline-offset: 2px;
-}
-
-.app-footer a:hover {
-  opacity: 0.8;
 }
 
 /* Responsive */

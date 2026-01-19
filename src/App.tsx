@@ -1,7 +1,11 @@
+import { useState } from 'react'
 import { Fridge } from './components/Fridge'
+import { AboutModal } from './components/AboutModal'
 import './App.css'
 
 function App() {
+  const [showAbout, setShowAbout] = useState(false)
+
   return (
     <div className="app">
       <header className="app-header">
@@ -16,25 +20,12 @@ function App() {
       </main>
 
       <footer className="app-footer">
-        <p>
-          The 80 most recent{' '}
-          <a
-            href="https://theforkiverse.com/tags/vibecoding"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            #vibecoding
-          </a>
-          {' '}posts on{' '}
-          <a
-            href="https://theforkiverse.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            The Forkiverse
-          </a>
-        </p>
+        <button className="footer-button" onClick={() => setShowAbout(true)}>
+          The 80 most recent #vibecoding posts on The Forkiverse
+        </button>
       </footer>
+
+      <AboutModal isOpen={showAbout} onClose={() => setShowAbout(false)} />
     </div>
   )
 }
