@@ -75,10 +75,9 @@ export function AboutModal({ isOpen, onClose }: AboutModalProps) {
         <div className="faq-item">
           <h3>Is this open source?</h3>
           <p>
-            Yes.{' '}
             <a href="https://github.com/labx31/forkiverse-fridge" target="_blank" rel="noopener noreferrer">
-              GitHub
-            </a>
+              Yes
+            </a>. Fork that shit.
           </p>
         </div>
       </div>
