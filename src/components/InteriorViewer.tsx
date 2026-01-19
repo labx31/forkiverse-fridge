@@ -81,7 +81,14 @@ export function InteriorViewer({ magnet, isVisible, onClose }: InteriorViewerPro
       <div className="viewer-header">
         <div className="viewer-title-section">
           <h2 className="viewer-title">{magnet.title}</h2>
-          <span className="viewer-author">{magnet.author}</span>
+          <a
+            href={magnet.status_url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="viewer-author"
+          >
+            {magnet.author}
+          </a>
         </div>
         <div className="viewer-actions">
           <button

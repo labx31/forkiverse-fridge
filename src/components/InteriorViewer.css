@@ -48,6 +48,13 @@
 .viewer-author {
   font-size: 11px;
   color: #888;
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.viewer-author:hover {
+  color: #aaa;
+  text-decoration: underline;
 }
 
 .viewer-actions {
