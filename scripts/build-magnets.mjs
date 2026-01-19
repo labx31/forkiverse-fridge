@@ -18,6 +18,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const CONFIG = {
   instance: 'https://theforkiverse.com',
   hashtag: 'vibecoding',
+  priorityHashtag: 'fridge', // Posts with #fridge get priority
   targetCount: 80,
   fetchBuffer: 120, // Fetch extra to account for filtering
   maxPages: 10,
@@ -188,6 +189,9 @@ function extractProject(status) {
 
   const canonicalUrl = canonicalizeUrl(url);
 
+  const hashtags = status.tags?.map(t => t.name.toLowerCase()) || [];
+  const hasPriorityTag = hashtags.includes(CONFIG.priorityHashtag);
+
   return {
     id: hashUrl(canonicalUrl),
     url: url,
@@ -198,8 +202,9 @@ function extractProject(status) {
     created_at: status.created_at,
     status_url: status.url,
     preview_image: status.card?.image || status.media_attachments?.[0]?.preview_url || null,
-    // Raw data for sticker matching
-    _hashtags: status.tags?.map(t => t.name.toLowerCase()) || [],
+    // Raw data for sticker matching and sorting
+    _hashtags: hashtags,
+    _hasPriorityTag: hasPriorityTag,
     _content: stripHtml(status.content).toLowerCase(),
     _card_title: (status.card?.title || '').toLowerCase(),
     _card_description: (status.card?.description || '').toLowerCase(),
@@ -303,8 +308,18 @@ async function buildMagnets() {
   const dedupedProjects = Array.from(seenUrls.values());
   console.log(`After deduplication: ${dedupedProjects.length}`);
 
-  // Sort by created_at descending and take top N
-  dedupedProjects.sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
+  // Sort: #fridge posts first (priority), then by created_at descending
+  dedupedProjects.sort((a, b) => {
+    // Priority: #fridge posts come first
+    if (a._hasPriorityTag && !b._hasPriorityTag) return -1;
+    if (!a._hasPriorityTag && b._hasPriorityTag) return 1;
+    // Then sort by date (newest first)
+    return new Date(b.created_at) - new Date(a.created_at);
+  });
+
+  const priorityCount = dedupedProjects.filter(p => p._hasPriorityTag).length;
+  console.log(`Posts with #${CONFIG.priorityHashtag}: ${priorityCount}`);
+
   const finalProjects = dedupedProjects.slice(0, CONFIG.targetCount);
   console.log(`Final count: ${finalProjects.length}`);
 
@@ -313,7 +328,7 @@ async function buildMagnets() {
     const { sticker_id, matched_keyword } = assignSticker(project);
 
     // Clean up internal fields
-    const { _hashtags, _content, _card_title, _card_description, canonical_url, ...clean } = project;
+    const { _hashtags, _hasPriorityTag, _content, _card_title, _card_description, canonical_url, ...clean } = project;
 
     return {
       ...clean,
