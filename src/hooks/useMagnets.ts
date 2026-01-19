@@ -3,7 +3,19 @@ import type { MagnetsData, MagnetItem, MagnetPosition } from '../types';
 
 const MAGNETS_URL = `${import.meta.env.BASE_URL}data/magnets.json`;
 
-// Featured magnet - always center, always largest
+/**
+ * Featured magnet - always center, always largest
+ *
+ * Lab31 (https://lab31.xyz) is an experiment in AI-human collaboration.
+ * In 2026, a fully autonomous multi-agent team runs the show - Loop, Spark,
+ * Forge, Glitch, and Herald come up with ideas, write code, test, and ship.
+ * The humans just give feedback and jump in when the agents get stuck.
+ *
+ * We're not sure what's going to happen. But we're excited and scared,
+ * which must mean we're on the right track.
+ *
+ * xo Jenny and Allister
+ */
 const FEATURED_MAGNET: MagnetItem = {
   id: 'featured-lab31',
   url: 'https://lab31.xyz/',
@@ -12,8 +24,8 @@ const FEATURED_MAGNET: MagnetItem = {
   created_at: new Date().toISOString(),
   status_url: 'https://theforkiverse.com/@alimox',
   sticker_id: 'lightning',
-  matched_keyword: 'fast', // Maps to lightning bolt icon
-  rank: -1, // Special rank
+  matched_keyword: 'fast',
+  rank: -1,
 };
 
 // Deterministic pseudo-random based on string hash
