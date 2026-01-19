@@ -10,8 +10,9 @@ interface InteriorViewerProps {
   onClose: () => void;
 }
 
-// Shorter timeout - most X-Frame-Options errors show instantly
-const IFRAME_TIMEOUT = 4000;
+// Short timeout - X-Frame-Options errors are instant, but we can't detect them
+// for cross-origin. After this timeout, show fallback for all cross-origin sites.
+const IFRAME_TIMEOUT = 2500;
 
 export function InteriorViewer({ magnet, isVisible, onClose }: InteriorViewerProps) {
   const [iframeStatus, setIframeStatus] = useState<'loading' | 'loaded' | 'failed'>('loading');
@@ -42,18 +43,20 @@ export function InteriorViewer({ magnet, isVisible, onClose }: InteriorViewerPro
   }, [magnet.id]);
 
   const handleIframeLoad = () => {
-    if (timeoutRef.current) {
-      clearTimeout(timeoutRef.current);
-    }
-    // Check if iframe actually loaded content (hacky but works for same-origin)
+    // Only trust onLoad for same-origin iframes where we can verify content
     try {
       const iframe = iframeRef.current;
+      // If we can access the location, it's same-origin and actually loaded
       if (iframe?.contentWindow?.location?.href) {
+        if (timeoutRef.current) {
+          clearTimeout(timeoutRef.current);
+        }
         setIframeStatus('loaded');
       }
+      // If we can't access (cross-origin), don't trust onLoad - let timeout decide
     } catch {
-      // Cross-origin - assume loaded if onLoad fired
-      setIframeStatus('loaded');
+      // Cross-origin: onLoad fires even for X-Frame-Options blocks
+      // Don't clear timeout - let it decide if we should show fallback
     }
   };
 
