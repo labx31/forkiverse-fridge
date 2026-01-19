@@ -2,12 +2,87 @@
 .app {
   min-height: 100vh;
   min-height: 100dvh;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 20px;
   box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Animated gradient shift */
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Floating orbs container */
+.app::before,
+.app::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(60px);
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+/* Large floating orb */
+.app::before {
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(255, 107, 107, 0.4) 0%, rgba(255, 107, 107, 0) 70%);
+  top: -150px;
+  left: -100px;
+  animation: floatOrb1 20s ease-in-out infinite;
+}
+
+/* Second floating orb */
+.app::after {
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(78, 205, 196, 0.4) 0%, rgba(78, 205, 196, 0) 70%);
+  bottom: -100px;
+  right: -100px;
+  animation: floatOrb2 25s ease-in-out infinite;
+}
+
+@keyframes floatOrb1 {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  25% {
+    transform: translate(100px, 50px) scale(1.1);
+  }
+  50% {
+    transform: translate(50px, 100px) scale(0.9);
+  }
+  75% {
+    transform: translate(-30px, 50px) scale(1.05);
+  }
+}
+
+@keyframes floatOrb2 {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  33% {
+    transform: translate(-80px, -60px) scale(1.15);
+  }
+  66% {
+    transform: translate(-40px, 40px) scale(0.95);
+  }
 }
 
 .app-layout {
@@ -17,6 +92,8 @@
   gap: 40px;
   width: 100%;
   max-width: 1200px;
+  position: relative;
+  z-index: 1;
 }
 
 /* Side Panels */
@@ -90,6 +167,11 @@
 
 /* Tablet - Stack title on top, info on bottom */
 @media (max-width: 1000px) {
+  .app {
+    flex-direction: column;
+    padding-bottom: 10px;
+  }
+
   .app-layout {
     flex-direction: column;
     gap: 20px;
@@ -165,6 +247,7 @@
   left: 0;
   right: 0;
   text-align: center;
+  z-index: 1;
 }
 
 .lab31-footer a {
@@ -176,4 +259,13 @@
 
 .lab31-footer a:hover {
   color: rgba(255, 255, 255, 0.8);
+}
+
+/* Mobile footer - static positioning to avoid clash with FAQ */
+@media (max-width: 1000px) {
+  .lab31-footer {
+    position: static;
+    margin-top: 20px;
+    padding-bottom: 10px;
+  }
 }
