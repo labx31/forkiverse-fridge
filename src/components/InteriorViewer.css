@@ -223,12 +223,6 @@
   white-space: nowrap;
 }
 
-.fallback-message {
-  margin: 0;
-  font-size: 14px;
-  color: #666;
-}
-
 .preview-image {
   max-width: 80%;
   max-height: 40%;

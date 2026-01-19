@@ -1,106 +1,159 @@
 /* App Layout */
 .app {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  min-height: 100dvh;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
-/* Header */
-.app-header {
-  text-align: center;
-  padding: 24px 20px 0;
+.app-layout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Side Panels */
+.side-panel {
+  flex: 1;
+  max-width: 280px;
   color: white;
 }
 
-.app-header h1 {
+.left-panel {
+  text-align: right;
+}
+
+.right-panel {
+  text-align: left;
+}
+
+/* Title */
+.left-panel h1 {
   margin: 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
   gap: 4px;
 }
 
 .title-hashtag {
   font-family: 'Pacifico', cursive;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 400;
   text-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
   line-height: 1.1;
 }
 
 .title-subtitle {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 400;
   opacity: 0.9;
   letter-spacing: 0.5px;
 }
 
-/* Main Content */
-main {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
+/* Fridge Panel */
+.fridge-panel {
+  flex-shrink: 0;
 }
 
-/* Footer */
-.app-footer {
-  text-align: center;
-  padding: 20px;
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 0.875rem;
+/* Right Panel Info */
+.info-text {
+  margin: 0 0 16px;
+  font-size: 0.95rem;
+  opacity: 0.9;
+  line-height: 1.5;
 }
 
-.footer-button {
+.faq-button {
+  font-family: 'Pacifico', cursive;
+  font-size: 1.8rem;
   background: none;
   border: none;
-  color: rgba(255, 255, 255, 0.8);
-  font-size: inherit;
-  font-family: inherit;
-  cursor: pointer;
-  padding: 8px 16px;
-  border-radius: 8px;
-  transition: background 0.15s, color 0.15s;
-}
-
-.footer-button:hover {
-  background: rgba(255, 255, 255, 0.1);
   color: white;
+  cursor: pointer;
+  padding: 0;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.15s ease, opacity 0.15s ease;
 }
 
-/* Responsive */
-@media (max-width: 500px) {
-  .app-header {
-    padding: 16px 16px 0;
+.faq-button:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* Tablet - Stack title on top, info on bottom */
+@media (max-width: 1000px) {
+  .app-layout {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .side-panel {
+    max-width: none;
+    width: 100%;
+  }
+
+  .left-panel {
+    text-align: center;
+    order: -1;
+  }
+
+  .left-panel h1 {
+    align-items: center;
+  }
+
+  .right-panel {
+    text-align: center;
+    order: 1;
   }
 
   .title-hashtag {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
 
-  .title-subtitle {
-    font-size: 0.95rem;
+  .faq-button {
+    font-size: 1.5rem;
   }
+}
 
-  main {
+/* Mobile - Smaller fridge, tighter spacing */
+@media (max-width: 500px) {
+  .app {
     padding: 10px;
   }
 
-  .app-footer {
-    padding: 16px;
+  .app-layout {
+    gap: 12px;
+  }
+
+  .title-hashtag {
+    font-size: 1.6rem;
+  }
+
+  .title-subtitle {
+    font-size: 0.85rem;
+  }
+
+  .info-text {
     font-size: 0.8rem;
+    margin-bottom: 10px;
+  }
+
+  .faq-button {
+    font-size: 1.2rem;
   }
 }
 
 /* Very small screens */
 @media (max-width: 360px) {
   .title-hashtag {
-    font-size: 1.9rem;
-  }
-
-  .title-subtitle {
-    font-size: 0.85rem;
+    font-size: 1.4rem;
   }
 }

@@ -5,7 +5,6 @@
   height: var(--fridge-height);
   perspective: 1500px;
   perspective-origin: 50% 50%;
-  margin: 40px auto;
   overflow: visible;
 }
 

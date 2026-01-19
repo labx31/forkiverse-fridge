@@ -8,22 +8,30 @@ function App() {
 
   return (
     <div className="app">
-      <header className="app-header">
-        <h1>
-          <span className="title-hashtag">#vibecoding</span>
-          <span className="title-subtitle">through the Forkiverse</span>
-        </h1>
-      </header>
+      <div className="app-layout">
+        {/* Left side - Title */}
+        <div className="side-panel left-panel">
+          <h1>
+            <span className="title-hashtag">#vibecoding</span>
+            <span className="title-subtitle">through the Forkiverse</span>
+          </h1>
+        </div>
 
-      <main>
-        <Fridge />
-      </main>
+        {/* Center - Fridge */}
+        <main className="fridge-panel">
+          <Fridge />
+        </main>
 
-      <footer className="app-footer">
-        <button className="footer-button" onClick={() => setShowAbout(true)}>
-          The 80 most recent #vibecoding posts on The Forkiverse
-        </button>
-      </footer>
+        {/* Right side - Info */}
+        <div className="side-panel right-panel">
+          <p className="info-text">
+            The 80 most recent #vibecoding posts on The Forkiverse
+          </p>
+          <button className="faq-button" onClick={() => setShowAbout(true)}>
+            FAQ
+          </button>
+        </div>
+      </div>
 
       <AboutModal isOpen={showAbout} onClose={() => setShowAbout(false)} />
     </div>

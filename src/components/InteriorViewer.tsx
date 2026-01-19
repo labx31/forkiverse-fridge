@@ -168,7 +168,6 @@ export function InteriorViewer({ magnet, isVisible, onClose }: InteriorViewerPro
             </div>
 
             <h3 className="fallback-title">{magnet.title}</h3>
-            <p className="fallback-message">This site can't be embedded</p>
 
             <button className="open-project-btn" onClick={openInNewTab}>
               Open Project
