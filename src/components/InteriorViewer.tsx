@@ -18,6 +18,7 @@ export function InteriorViewer({ magnet, isVisible, onClose }: InteriorViewerPro
   const [iframeStatus, setIframeStatus] = useState<'loading' | 'loaded' | 'failed'>('loading');
   const iframeRef = useRef<HTMLIFrameElement>(null);
   const timeoutRef = useRef<number | null>(null);
+  const loadStartRef = useRef<number>(0);
 
   // Get magnet style for fallback display
   const { color, shape } = useMemo(() => getMagnetStyle(magnet.id), [magnet.id]);
@@ -30,6 +31,7 @@ export function InteriorViewer({ magnet, isVisible, onClose }: InteriorViewerPro
   useEffect(() => {
     console.log('[Iframe] Loading:', magnet.url);
     setIframeStatus('loading');
+    loadStartRef.current = Date.now();
 
     // Set timeout for iframe load - catches X-Frame-Options errors
     timeoutRef.current = window.setTimeout(() => {
@@ -51,7 +53,9 @@ export function InteriorViewer({ magnet, isVisible, onClose }: InteriorViewerPro
   }, [magnet.id]);
 
   const handleIframeLoad = () => {
-    console.log('[Iframe] onLoad fired for:', magnet.url);
+    const loadTime = Date.now() - loadStartRef.current;
+    console.log('[Iframe] onLoad fired for:', magnet.url, 'in', loadTime, 'ms');
+
     // Only trust onLoad for same-origin iframes where we can verify content
     try {
       const iframe = iframeRef.current;
@@ -68,11 +72,22 @@ export function InteriorViewer({ magnet, isVisible, onClose }: InteriorViewerPro
     } catch (e) {
       // Cross-origin: onLoad fires even for X-Frame-Options blocks
       console.log('[Iframe] Cross-origin detected:', e);
-      // For cross-origin, trust onLoad and mark as loaded
-      if (timeoutRef.current) {
-        clearTimeout(timeoutRef.current);
+
+      // Heuristic: If onLoad fires very quickly (< 1000ms), it's likely an error page
+      // Real sites take longer to load. Blocked sites show error instantly.
+      if (loadTime < 1000) {
+        console.log('[Iframe] Loaded too fast, likely blocked - showing fallback');
+        if (timeoutRef.current) {
+          clearTimeout(timeoutRef.current);
+        }
+        setIframeStatus('failed');
+      } else {
+        console.log('[Iframe] Loaded in reasonable time, assuming success');
+        if (timeoutRef.current) {
+          clearTimeout(timeoutRef.current);
+        }
+        setIframeStatus('loaded');
       }
-      setIframeStatus('loaded');
     }
   };
 
