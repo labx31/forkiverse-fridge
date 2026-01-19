@@ -10,9 +10,9 @@ interface InteriorViewerProps {
   onClose: () => void;
 }
 
-// Short timeout - X-Frame-Options errors are instant, but we can't detect them
-// for cross-origin. After this timeout, show fallback for all cross-origin sites.
-const IFRAME_TIMEOUT = 2500;
+// Timeout for cross-origin iframe detection. X-Frame-Options errors are instant,
+// but we can't detect them for cross-origin. This gives legitimate sites time to load.
+const IFRAME_TIMEOUT = 5000;
 
 export function InteriorViewer({ magnet, isVisible, onClose }: InteriorViewerProps) {
   const [iframeStatus, setIframeStatus] = useState<'loading' | 'loaded' | 'failed'>('loading');

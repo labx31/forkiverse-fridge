@@ -58,43 +58,42 @@
 }
 
 .about-modal h2 {
-  margin: 0 0 16px;
+  margin: 0 0 24px;
   font-size: 1.5rem;
   color: #fff;
   padding-right: 40px;
 }
 
-.about-intro {
-  font-size: 1.05rem;
-  color: #aaa;
-  margin-bottom: 24px;
-  line-height: 1.5;
+.faq-item {
+  margin-bottom: 20px;
 }
 
-.about-modal section {
-  margin-bottom: 24px;
+.faq-item:last-child {
+  margin-bottom: 0;
 }
 
 .about-modal h3 {
-  font-size: 1rem;
-  color: #fff;
-  margin: 0 0 12px;
-  font-weight: 600;
+  font-size: 0.95rem;
+  color: #888;
+  margin: 0 0 6px;
+  font-weight: 500;
 }
 
-.about-modal ol,
+.about-modal p {
+  margin: 0;
+  line-height: 1.5;
+  color: #fff;
+}
+
 .about-modal ul {
   margin: 0;
   padding-left: 20px;
+  color: #fff;
 }
 
 .about-modal li {
-  margin-bottom: 10px;
+  margin-bottom: 4px;
   line-height: 1.5;
-}
-
-.about-modal li strong {
-  color: #fff;
 }
 
 .about-modal code {
@@ -114,37 +113,6 @@
   text-decoration: underline;
 }
 
-.about-modal p {
-  margin: 0;
-  line-height: 1.5;
-}
-
-.github-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background: #333;
-  padding: 10px 16px;
-  border-radius: 8px;
-  margin-top: 12px;
-  color: #fff !important;
-  transition: background 0.15s;
-}
-
-.github-link:hover {
-  background: #444;
-  text-decoration: none !important;
-}
-
-.about-footer {
-  margin-top: 24px;
-  padding-top: 20px;
-  border-top: 1px solid #333;
-  text-align: center;
-  color: #888;
-  font-size: 0.9rem;
-}
-
 /* Mobile */
 @media (max-width: 500px) {
   .about-modal {
@@ -154,17 +122,5 @@
 
   .about-modal h2 {
     font-size: 1.25rem;
-  }
-
-  .about-intro {
-    font-size: 0.95rem;
-  }
-
-  .about-modal h3 {
-    font-size: 0.95rem;
-  }
-
-  .about-modal li {
-    font-size: 0.9rem;
   }
 }
