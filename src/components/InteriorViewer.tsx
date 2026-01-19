@@ -28,11 +28,19 @@ export function InteriorViewer({ magnet, isVisible, onClose }: InteriorViewerPro
 
   // Reset state when magnet changes
   useEffect(() => {
+    console.log('[Iframe] Loading:', magnet.url);
     setIframeStatus('loading');
 
     // Set timeout for iframe load - catches X-Frame-Options errors
     timeoutRef.current = window.setTimeout(() => {
-      setIframeStatus((current) => (current === 'loading' ? 'failed' : current));
+      console.log('[Iframe] Timeout reached, current status:', iframeStatus);
+      setIframeStatus((current) => {
+        if (current === 'loading') {
+          console.log('[Iframe] Setting to failed due to timeout');
+          return 'failed';
+        }
+        return current;
+      });
     }, IFRAME_TIMEOUT);
 
     return () => {
@@ -43,24 +51,33 @@ export function InteriorViewer({ magnet, isVisible, onClose }: InteriorViewerPro
   }, [magnet.id]);
 
   const handleIframeLoad = () => {
+    console.log('[Iframe] onLoad fired for:', magnet.url);
     // Only trust onLoad for same-origin iframes where we can verify content
     try {
       const iframe = iframeRef.current;
       // If we can access the location, it's same-origin and actually loaded
       if (iframe?.contentWindow?.location?.href) {
+        console.log('[Iframe] Same-origin verified, marking as loaded');
         if (timeoutRef.current) {
           clearTimeout(timeoutRef.current);
         }
         setIframeStatus('loaded');
+      } else {
+        console.log('[Iframe] Could not access contentWindow.location');
       }
-      // If we can't access (cross-origin), don't trust onLoad - let timeout decide
-    } catch {
+    } catch (e) {
       // Cross-origin: onLoad fires even for X-Frame-Options blocks
-      // Don't clear timeout - let it decide if we should show fallback
+      console.log('[Iframe] Cross-origin detected:', e);
+      // For cross-origin, trust onLoad and mark as loaded
+      if (timeoutRef.current) {
+        clearTimeout(timeoutRef.current);
+      }
+      setIframeStatus('loaded');
     }
   };
 
   const handleIframeError = () => {
+    console.log('[Iframe] onError fired for:', magnet.url);
     if (timeoutRef.current) {
       clearTimeout(timeoutRef.current);
     }
