@@ -16,9 +16,8 @@ function App() {
       </main>
 
       <footer className="app-footer">
-        <span className="footer-label">Recent</span>
         <p>
-          Projects tagged{' '}
+          The 80 most recent{' '}
           <a
             href="https://theforkiverse.com/tags/vibecoding"
             target="_blank"
@@ -26,7 +25,7 @@ function App() {
           >
             #vibecoding
           </a>
-          {' '}on{' '}
+          {' '}posts on{' '}
           <a
             href="https://theforkiverse.com"
             target="_blank"
