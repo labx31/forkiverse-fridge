@@ -14,6 +14,48 @@ interface InteriorViewerProps {
 // but we can't detect them for cross-origin. This gives legitimate sites time to load.
 const IFRAME_TIMEOUT = 5000;
 
+// Domains that are known to block iframing via X-Frame-Options or CSP frame-ancestors
+// These will immediately show the fallback instead of attempting to load
+const BLOCKED_DOMAINS = [
+  'github.com',
+  'gitlab.com',
+  'bitbucket.org',
+  'twitter.com',
+  'x.com',
+  'facebook.com',
+  'instagram.com',
+  'linkedin.com',
+  'reddit.com',
+  'medium.com',
+  'substack.com',
+  'notion.so',
+  'figma.com',
+  'canva.com',
+  'google.com',
+  'youtube.com',
+  'dropbox.com',
+  'slack.com',
+  'discord.com',
+  'twitch.tv',
+  'spotify.com',
+  'apple.com',
+  'microsoft.com',
+  'amazon.com',
+  'paypal.com',
+  'stripe.com',
+];
+
+function isBlockedDomain(url: string): boolean {
+  try {
+    const hostname = new URL(url).hostname.toLowerCase();
+    return BLOCKED_DOMAINS.some(domain =>
+      hostname === domain || hostname.endsWith('.' + domain)
+    );
+  } catch {
+    return false;
+  }
+}
+
 export function InteriorViewer({ magnet, isVisible, onClose }: InteriorViewerProps) {
   const [iframeStatus, setIframeStatus] = useState<'loading' | 'loaded' | 'failed'>('loading');
   const iframeRef = useRef<HTMLIFrameElement>(null);
@@ -30,8 +72,16 @@ export function InteriorViewer({ magnet, isVisible, onClose }: InteriorViewerPro
   // Reset state when magnet changes
   useEffect(() => {
     console.log('[Iframe] Loading:', magnet.url);
-    setIframeStatus('loading');
     loadStartRef.current = Date.now();
+
+    // Check if domain is known to block iframing
+    if (isBlockedDomain(magnet.url)) {
+      console.log('[Iframe] Known blocked domain, showing fallback immediately');
+      setIframeStatus('failed');
+      return;
+    }
+
+    setIframeStatus('loading');
 
     // Set timeout for iframe load - catches X-Frame-Options errors
     timeoutRef.current = window.setTimeout(() => {
