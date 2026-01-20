@@ -242,37 +242,31 @@
   display: none;
 }
 
-/* Responsive */
-@media (max-width: 500px) {
-  .fridge-container {
-    --fridge-width: 300px;
-    --fridge-height: 500px;
-    margin: 10px auto;
-    perspective: 1200px;
-  }
-
+/* Responsive - scale handle and spacing proportionally */
+@media (max-width: 600px) {
   .door-handle {
     width: 10px;
-    height: 90px;
-    right: 14px;
+    height: 80px;
+    right: 12px;
   }
 
   .magnets-container {
-    top: 15px;
-    left: 8px;
-    right: 40px;
-    bottom: 15px;
+    top: 12px;
+    left: 6px;
+    right: 35px;
+    bottom: 12px;
   }
 
   .fridge-interior {
-    inset: 10px;
+    inset: 8px;
   }
-}
 
-/* Very small screens */
-@media (max-width: 360px) {
-  .fridge-container {
-    --fridge-width: 280px;
-    --fridge-height: 470px;
+  .fridge-frame {
+    border-width: 5px;
+  }
+
+  .door-edge {
+    width: 15px;
+    right: -15px;
   }
 }

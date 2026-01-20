@@ -5,16 +5,53 @@ import { Magnet } from './Magnet';
 import { InteriorViewer } from './InteriorViewer';
 import './Fridge.css';
 
-// Fridge dimensions (aspect ratio of a typical fridge)
-const FRIDGE_WIDTH = 420;
-const FRIDGE_HEIGHT = 700;
-const DOOR_WIDTH = FRIDGE_WIDTH - 20; // Slight inset
-const DOOR_HEIGHT = FRIDGE_HEIGHT - 40;
+// Base fridge dimensions (aspect ratio 0.6:1)
+const BASE_WIDTH = 420;
+const BASE_HEIGHT = 700;
+const ASPECT_RATIO = BASE_WIDTH / BASE_HEIGHT;
+
+function useFridgeDimensions() {
+  const [dimensions, setDimensions] = useState({ width: BASE_WIDTH, height: BASE_HEIGHT });
+
+  useEffect(() => {
+    function calculateDimensions() {
+      const vh = window.innerHeight;
+      const vw = window.innerWidth;
+
+      // Max height: 85% of viewport height (leave room for title/footer)
+      // Max width: 90% of viewport width on mobile, 50% on desktop
+      const maxHeight = vh * 0.75;
+      const maxWidth = vw < 600 ? vw * 0.85 : Math.min(vw * 0.4, 420);
+
+      // Calculate dimensions maintaining aspect ratio
+      let width = maxWidth;
+      let height = width / ASPECT_RATIO;
+
+      // If too tall, constrain by height instead
+      if (height > maxHeight) {
+        height = maxHeight;
+        width = height * ASPECT_RATIO;
+      }
+
+      setDimensions({ width: Math.round(width), height: Math.round(height) });
+    }
+
+    calculateDimensions();
+    window.addEventListener('resize', calculateDimensions);
+    return () => window.removeEventListener('resize', calculateDimensions);
+  }, []);
+
+  return dimensions;
+}
 
 export function Fridge() {
   const [state, setState] = useState<FridgeState>('BOOT');
   const [selectedMagnet, setSelectedMagnet] = useState<MagnetItem | null>(null);
   const doorRef = useRef<HTMLDivElement>(null);
+
+  const { width: FRIDGE_WIDTH, height: FRIDGE_HEIGHT } = useFridgeDimensions();
+  const DOOR_WIDTH = FRIDGE_WIDTH - 20;
+  const DOOR_HEIGHT = FRIDGE_HEIGHT - 40;
 
   const { data, positions, loading, error } = useMagnets(DOOR_WIDTH, DOOR_HEIGHT);
 

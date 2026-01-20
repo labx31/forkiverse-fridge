@@ -169,12 +169,13 @@
 @media (max-width: 1000px) {
   .app {
     flex-direction: column;
+    padding: 10px;
     padding-bottom: 10px;
   }
 
   .app-layout {
     flex-direction: column;
-    gap: 20px;
+    gap: 12px;
   }
 
   .side-panel {
@@ -197,46 +198,53 @@
   }
 
   .title-hashtag {
-    font-size: 2rem;
-  }
-
-  .faq-button {
-    font-size: 1.5rem;
-  }
-}
-
-/* Mobile - Smaller fridge, tighter spacing */
-@media (max-width: 500px) {
-  .app {
-    padding: 10px;
-  }
-
-  .app-layout {
-    gap: 12px;
-  }
-
-  .title-hashtag {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
 
   .title-subtitle {
-    font-size: 0.85rem;
+    font-size: 0.9rem;
   }
 
   .info-text {
-    font-size: 0.8rem;
-    margin-bottom: 10px;
+    display: none;
   }
 
   .faq-button {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+  }
+}
+
+/* Mobile - Compact layout */
+@media (max-width: 600px) {
+  .app {
+    padding: 8px;
+  }
+
+  .app-layout {
+    gap: 8px;
+  }
+
+  .title-hashtag {
+    font-size: 1.5rem;
+  }
+
+  .title-subtitle {
+    font-size: 0.8rem;
+  }
+
+  .faq-button {
+    font-size: 1.1rem;
   }
 }
 
 /* Very small screens */
 @media (max-width: 360px) {
   .title-hashtag {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
+  }
+
+  .title-subtitle {
+    font-size: 0.75rem;
   }
 }
 
