@@ -83,15 +83,16 @@ function generatePositions(
     size: featuredSize,
   });
 
-  // Grid layout: calculate based on item count
-  const cols = 8;
+  // Dynamic columns based on door width (fewer on mobile)
+  const cols = doorWidth < 300 ? 5 : doorWidth < 400 ? 6 : 7;
   const rows = Math.ceil(items.length / cols);
 
-  // Padding from edges (percentage-based for responsiveness)
-  const paddingX = doorWidth * 0.05;
-  const paddingY = doorHeight * 0.04;
+  // Padding from edges - more on right for handle
+  const paddingLeft = doorWidth * 0.08;
+  const paddingRight = doorWidth * 0.15; // Extra for handle
+  const paddingY = doorHeight * 0.05;
 
-  const availableWidth = doorWidth - paddingX * 2;
+  const availableWidth = doorWidth - paddingLeft - paddingRight;
   const availableHeight = doorHeight - paddingY * 2;
 
   const cellWidth = availableWidth / cols;
@@ -111,7 +112,7 @@ function generatePositions(
     const row = Math.floor(index / cols);
 
     // Base position (center of cell)
-    let baseX = paddingX + col * cellWidth + cellWidth / 2;
+    let baseX = paddingLeft + col * cellWidth + cellWidth / 2;
     let baseY = paddingY + row * cellHeight + cellHeight / 2;
 
     // Push items away from center where featured magnet sits
@@ -120,7 +121,7 @@ function generatePositions(
     const distFromCenter = Math.sqrt(
       Math.pow(baseX - centerX, 2) + Math.pow(baseY - centerY, 2)
     );
-    const minDistFromCenter = featuredSize * 0.6; // Keep items away from featured
+    const minDistFromCenter = featuredSize * 0.55; // Keep items away from featured
 
     if (distFromCenter < minDistFromCenter) {
       // Push outward
@@ -129,9 +130,9 @@ function generatePositions(
       baseY = centerY + Math.sin(angle) * minDistFromCenter;
     }
 
-    // Add jitter (up to 30% of cell size)
-    const jitterX = (random() - 0.5) * cellWidth * 0.4;
-    const jitterY = (random() - 0.5) * cellHeight * 0.4;
+    // Add more jitter for organic feel
+    const jitterX = (random() - 0.5) * cellWidth * 0.6;
+    const jitterY = (random() - 0.5) * cellHeight * 0.6;
 
     // Rotation: -15 to +15 degrees
     const rotation = (random() - 0.5) * 30;
