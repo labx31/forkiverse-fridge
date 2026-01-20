@@ -100,16 +100,30 @@ export const MAGNET_COLORS = [
   '#5B5EA6', // Blue iris
 ];
 
-// Background shapes for variety
-export type MagnetShape = 'circle' | 'rounded-square' | 'hexagon' | 'star' | 'blob';
+// Background shapes for variety (10 different shapes)
+export type MagnetShape =
+  | 'circle'
+  | 'rounded-square'
+  | 'hexagon'
+  | 'star'
+  | 'blob'
+  | 'diamond'
+  | 'oval'
+  | 'pill'
+  | 'shield'
+  | 'cloud';
 
 export const MAGNET_SHAPES: MagnetShape[] = [
   'circle',
   'rounded-square',
-  'rounded-square',
-  'circle',
   'hexagon',
+  'star',
   'blob',
+  'diamond',
+  'oval',
+  'pill',
+  'shield',
+  'cloud',
 ];
 
 // Keyword to icon mapping

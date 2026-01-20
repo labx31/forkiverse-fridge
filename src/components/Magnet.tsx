@@ -11,13 +11,18 @@ interface MagnetProps {
   disabled: boolean;
 }
 
-// SVG clip paths for different shapes
+// SVG clip paths for different shapes (empty string = use CSS border-radius)
 const SHAPE_PATHS: Record<MagnetShape, string> = {
   circle: '',
   'rounded-square': '',
   hexagon: 'polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)',
   star: 'polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%)',
   blob: '',
+  diamond: 'polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)',
+  oval: '',
+  pill: '',
+  shield: 'polygon(50% 0%, 100% 0%, 100% 70%, 50% 100%, 0% 70%, 0% 0%)',
+  cloud: 'polygon(25% 60%, 0% 60%, 0% 40%, 10% 20%, 30% 10%, 50% 0%, 70% 10%, 90% 20%, 100% 40%, 100% 60%, 75% 60%, 75% 80%, 60% 100%, 40% 100%, 25% 80%)',
 };
 
 export function Magnet({ item, position, onClick, disabled }: MagnetProps) {
@@ -41,7 +46,7 @@ export function Magnet({ item, position, onClick, disabled }: MagnetProps) {
   }, [item.title, item.url, item.matched_keyword]);
 
   const clipPath = SHAPE_PATHS[shape];
-  const isSpecialShape = shape === 'hexagon' || shape === 'star';
+  const useClipPath = clipPath !== '';
 
   return (
     <button
@@ -68,7 +73,7 @@ export function Magnet({ item, position, onClick, disabled }: MagnetProps) {
     >
       <div
         className={`magnet-body magnet-shape-${shape}`}
-        style={isSpecialShape ? { clipPath } : undefined}
+        style={useClipPath ? { clipPath } : undefined}
       >
         <FontAwesomeIcon
           icon={icon}

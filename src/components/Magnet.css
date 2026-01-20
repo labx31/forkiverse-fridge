@@ -67,6 +67,26 @@
   border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
 }
 
+.magnet-shape-diamond {
+  /* clip-path applied inline */
+}
+
+.magnet-shape-oval {
+  border-radius: 50% / 35%;
+}
+
+.magnet-shape-pill {
+  border-radius: 50px;
+}
+
+.magnet-shape-shield {
+  /* clip-path applied inline */
+}
+
+.magnet-shape-cloud {
+  /* clip-path applied inline */
+}
+
 /* The Font Awesome icon */
 .magnet-icon {
   font-size: calc(var(--magnet-size) * 0.5);
