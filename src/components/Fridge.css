@@ -127,6 +127,22 @@
   box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.2);
 }
 
+/* Easter egg: clickable eggs area */
+.easter-egg {
+  position: absolute;
+  top: 8%;
+  right: 5%;
+  width: 25%;
+  height: 12%;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background 0.2s ease;
+}
+
+.easter-egg:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
 /* Door Handle */
 .door-handle {
   position: absolute;

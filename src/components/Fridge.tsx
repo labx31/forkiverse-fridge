@@ -185,7 +185,17 @@ export function Fridge() {
         <div className="door-edge" />
 
         {/* Door back face (visible when open wide) */}
-        <div className="door-back" />
+        <div className="door-back">
+          {/* Easter egg: clickable eggs linking to Rob's nice comment */}
+          <a
+            href="https://theforkiverse.com/@twiblr/115924688954061517"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="easter-egg"
+            title="🥚 Easter egg!"
+            onClick={(e) => e.stopPropagation()}
+          />
+        </div>
       </div>
 
       {/* Smoke effect overlay */}
