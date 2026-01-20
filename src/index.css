@@ -9,7 +9,9 @@
   margin: 0;
 }
 
-html {
+html, body {
+  height: 100%;
+  overflow: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -18,7 +20,7 @@ body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
     'Helvetica Neue', Arial, sans-serif;
   line-height: 1.5;
-  min-height: 100vh;
+  background: #764ba2; /* Fallback to prevent white flash */
 }
 
 img, svg {
@@ -31,5 +33,6 @@ button {
 }
 
 #root {
-  min-height: 100vh;
+  height: 100%;
+  overflow: hidden;
 }
