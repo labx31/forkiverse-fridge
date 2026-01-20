@@ -48,9 +48,11 @@ export function Magnet({ item, position, onClick, disabled }: MagnetProps) {
   const clipPath = SHAPE_PATHS[shape];
   const useClipPath = clipPath !== '';
 
+  const isFeatured = item.id === 'featured-lab31';
+
   return (
     <button
-      className={`magnet ${isHovered ? 'hovered' : ''} ${isPressed ? 'pressed' : ''}`}
+      className={`magnet ${isHovered ? 'hovered' : ''} ${isPressed ? 'pressed' : ''} ${isFeatured ? 'featured' : ''}`}
       style={{
         '--magnet-x': `${position.x}px`,
         '--magnet-y': `${position.y}px`,
