@@ -125,6 +125,10 @@ function generatePositions(
     const random = seededRandom(item.id);
     const gridPos = gridPositions[index];
 
+    // Size based on rank (newest = largest), scales with door width
+    const size = calculateMagnetSize(item.rank, items.length, random, doorWidth);
+    const halfSize = size / 2;
+
     let baseX = gridPos.x;
     let baseY = gridPos.y;
 
@@ -139,18 +143,27 @@ function generatePositions(
     }
 
     // Add jitter for organic feel
-    const jitterX = (random() - 0.5) * cellWidth * 0.6;
-    const jitterY = (random() - 0.5) * cellHeight * 0.6;
+    const jitterX = (random() - 0.5) * cellWidth * 0.4;
+    const jitterY = (random() - 0.5) * cellHeight * 0.4;
+
+    let finalX = baseX + jitterX;
+    let finalY = baseY + jitterY;
+
+    // Clamp positions to stay within door bounds (accounting for magnet size)
+    const minX = halfSize + 10;
+    const maxX = doorWidth - halfSize - paddingRight;
+    const minY = halfSize + 10;
+    const maxY = doorHeight - halfSize - 10;
+
+    finalX = Math.max(minX, Math.min(maxX, finalX));
+    finalY = Math.max(minY, Math.min(maxY, finalY));
 
     // Rotation: -15 to +15 degrees
     const rotation = (random() - 0.5) * 30;
 
-    // Size based on rank (newest = largest), scales with door width
-    const size = calculateMagnetSize(item.rank, items.length, random, doorWidth);
-
     positions.set(item.id, {
-      x: baseX + jitterX,
-      y: baseY + jitterY,
+      x: finalX,
+      y: finalY,
       rotation,
       size,
     });
