@@ -73,9 +73,9 @@ export function InteriorViewer({ magnet, isVisible, onClose }: InteriorViewerPro
       // Cross-origin: onLoad fires even for X-Frame-Options blocks
       console.log('[Iframe] Cross-origin detected:', e);
 
-      // Heuristic: If onLoad fires very quickly (< 1000ms), it's likely an error page
-      // Real sites take longer to load. Blocked sites show error instantly.
-      if (loadTime < 1000) {
+      // Heuristic: If onLoad fires very quickly (< 500ms), it's likely an error page
+      // Blocked sites show error instantly (< 200ms). Real sites take at least 500ms.
+      if (loadTime < 500) {
         console.log('[Iframe] Loaded too fast, likely blocked - showing fallback');
         if (timeoutRef.current) {
           clearTimeout(timeoutRef.current);
