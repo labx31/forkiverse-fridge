@@ -151,10 +151,10 @@
 /* Magnets Container */
 .magnets-container {
   position: absolute;
-  top: 20px;
-  left: 10px;
-  right: 50px; /* Leave room for handle */
-  bottom: 20px;
+  top: 10px;
+  left: 5px;
+  right: 40px; /* Leave room for handle */
+  bottom: 10px;
   overflow: visible;
 }
 

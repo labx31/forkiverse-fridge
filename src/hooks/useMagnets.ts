@@ -44,24 +44,26 @@ function seededRandom(seed: string): () => number {
   };
 }
 
-// Size tiers: tier 0 (newest) = largest, tier 4 (oldest) = smallest
-const SIZE_TIERS = [
-  { min: 70, max: 85 },   // Tier 0: newest, largest
-  { min: 58, max: 70 },   // Tier 1
-  { min: 48, max: 58 },   // Tier 2
-  { min: 40, max: 48 },   // Tier 3
-  { min: 32, max: 40 },   // Tier 4: oldest, smallest
+// Size tiers as percentage of door width (scales with screen size)
+// tier 0 (newest) = largest, tier 4 (oldest) = smallest
+const SIZE_TIERS_PERCENT = [
+  { min: 0.12, max: 0.15 },   // Tier 0: newest, largest
+  { min: 0.10, max: 0.12 },   // Tier 1
+  { min: 0.08, max: 0.10 },   // Tier 2
+  { min: 0.07, max: 0.08 },   // Tier 3
+  { min: 0.06, max: 0.07 },   // Tier 4: oldest, smallest
 ];
 
 function getSizeTier(rank: number, totalItems: number): number {
-  const itemsPerTier = Math.ceil(totalItems / SIZE_TIERS.length);
-  return Math.min(Math.floor(rank / itemsPerTier), SIZE_TIERS.length - 1);
+  const itemsPerTier = Math.ceil(totalItems / SIZE_TIERS_PERCENT.length);
+  return Math.min(Math.floor(rank / itemsPerTier), SIZE_TIERS_PERCENT.length - 1);
 }
 
-function calculateMagnetSize(rank: number, totalItems: number, random: () => number): number {
+function calculateMagnetSize(rank: number, totalItems: number, random: () => number, doorWidth: number): number {
   const tier = getSizeTier(rank, totalItems);
-  const { min, max } = SIZE_TIERS[tier];
-  return min + random() * (max - min);
+  const { min, max } = SIZE_TIERS_PERCENT[tier];
+  const sizePercent = min + random() * (max - min);
+  return doorWidth * sizePercent;
 }
 
 // Generate positions using a grid with jitter for organic feel
@@ -72,21 +74,22 @@ function generatePositions(
 ): Map<string, MagnetPosition> {
   const positions = new Map<string, MagnetPosition>();
 
-  // Featured magnet goes dead center, extra large
+  // Featured magnet goes dead center, size scales with door
+  const featuredSize = doorWidth * 0.18;
   positions.set(FEATURED_MAGNET.id, {
     x: doorWidth / 2,
     y: doorHeight / 2,
     rotation: -3, // Slight tilt for character
-    size: 95, // Biggest magnet on the fridge
+    size: featuredSize,
   });
 
   // Grid layout: calculate based on item count
   const cols = 8;
   const rows = Math.ceil(items.length / cols);
 
-  // Padding from edges
-  const paddingX = 40;
-  const paddingY = 50;
+  // Padding from edges (percentage-based for responsiveness)
+  const paddingX = doorWidth * 0.05;
+  const paddingY = doorHeight * 0.04;
 
   const availableWidth = doorWidth - paddingX * 2;
   const availableHeight = doorHeight - paddingY * 2;
@@ -117,7 +120,7 @@ function generatePositions(
     const distFromCenter = Math.sqrt(
       Math.pow(baseX - centerX, 2) + Math.pow(baseY - centerY, 2)
     );
-    const minDistFromCenter = 80; // Keep items away from featured
+    const minDistFromCenter = featuredSize * 0.6; // Keep items away from featured
 
     if (distFromCenter < minDistFromCenter) {
       // Push outward
@@ -127,14 +130,14 @@ function generatePositions(
     }
 
     // Add jitter (up to 30% of cell size)
-    const jitterX = (random() - 0.5) * cellWidth * 0.5;
-    const jitterY = (random() - 0.5) * cellHeight * 0.5;
+    const jitterX = (random() - 0.5) * cellWidth * 0.4;
+    const jitterY = (random() - 0.5) * cellHeight * 0.4;
 
     // Rotation: -15 to +15 degrees
     const rotation = (random() - 0.5) * 30;
 
-    // Size based on rank (newest = largest)
-    const size = calculateMagnetSize(item.rank, items.length, random);
+    // Size based on rank (newest = largest), scales with door width
+    const size = calculateMagnetSize(item.rank, items.length, random, doorWidth);
 
     positions.set(item.id, {
       x: baseX + jitterX,
