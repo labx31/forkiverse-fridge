@@ -17,8 +17,8 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 // Configuration
 const CONFIG = {
   instance: 'https://theforkiverse.com',
-  hashtag: 'vibecoding',
-  priorityHashtag: 'fridge', // Posts with #fridge get priority
+  hashtags: ['vibecoding', 'fridge'], // Fetch from both hashtags
+  priorityHashtag: 'fridge', // Posts with #fridge get priority placement
   targetCount: 50,
   fetchBuffer: 120, // Fetch extra to account for filtering
   maxPages: 10,
@@ -30,10 +30,10 @@ const CONFIG = {
 const manifest = JSON.parse(readFileSync(CONFIG.manifestPath, 'utf-8'));
 
 /**
- * Fetch a page of statuses from the hashtag timeline
+ * Fetch a page of statuses from a hashtag timeline
  */
-async function fetchHashtagPage(maxId = null) {
-  const url = new URL(`${CONFIG.instance}/api/v1/timelines/tag/${CONFIG.hashtag}`);
+async function fetchHashtagPage(hashtag, maxId = null) {
+  const url = new URL(`${CONFIG.instance}/api/v1/timelines/tag/${hashtag}`);
   url.searchParams.set('limit', '40');
   if (maxId) {
     url.searchParams.set('max_id', maxId);
@@ -41,22 +41,22 @@ async function fetchHashtagPage(maxId = null) {
 
   const response = await fetch(url.toString());
   if (!response.ok) {
-    throw new Error(`Failed to fetch: ${response.status} ${response.statusText}`);
+    throw new Error(`Failed to fetch #${hashtag}: ${response.status} ${response.statusText}`);
   }
   return response.json();
 }
 
 /**
- * Fetch all statuses, paginating until we have enough
+ * Fetch statuses from a single hashtag, paginating until we have enough
  */
-async function fetchAllStatuses() {
+async function fetchStatusesForHashtag(hashtag, targetCount) {
   const statuses = [];
   let maxId = null;
   let page = 0;
 
-  while (statuses.length < CONFIG.fetchBuffer && page < CONFIG.maxPages) {
-    console.log(`Fetching page ${page + 1}...`);
-    const pageStatuses = await fetchHashtagPage(maxId);
+  while (statuses.length < targetCount && page < CONFIG.maxPages) {
+    console.log(`  #${hashtag} page ${page + 1}...`);
+    const pageStatuses = await fetchHashtagPage(hashtag, maxId);
 
     if (pageStatuses.length === 0) break;
 
@@ -68,8 +68,32 @@ async function fetchAllStatuses() {
     await new Promise(r => setTimeout(r, 200));
   }
 
-  console.log(`Fetched ${statuses.length} total statuses`);
+  console.log(`  #${hashtag}: ${statuses.length} statuses`);
   return statuses;
+}
+
+/**
+ * Fetch all statuses from all configured hashtags
+ */
+async function fetchAllStatuses() {
+  const allStatuses = [];
+  const seenIds = new Set();
+
+  for (const hashtag of CONFIG.hashtags) {
+    console.log(`Fetching #${hashtag}...`);
+    const statuses = await fetchStatusesForHashtag(hashtag, CONFIG.fetchBuffer);
+
+    // Add only unique statuses (a post might appear in both hashtag timelines)
+    for (const status of statuses) {
+      if (!seenIds.has(status.id)) {
+        seenIds.add(status.id);
+        allStatuses.push(status);
+      }
+    }
+  }
+
+  console.log(`Fetched ${allStatuses.length} unique statuses total`);
+  return allStatuses;
 }
 
 /**
@@ -391,7 +415,8 @@ async function buildMagnets() {
     generated_at: new Date().toISOString(),
     source: {
       instance: CONFIG.instance,
-      required_hashtag: CONFIG.hashtag,
+      hashtags: CONFIG.hashtags,
+      priority_hashtag: CONFIG.priorityHashtag,
       limit: CONFIG.targetCount,
     },
     items,
