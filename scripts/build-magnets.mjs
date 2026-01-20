@@ -92,6 +92,25 @@ const SOURCE_CODE_DOMAINS = [
 ];
 
 /**
+ * Known Mastodon/Fediverse instances to filter out
+ */
+const MASTODON_INSTANCES = [
+  'mastodon.social',
+  'mastodon.online',
+  'mstdn.social',
+  'mas.to',
+  'fosstodon.org',
+  'hachyderm.io',
+  'infosec.exchange',
+  'indieweb.social',
+  'masto.es',
+  'union.place',
+  'tech.lgbt',
+  'aus.social',
+  'sfba.social',
+];
+
+/**
  * Check if URL is from a source code hosting site
  */
 function isSourceCodeUrl(url) {
@@ -106,14 +125,42 @@ function isSourceCodeUrl(url) {
 }
 
 /**
+ * Check if URL is a Mastodon/Fediverse instance link (not a project)
+ */
+function isMastodonUrl(url) {
+  try {
+    const parsed = new URL(url);
+    const hostname = parsed.hostname.toLowerCase();
+    const pathname = parsed.pathname.toLowerCase();
+
+    // Check known instances
+    if (MASTODON_INSTANCES.some(instance => hostname === instance || hostname.endsWith('.' + instance))) {
+      return true;
+    }
+
+    // Check for Mastodon URL patterns: /tags/, /@username, /users/
+    if (pathname.includes('/tags/') || pathname.startsWith('/@') || pathname.includes('/users/')) {
+      return true;
+    }
+
+    return false;
+  } catch {
+    return false;
+  }
+}
+
+/**
  * Find the best project URL from a list
  * Prioritizes deployed projects over source code repos
+ * Filters out Mastodon/Fediverse instance links
  */
 function findBestProjectUrl(urls) {
   if (urls.length === 0) return null;
 
-  // Filter out internal Forkiverse links
-  const externalUrls = urls.filter(url => !url.includes('theforkiverse.com'));
+  // Filter out internal Forkiverse links and Mastodon instance links
+  const externalUrls = urls.filter(url =>
+    !url.includes('theforkiverse.com') && !isMastodonUrl(url)
+  );
   if (externalUrls.length === 0) return null;
 
   // Prefer non-source-code URLs (the actual deployed project)
