@@ -169,9 +169,32 @@
   }
 }
 
-/* Responsive - smaller magnets on mobile */
+/* Previewed State (mobile two-tap) */
+.magnet.previewed {
+  transform: translate(-50%, -50%) rotate(var(--magnet-rotation)) scale(1.15);
+  z-index: 100;
+  animation: magnet-jiggle 0.6s ease-in-out infinite;
+}
+
+.magnet.previewed .magnet-body {
+  filter: drop-shadow(3px 5px 8px rgba(0, 0, 0, 0.4));
+}
+
+@keyframes magnet-jiggle {
+  0%, 100% {
+    transform: translate(-50%, -50%) rotate(var(--magnet-rotation)) scale(1.15);
+  }
+  25% {
+    transform: translate(-50%, -50%) rotate(calc(var(--magnet-rotation) - 3deg)) scale(1.15);
+  }
+  75% {
+    transform: translate(-50%, -50%) rotate(calc(var(--magnet-rotation) + 3deg)) scale(1.15);
+  }
+}
+
+/* Responsive - on mobile, only show tooltip when previewed (tapped) */
 @media (max-width: 500px) {
-  .magnet-tooltip {
+  .magnet:not(.previewed) .magnet-tooltip {
     display: none;
   }
 }
