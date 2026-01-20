@@ -19,7 +19,7 @@ const CONFIG = {
   instance: 'https://theforkiverse.com',
   hashtag: 'vibecoding',
   priorityHashtag: 'fridge', // Posts with #fridge get priority
-  targetCount: 80,
+  targetCount: 50,
   fetchBuffer: 120, // Fetch extra to account for filtering
   maxPages: 10,
   outputPath: join(__dirname, '..', 'public', 'data', 'magnets.json'),

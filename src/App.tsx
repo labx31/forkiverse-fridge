@@ -25,7 +25,7 @@ function App() {
         {/* Right side - Info */}
         <div className="side-panel right-panel">
           <p className="info-text">
-            The 80 most recent #vibecoding posts on The Forkiverse
+            The 50 most recent #vibecoding posts on The Forkiverse
           </p>
           <button className="faq-button" onClick={() => setShowAbout(true)}>
             FAQ
