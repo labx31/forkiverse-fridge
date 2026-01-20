@@ -98,39 +98,47 @@ function generatePositions(
   const cellWidth = availableWidth / cols;
   const cellHeight = availableHeight / rows;
 
-  // Shuffle items for random placement (but keep size based on rank)
-  const shuffledItems = [...items].sort((a, b) => {
-    const randA = seededRandom(a.id + 'shuffle')();
-    const randB = seededRandom(b.id + 'shuffle')();
-    return randA - randB;
-  });
+  const centerX = doorWidth / 2;
+  const centerY = doorHeight / 2;
 
-  shuffledItems.forEach((item, index) => {
+  // Generate all grid positions first
+  const gridPositions: { x: number; y: number; dist: number }[] = [];
+  for (let row = 0; row < rows; row++) {
+    for (let col = 0; col < cols; col++) {
+      const x = paddingLeft + col * cellWidth + cellWidth / 2;
+      const y = paddingY + row * cellHeight + cellHeight / 2;
+      const dist = Math.sqrt(Math.pow(x - centerX, 2) + Math.pow(y - centerY, 2));
+      gridPositions.push({ x, y, dist });
+    }
+  }
+
+  // Sort positions by distance from center (closest first)
+  gridPositions.sort((a, b) => a.dist - b.dist);
+
+  // Sort items by rank (lower rank = priority = closer to center)
+  const sortedItems = [...items].sort((a, b) => a.rank - b.rank);
+
+  // Assign items to positions - priority items get center positions
+  sortedItems.forEach((item, index) => {
+    if (index >= gridPositions.length) return;
+
     const random = seededRandom(item.id);
+    const gridPos = gridPositions[index];
 
-    const col = index % cols;
-    const row = Math.floor(index / cols);
-
-    // Base position (center of cell)
-    let baseX = paddingLeft + col * cellWidth + cellWidth / 2;
-    let baseY = paddingY + row * cellHeight + cellHeight / 2;
+    let baseX = gridPos.x;
+    let baseY = gridPos.y;
 
     // Push items away from center where featured magnet sits
-    const centerX = doorWidth / 2;
-    const centerY = doorHeight / 2;
-    const distFromCenter = Math.sqrt(
-      Math.pow(baseX - centerX, 2) + Math.pow(baseY - centerY, 2)
-    );
-    const minDistFromCenter = featuredSize * 0.55; // Keep items away from featured
+    const distFromCenter = gridPos.dist;
+    const minDistFromCenter = featuredSize * 0.55;
 
     if (distFromCenter < minDistFromCenter) {
-      // Push outward
       const angle = Math.atan2(baseY - centerY, baseX - centerX);
       baseX = centerX + Math.cos(angle) * minDistFromCenter;
       baseY = centerY + Math.sin(angle) * minDistFromCenter;
     }
 
-    // Add more jitter for organic feel
+    // Add jitter for organic feel
     const jitterX = (random() - 0.5) * cellWidth * 0.6;
     const jitterY = (random() - 0.5) * cellHeight * 0.6;
 
