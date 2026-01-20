@@ -9,6 +9,8 @@ interface MagnetProps {
   position: MagnetPosition;
   onClick: () => void;
   disabled: boolean;
+  isPreviewed: boolean;
+  onPreview: () => void;
 }
 
 // SVG clip paths for different shapes (empty string = use CSS border-radius)
@@ -25,9 +27,15 @@ const SHAPE_PATHS: Record<MagnetShape, string> = {
   arrow: 'polygon(50% 0%, 100% 40%, 70% 40%, 70% 100%, 30% 100%, 30% 40%, 0% 40%)',
 };
 
-export function Magnet({ item, position, onClick, disabled }: MagnetProps) {
+export function Magnet({ item, position, onClick, disabled, isPreviewed, onPreview }: MagnetProps) {
   const [isHovered, setIsHovered] = useState(false);
   const [isPressed, setIsPressed] = useState(false);
+  const [isTouchDevice, setIsTouchDevice] = useState(false);
+
+  // Detect touch device on first touch
+  const handleTouchStart = () => {
+    setIsTouchDevice(true);
+  };
 
   // Get deterministic style based on item ID
   const { color, shape, iconRotation } = useMemo(
@@ -50,9 +58,20 @@ export function Magnet({ item, position, onClick, disabled }: MagnetProps) {
 
   const isFeatured = item.id === 'featured-lab31';
 
+  const handleClick = () => {
+    // On touch devices: first tap previews, second tap opens
+    if (isTouchDevice && !isPreviewed) {
+      onPreview();
+      return;
+    }
+    onClick();
+  };
+
+  const showTooltip = isHovered || isPreviewed;
+
   return (
     <button
-      className={`magnet ${isHovered ? 'hovered' : ''} ${isPressed ? 'pressed' : ''} ${isFeatured ? 'featured' : ''}`}
+      className={`magnet ${isHovered ? 'hovered' : ''} ${isPressed ? 'pressed' : ''} ${isFeatured ? 'featured' : ''} ${isPreviewed ? 'previewed' : ''}`}
       style={{
         '--magnet-x': `${position.x}px`,
         '--magnet-y': `${position.y}px`,
@@ -61,7 +80,8 @@ export function Magnet({ item, position, onClick, disabled }: MagnetProps) {
         '--magnet-color': color,
         '--icon-rotation': `${iconRotation}deg`,
       } as React.CSSProperties}
-      onClick={onClick}
+      onClick={handleClick}
+      onTouchStart={handleTouchStart}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => {
         setIsHovered(false);
@@ -83,8 +103,8 @@ export function Magnet({ item, position, onClick, disabled }: MagnetProps) {
         />
       </div>
 
-      {/* Tooltip on hover */}
-      {isHovered && (
+      {/* Tooltip on hover or preview (mobile) */}
+      {showTooltip && (
         <div className="magnet-tooltip">
           <span className="tooltip-title">{item.title}</span>
           <span className="tooltip-author">{item.author}</span>

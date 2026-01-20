@@ -47,6 +47,7 @@ function useFridgeDimensions() {
 export function Fridge() {
   const [state, setState] = useState<FridgeState>('BOOT');
   const [selectedMagnet, setSelectedMagnet] = useState<MagnetItem | null>(null);
+  const [previewedMagnetId, setPreviewedMagnetId] = useState<string | null>(null);
   const doorRef = useRef<HTMLDivElement>(null);
 
   const { width: FRIDGE_WIDTH, height: FRIDGE_HEIGHT } = useFridgeDimensions();
@@ -78,6 +79,7 @@ export function Fridge() {
   const openDoor = useCallback((magnet: MagnetItem) => {
     if (state !== 'CLOSED') return;
 
+    setPreviewedMagnetId(null);
     setSelectedMagnet(magnet);
     setState('OPENING');
 
@@ -160,7 +162,15 @@ export function Fridge() {
         {/* Door surface */}
         <div className="door-surface">
           {/* Magnets */}
-          <div className="magnets-container">
+          <div
+            className="magnets-container"
+            onClick={(e) => {
+              // Click on background (not a magnet) clears preview
+              if (e.target === e.currentTarget) {
+                setPreviewedMagnetId(null);
+              }
+            }}
+          >
             {data?.items.map((item) => {
               const position = positions.get(item.id);
               if (!position) return null;
@@ -172,6 +182,8 @@ export function Fridge() {
                   position={position}
                   onClick={() => openDoor(item)}
                   disabled={state !== 'CLOSED'}
+                  isPreviewed={previewedMagnetId === item.id}
+                  onPreview={() => setPreviewedMagnetId(item.id)}
                 />
               );
             })}
