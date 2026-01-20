@@ -22,7 +22,7 @@ const SHAPE_PATHS: Record<MagnetShape, string> = {
   oval: '',
   pill: '',
   shield: 'polygon(50% 0%, 100% 0%, 100% 70%, 50% 100%, 0% 70%, 0% 0%)',
-  cloud: 'polygon(25% 60%, 0% 60%, 0% 40%, 10% 20%, 30% 10%, 50% 0%, 70% 10%, 90% 20%, 100% 40%, 100% 60%, 75% 60%, 75% 80%, 60% 100%, 40% 100%, 25% 80%)',
+  arrow: 'polygon(50% 0%, 100% 40%, 70% 40%, 70% 100%, 30% 100%, 30% 40%, 0% 40%)',
 };
 
 export function Magnet({ item, position, onClick, disabled }: MagnetProps) {

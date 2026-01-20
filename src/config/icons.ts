@@ -111,7 +111,7 @@ export type MagnetShape =
   | 'oval'
   | 'pill'
   | 'shield'
-  | 'cloud';
+  | 'arrow';
 
 export const MAGNET_SHAPES: MagnetShape[] = [
   'circle',
@@ -123,7 +123,7 @@ export const MAGNET_SHAPES: MagnetShape[] = [
   'oval',
   'pill',
   'shield',
-  'cloud',
+  'arrow',
 ];
 
 // Keyword to icon mapping
