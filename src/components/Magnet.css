@@ -39,83 +39,25 @@
   z-index: 50;
 }
 
-/* Magnet Body (the colored shape) */
-.magnet-body {
+/* The sticker image */
+.magnet-sticker {
   width: 100%;
   height: 100%;
-  background: var(--magnet-color);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  object-fit: contain;
+  pointer-events: none;
+  user-select: none;
   filter: drop-shadow(2px 3px 4px rgba(0, 0, 0, 0.3));
   transition: filter 0.15s ease;
 }
 
-/* Shape variations */
-.magnet-shape-circle {
-  border-radius: 50%;
-}
-
-.magnet-shape-rounded-square {
-  border-radius: 20%;
-}
-
-.magnet-shape-hexagon {
-  /* clip-path applied inline */
-}
-
-.magnet-shape-star {
-  /* clip-path applied inline */
-}
-
-.magnet-shape-blob {
-  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-}
-
-.magnet-shape-diamond {
-  /* clip-path applied inline */
-}
-
-.magnet-shape-oval {
-  border-radius: 50% / 35%;
-}
-
-.magnet-shape-pill {
-  border-radius: 50px;
-}
-
-.magnet-shape-shield {
-  /* clip-path applied inline */
-}
-
-.magnet-shape-arrow {
-  /* clip-path applied inline */
-}
-
-/* The sticker icon/image */
-.magnet-icon {
-  font-size: calc(var(--magnet-size) * 0.5);
-  color: white;
-  transform: rotate(var(--icon-rotation));
-  filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.2));
-}
-
-/* Image specific styles */
-.magnet-icon[src] {
-  width: 70%;
-  height: 70%;
-  object-fit: contain;
-  pointer-events: none;
-  user-select: none;
-}
-
 /* Placeholder for missing stickers */
-.magnet-icon-placeholder {
+.magnet-sticker-placeholder {
   font-size: calc(var(--magnet-size) * 0.6);
   font-weight: bold;
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #999;
 }
 
 /* Hover State */
@@ -124,7 +66,7 @@
   z-index: 100;
 }
 
-.magnet.hovered .magnet-body {
+.magnet.hovered .magnet-sticker {
   filter: drop-shadow(3px 5px 8px rgba(0, 0, 0, 0.4));
 }
 
@@ -194,7 +136,7 @@
   animation: magnet-jiggle 0.6s ease-in-out infinite;
 }
 
-.magnet.previewed .magnet-body {
+.magnet.previewed .magnet-sticker {
   filter: drop-shadow(3px 5px 8px rgba(0, 0, 0, 0.4));
 }
 
