@@ -1,0 +1,231 @@
+{
+  "enhanced_gradient_rave_mappings": {
+    "alien-head": {
+      "filename": "holo-alien-circle.png",
+      "description": "Black alien head in holographic circle - THE definitive AI/tech sticker",
+      "primary_focus": "AI, ML, and futuristic technology",
+      "keywords": [
+        "ai", "ml", "artificial", "intelligence", "machine-learning", 
+        "neural", "llm", "gpt", "chatgpt", "claude", "openai", "anthropic",
+        "gemini", "copilot", "midjourney", "stable-diffusion", "dall-e",
+        "huggingface", "tensorflow", "pytorch", "langchain", "vector",
+        "embedding", "transformer", "bert", "rag", "agent", "agentic",
+        "prompt", "completion", "inference", "model", "training",
+        "alien", "extraterrestrial", "ufo", "futuristic", "advanced",
+        "robot", "bot", "automation", "autonomous", "sentient"
+      ],
+      "tech_overrides": [
+        "ai", "ml", "gpt", "llm", "chatgpt", "claude", "openai", 
+        "anthropic", "tensorflow", "pytorch", "huggingface", "bot"
+      ]
+    },
+
+    "asterisk-holo": {
+      "filename": "holo-asterisk-alert.png",
+      "description": "Holographic asterisk with exclamation - alerts, warnings, important notices",
+      "primary_focus": "Errors, alerts, logging, monitoring, critical systems",
+      "keywords": [
+        "error", "alert", "warning", "attention", "important", "critical",
+        "exception", "crash", "bug", "debug", "troubleshoot", "fix",
+        "log", "logging", "monitor", "monitoring", "sentry", "datadog",
+        "observability", "trace", "telemetry", "metrics", "apm",
+        "incident", "outage", "downtime", "status", "health-check",
+        "asterisk", "wildcard", "regex", "pattern", "glob",
+        "footnote", "annotation", "note", "reference", "caution",
+        "urgent", "priority", "required", "mandatory", "must"
+      ],
+      "tech_overrides": [
+        "sentry", "datadog", "newrelic", "pagerduty", "prometheus",
+        "grafana", "elk", "splunk", "error", "exception", "debug"
+      ]
+    },
+
+    "melted-smiley": {
+      "filename": "holo-melting-smiley.png",
+      "description": "Warped melting smiley - glitch art, experimental, surreal, weird tech",
+      "primary_focus": "Glitch, experimental tech, creative coding, generative art",
+      "keywords": [
+        "glitch", "distort", "warp", "melt", "melted", "drip",
+        "surreal", "trippy", "psychedelic", "weird", "strange", "odd",
+        "experimental", "avant-garde", "abstract", "artistic",
+        "generative", "procedural", "algorithmic", "creative-coding",
+        "p5js", "processing", "openframeworks", "touchdesigner",
+        "shader", "glsl", "fragment", "vertex", "webgl", "canvas",
+        "visual", "vfx", "effect", "filter", "distortion",
+        "databending", "datamosh", "corruption", "artifact",
+        "aesthetic", "vaporwave", "retrowave", "cyberpunk"
+      ],
+      "tech_overrides": [
+        "p5js", "processing", "shader", "glsl", "webgl", "three.js",
+        "canvas", "glitch", "generative", "creative-coding"
+      ]
+    },
+
+    "money-globes": {
+      "filename": "holo-money-globes.png",
+      "description": "MONEY text with holographic globes - finance, crypto, payments, trading",
+      "primary_focus": "Financial technology, cryptocurrency, payments, trading",
+      "keywords": [
+        "money", "cash", "finance", "financial", "fintech",
+        "payment", "pay", "transaction", "checkout", "billing",
+        "stripe", "paypal", "square", "plaid", "dwolla",
+        "crypto", "cryptocurrency", "bitcoin", "ethereum", "solana",
+        "blockchain", "web3", "defi", "dex", "nft", "token",
+        "wallet", "metamask", "ledger", "coinbase", "binance",
+        "trading", "exchange", "market", "stock", "forex",
+        "investment", "portfolio", "asset", "wealth", "profit",
+        "bank", "banking", "account", "balance", "transfer",
+        "dollar", "currency", "euro", "pound", "yen",
+        "budget", "expense", "income", "revenue", "cost"
+      ],
+      "tech_overrides": [
+        "stripe", "crypto", "bitcoin", "ethereum", "blockchain",
+        "web3", "nft", "defi", "wallet", "fintech", "payment",
+        "solana", "finance", "trading", "paypal"
+      ]
+    },
+
+    "rave-on-badge": {
+      "filename": "holo-rave-on-barbed.png",
+      "description": "RAVE ON badge with barbed wire - edgy music tech, nightlife, events",
+      "primary_focus": "Music production, EDM, audio tech, live events, streaming",
+      "keywords": [
+        "rave", "edm", "electronic", "techno", "house", "trance",
+        "drum-bass", "dnb", "dubstep", "trap", "bass", "beat",
+        "music-production", "ableton", "fl-studio", "logic", "cubase",
+        "daw", "synthesizer", "synth", "midi", "vst", "plugin",
+        "audio-engineering", "mixing", "mastering", "eq", "compression",
+        "dj", "mixing", "turntable", "controller", "serato", "traktor",
+        "festival", "concert", "show", "live", "performance",
+        "nightclub", "club", "party", "dance", "dancing",
+        "barbed", "edgy", "punk", "hardcore", "industrial",
+        "loud", "amplified", "speaker", "sound-system", "subwoofer"
+      ],
+      "tech_overrides": [
+        "ableton", "audio", "music", "sound", "midi", "synth",
+        "spotify", "soundcloud", "bandcamp", "daw", "plugin"
+      ]
+    },
+
+    "smiley-rave": {
+      "filename": "holo-rave-on-smiley.png",
+      "description": "Smiley with RAVE ON circle - retro 90s, positive vibes, fun projects",
+      "primary_focus": "Fun side projects, retro tech, nostalgia, positive community",
+      "keywords": [
+        "fun", "joy", "happy", "happiness", "positive", "upbeat",
+        "smile", "smiley", "emoji", "emoticon", "mood",
+        "retro", "90s", "nostalgic", "throwback", "vintage",
+        "acid-house", "smiley-face", "yellow", "classic",
+        "side-project", "hobby", "passion", "enthusiasm",
+        "community", "friendly", "welcoming", "inclusive", "chill",
+        "casual", "lighthearted", "playful", "whimsical",
+        "meme", "internet-culture", "viral", "trending",
+        "social", "share", "like", "favorite", "upvote"
+      ],
+      "tech_overrides": []
+    },
+
+    "say-yes": {
+      "filename": "holo-say-yes-spiral.png",
+      "description": "SAY YES in hypnotic spiral - motivation, commitment, CI/CD, deployment",
+      "primary_focus": "Deployment, CI/CD, automation, DevOps, productivity",
+      "keywords": [
+        "yes", "commit", "deploy", "ship", "launch", "release",
+        "go-live", "publish", "push", "merge", "approve",
+        "ci-cd", "continuous", "integration", "deployment", "delivery",
+        "pipeline", "workflow", "automation", "orchestration",
+        "github-actions", "gitlab-ci", "jenkins", "circleci", "travis",
+        "terraform", "ansible", "puppet", "chef", "saltstack",
+        "devops", "devsecops", "sre", "platform-engineering",
+        "infrastructure-as-code", "iac", "gitops", "argocd", "flux",
+        "build", "compile", "package", "artifact", "container",
+        "motivation", "affirmation", "positive", "can-do", "execute",
+        "spiral", "hypnotic", "focus", "flow", "productivity"
+      ],
+      "tech_overrides": [
+        "ci", "cd", "jenkins", "github-actions", "gitlab-ci",
+        "terraform", "ansible", "devops", "deployment", "pipeline"
+      ]
+    },
+
+    "star-burst": {
+      "filename": "holo-sparkle-star.png",
+      "description": "Holographic 6-point starburst - new features, highlights, premium",
+      "primary_focus": "New releases, features, highlights, premium services",
+      "keywords": [
+        "new", "latest", "fresh", "just-released", "announcing",
+        "feature", "update", "upgrade", "enhancement", "improvement",
+        "highlight", "showcase", "featured", "spotlight", "star",
+        "premium", "pro", "plus", "elite", "exclusive", "vip",
+        "tier", "subscription", "paid", "upgrade", "unlock",
+        "sparkle", "shine", "glitter", "shimmer", "glow",
+        "bright", "brilliant", "radiant", "luminous",
+        "launch-week", "product-hunt", "beta", "early-access",
+        "announcement", "reveal", "unveil", "debut", "premiere",
+        "award", "winner", "achievement", "milestone", "badge"
+      ],
+      "tech_overrides": []
+    },
+
+    "rings-loop": {
+      "filename": "holo-spiral-rings.png",
+      "description": "Interlocking spiral rings - APIs, integrations, connections, webhooks",
+      "primary_focus": "API integrations, microservices, data flow, webhooks",
+      "keywords": [
+        "api", "rest", "restful", "graphql", "grpc", "soap",
+        "endpoint", "route", "request", "response", "http",
+        "integration", "connect", "link", "bridge", "middleware",
+        "webhook", "callback", "event", "trigger", "listener",
+        "microservice", "service", "serverless", "lambda", "function",
+        "sync", "synchronize", "real-time", "streaming", "websocket",
+        "pub-sub", "queue", "message", "broker", "kafka", "rabbitmq",
+        "oauth", "auth", "authentication", "authorization", "sso",
+        "zapier", "ifttt", "make", "n8n", "workflow-automation",
+        "etl", "pipeline", "data-flow", "transform", "process",
+        "ring", "loop", "cycle", "circular", "infinite",
+        "connection", "network", "mesh", "topology", "node"
+      ],
+      "tech_overrides": [
+        "api", "graphql", "rest", "webhook", "oauth", "grpc",
+        "microservice", "kafka", "rabbitmq", "integration", "zapier"
+      ]
+    },
+
+    "globe-holo": {
+      "filename": "holo-torus-wireframe.png",
+      "description": "3D wireframe torus/donut - 3D graphics, geometry, mesh, rendering",
+      "primary_focus": "3D graphics, WebGL, game engines, mathematical visualization",
+      "keywords": [
+        "3d", "three-dimensional", "torus", "donut", "geometry",
+        "wireframe", "mesh", "polygon", "vertex", "edge", "face",
+        "threejs", "three.js", "babylonjs", "webgl", "webgpu",
+        "opengl", "vulkan", "directx", "metal", "shader",
+        "rendering", "render", "graphics", "visual", "display",
+        "topology", "manifold", "surface", "mathematical",
+        "unity", "unreal", "godot", "game-engine", "simulation",
+        "blender", "maya", "cinema4d", "houdini", "3ds-max",
+        "cad", "modeling", "design", "parametric", "procedural",
+        "vr", "ar", "xr", "spatial", "immersive", "metaverse",
+        "point-cloud", "voxel", "raytracing", "pathtracing",
+        "physics", "collision", "rigidbody", "particle"
+      ],
+      "tech_overrides": [
+        "threejs", "three.js", "webgl", "3d", "unity", "unreal",
+        "godot", "blender", "vr", "ar", "xr", "webgpu", "babylon"
+      ]
+    }
+  },
+
+  "notes": {
+    "philosophy": "Each sticker should own a specific semantic domain. Avoid keyword overlap where possible. Use the visual aesthetic to guide thematic assignment.",
+    "priority": "tech_overrides are highest priority and should be unique per sticker to avoid conflicts",
+    "fallback": "Generic positive keywords (new, awesome, great) should only go to star-burst and smiley-rave",
+    "removed_duplicates": [
+      "Removed 'space' from alien-head (now focused on AI)",
+      "Removed 'game' from planet stickers (now on game-over sticker)",
+      "Separated rave stickers by use case (production vs vibes)",
+      "Made asterisk the definitive error/warning sticker",
+      "Clarified torus is for 3D graphics, not generic 'world/globe'"
+    ]
+  }
+}

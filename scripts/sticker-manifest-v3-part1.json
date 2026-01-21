@@ -1,0 +1,187 @@
+{
+  "$schema": "sticker-manifest-schema",
+  "version": "2.0",
+  "description": "Expanded sticker keywords - 50+ per sticker, no priority weighting",
+  "stickers": [
+    {
+      "id": "cat-teal",
+      "source": "funny-set-lovely-stickers",
+      "description": "Cute teal cat face with big eyes",
+      "keywords": ["cat", "cats", "kitten", "kittens", "kitty", "kitties", "feline", "pet", "pets", "meow", "purr", "whiskers", "paws", "tail", "fur", "furry", "fluffy", "animal", "animals", "cute", "adorable", "cuddly", "cozy", "lazy", "sleepy", "chill", "relaxed", "happy", "content", "comfort", "warm", "soft", "gentle", "sweet", "nap", "sleep", "stretch", "lounge", "play", "watch", "stare", "home", "house", "indoor", "companion", "friend", "buddy", "family", "favorite", "github", "git", "octocat", "repo", "repository", "fork", "clone", "commit", "branch", "version", "source", "open-source", "oss", "internet", "meme", "viral", "teal", "blue", "cartoon", "icon", "avatar"]
+    },
+    {
+      "id": "watermelon",
+      "source": "funny-set-lovely-stickers",
+      "description": "Watermelon slice",
+      "keywords": ["watermelon", "melon", "fruit", "fruits", "summer", "fresh", "juicy", "snack", "tropical", "refreshing", "slice", "red", "green", "seeds", "sweet", "healthy", "food", "eat", "eating", "delicious", "tasty", "yummy", "picnic", "beach", "outdoor", "bbq", "party", "hydrate", "cool", "cold", "treat", "dessert", "natural", "organic", "garden", "grow", "harvest", "seasonal", "hot", "weather", "vacation", "fun", "colorful", "bright", "vibrant", "splash", "bite", "chunk", "wedge", "rind"]
+    },
+    {
+      "id": "ok-bubble",
+      "source": "funny-set-lovely-stickers",
+      "description": "Speech bubble saying OK",
+      "keywords": ["ok", "okay", "yes", "approve", "confirm", "accept", "agree", "done", "check", "valid", "success", "pass", "good", "great", "fine", "alright", "sure", "affirmative", "positive", "complete", "finished", "ready", "working", "works", "fixed", "solved", "resolved", "approved", "merged", "shipped", "deployed", "live", "production", "release", "launch", "green", "go", "proceed", "continue", "next", "forward", "progress", "achievement", "milestone", "goal", "task", "todo", "checklist", "verify", "validate", "test", "passed", "bubble", "speech", "message", "reply", "response", "feedback", "thumbs", "up"]
+    },
+    {
+      "id": "heart-red",
+      "source": "funny-set-lovely-stickers",
+      "description": "Classic red heart",
+      "keywords": ["heart", "love", "like", "favorite", "favourite", "romance", "dating", "relationship", "passion", "care", "health", "wellness", "emotion", "feel", "feeling", "affection", "adore", "crush", "valentine", "romantic", "couple", "partner", "soul", "kind", "kindness", "generous", "support", "help", "community", "together", "unity", "bond", "connection", "friend", "friendship", "family", "gratitude", "thank", "thanks", "appreciate", "appreciation", "warm", "warmth", "tender", "sweet", "dear", "beloved", "cherish", "treasure", "precious", "special", "meaningful", "heartfelt", "sincere", "genuine", "red", "pulse", "beat", "life", "vital", "core", "center", "central", "essential", "important", "fitness", "workout"]
+    },
+    {
+      "id": "lightning",
+      "source": "funny-set-lovely-stickers",
+      "description": "Yellow lightning bolt",
+      "keywords": ["lightning", "bolt", "fast", "speed", "quick", "rapid", "electric", "power", "energy", "flash", "thunder", "storm", "performance", "turbo", "boost", "zap", "instant", "immediate", "swift", "accelerate", "optimize", "efficient", "blazing", "rocket", "launch", "deploy", "ship", "release", "live", "production", "vercel", "netlify", "edge", "cdn", "cache", "load", "render", "hydrate", "ssr", "ssg", "jamstack", "static", "dynamic", "realtime", "websocket", "stream", "async", "concurrent", "parallel", "thread", "worker", "serverless", "lambda", "function", "api", "endpoint", "request", "response", "latency", "throughput", "bandwidth", "scale", "yellow", "bright", "spark", "charge", "voltage", "watt", "amp", "react", "nextjs", "svelte", "vite", "javascript", "typescript", "mobile", "app", "pwa", "redis"]
+    },
+    {
+      "id": "rainbow-clouds",
+      "source": "funny-set-lovely-stickers",
+      "description": "Rainbow with clouds",
+      "keywords": ["rainbow", "color", "colors", "colour", "colours", "colorful", "pride", "lgbtq", "lgbt", "weather", "hope", "happy", "joy", "joyful", "bright", "spectrum", "diversity", "diverse", "inclusive", "inclusion", "equal", "equality", "celebrate", "celebration", "cloud", "clouds", "sky", "beautiful", "pretty", "aesthetic", "art", "artistic", "creative", "design", "style", "css", "tailwind", "sass", "scss", "less", "styling", "theme", "palette", "gradient", "hue", "saturation", "vibrant", "vivid", "bold", "cheerful", "optimistic", "positive", "uplifting", "inspiring", "magical", "wonder", "wonderful", "amazing", "fantastic", "dream", "dreamy", "whimsical", "fantasy", "imagination", "arc", "curve", "bridge", "promise", "after", "rain", "sunshine", "animation"]
+    },
+    {
+      "id": "popsicle",
+      "source": "funny-set-lovely-stickers",
+      "description": "Ice cream popsicle bar",
+      "keywords": ["popsicle", "ice", "cream", "icecream", "frozen", "dessert", "treat", "summer", "cool", "cold", "chill", "refreshing", "sweet", "snack", "stick", "bar", "lolly", "lollipop", "freeze", "freezer", "fridge", "icy", "frost", "frosty", "yummy", "delicious", "tasty", "flavor", "flavour", "vanilla", "chocolate", "strawberry", "fruit", "fruity", "colorful", "striped", "layers", "melt", "melting", "drip", "lick", "bite", "enjoy", "indulge", "childhood", "nostalgia", "nostalgic", "memory", "memories", "kid", "kids", "children", "fun", "playful", "happy", "smile", "beach", "pool", "hot", "heatwave", "sunny", "vacation", "holiday", "break", "relax", "reward"]
+    },
+    {
+      "id": "strawberry",
+      "source": "funny-set-lovely-stickers",
+      "description": "Red strawberry",
+      "keywords": ["strawberry", "strawberries", "berry", "berries", "fruit", "fruits", "sweet", "red", "garden", "fresh", "organic", "natural", "healthy", "food", "eat", "delicious", "tasty", "yummy", "dessert", "cake", "jam", "smoothie", "shake", "juice", "vitamin", "antioxidant", "nutrition", "nutritious", "diet", "snack", "treat", "pick", "picking", "farm", "field", "grow", "growing", "plant", "seed", "harvest", "season", "seasonal", "spring", "summer", "ripe", "juicy", "fragrant", "aroma", "smell", "cute", "adorable", "pretty", "shape", "tiny", "small", "little", "dot", "dots", "pattern", "print", "design", "decorative", "emoji", "icon"]
+    },
+    {
+      "id": "skull-cute",
+      "source": "funny-set-lovely-stickers",
+      "description": "Cute purple/blue skull",
+      "keywords": ["skull", "death", "dead", "skeleton", "spooky", "halloween", "goth", "gothic", "punk", "edgy", "dark", "horror", "bones", "danger", "dangerous", "warning", "scary", "creepy", "eerie", "macabre", "morbid", "metal", "rock", "hardcore", "alternative", "alt", "emo", "rebel", "rebellious", "badass", "tough", "cool", "rad", "sick", "dope", "fire", "lit", "purple", "blue", "cute", "kawaii", "sugar", "calavera", "dia", "muertos", "mexican", "tradition", "culture", "art", "tattoo", "ink", "piercing", "underground", "subculture", "counter", "nonconformist", "unique", "different", "stand", "out", "bold", "statement", "icon", "symbol"]
+    },
+    {
+      "id": "just-cool-it",
+      "source": "pack-modern-stickers",
+      "description": "Text: Just Cool It",
+      "keywords": ["cool", "chill", "relax", "calm", "easy", "smooth", "casual", "laid-back", "ice", "freeze", "cold", "patience", "patient", "wait", "slow", "down", "breathe", "breath", "zen", "peace", "peaceful", "tranquil", "serene", "mellow", "easygoing", "stress", "free", "destress", "unwind", "decompress", "break", "pause", "rest", "reset", "refresh", "recharge", "balance", "balanced", "steady", "stable", "grounded", "centered", "mindful", "mindfulness", "meditation", "meditate", "yoga", "wellness", "wellbeing", "selfcare", "self-care", "mental", "health", "anxiety", "worry", "overthink", "stop", "halt", "settle", "tone", "moderate", "reasonable", "rational", "logic", "logical", "think", "thought"]
+    },
+    {
+      "id": "what-shakin",
+      "source": "pack-modern-stickers",
+      "description": "Text: What Shakin?",
+      "keywords": ["shake", "shaking", "vibrate", "hello", "hi", "hey", "greeting", "greet", "sup", "whatsup", "yo", "howdy", "social", "chat", "conversation", "talk", "talking", "speak", "speaking", "communicate", "communication", "connect", "connection", "network", "networking", "meet", "meeting", "intro", "introduction", "introduce", "new", "friend", "friends", "community", "media", "dm", "message", "text", "reach", "out", "wave", "dance", "dancing", "move", "movement", "motion", "groove", "groovy", "funky", "fun", "party", "vibe", "vibes", "vibing", "energy", "energetic", "excited", "excitement", "enthusiastic", "enthusiasm", "curious", "curiosity", "interest", "interested", "ask", "asking", "question"]
+    },
+    {
+      "id": "slightly-censored",
+      "source": "pack-modern-stickers",
+      "description": "Text: Slightly Censored",
+      "keywords": ["censored", "censor", "nsfw", "adult", "mature", "filter", "filtered", "blur", "blurred", "hidden", "secret", "secrets", "redacted", "private", "privacy", "explicit", "inappropriate", "banned", "block", "blocked", "restrict", "restricted", "moderate", "moderation", "content", "warning", "caution", "careful", "sensitive", "controversial", "edgy", "risque", "spicy", "hot", "take", "opinion", "opinions", "unpopular", "taboo", "forbidden", "naughty", "cheeky", "playful", "tease", "teasing", "hint", "subtle", "innuendo", "imply", "implied", "suggest", "suggestive", "wink", "nudge", "asterisk", "bleep", "omit", "omitted", "remove", "removed", "hide", "conceal", "cover", "mask", "obscure", "partial", "partly", "somewhat"]
+    },
+    {
+      "id": "sorry-not-sorry",
+      "source": "pack-modern-stickers",
+      "description": "Text: Sorry Not Sorry",
+      "keywords": ["sorry", "not", "apology", "unapologetic", "bold", "confident", "confidence", "sass", "sassy", "attitude", "proud", "pride", "defiant", "defiance", "opinion", "opinions", "stand", "stance", "believe", "belief", "authentic", "authenticity", "real", "genuine", "true", "truth", "honest", "honesty", "direct", "blunt", "straightforward", "frank", "candid", "outspoken", "vocal", "speak", "mind", "express", "expression", "assert", "assertive", "strong", "strength", "power", "powerful", "empowered", "empower", "own", "ownership", "responsibility", "accountable", "accountability", "choice", "choose", "decision", "decide", "no", "regrets", "regret", "free", "freedom", "liberate", "liberation", "unapologetically", "myself", "yourself", "self", "identity"]
+    },
+    {
+      "id": "outstanding",
+      "source": "pack-modern-stickers",
+      "description": "Text: Outstanding",
+      "keywords": ["outstanding", "excellent", "amazing", "great", "awesome", "fantastic", "brilliant", "impressive", "remarkable", "exceptional", "superb", "best", "top", "premier", "first", "class", "quality", "superior", "supreme", "ultimate", "perfect", "perfection", "flawless", "incredible", "unbelievable", "extraordinary", "phenomenal", "spectacular", "magnificent", "marvelous", "wonderful", "stellar", "star", "standout", "distinguished", "notable", "noteworthy", "praiseworthy", "commendable", "admirable", "applause", "kudos", "bravo", "congrats", "congratulations", "celebrate", "celebration", "achievement", "achieve", "accomplish", "accomplishment", "success", "successful", "win", "winner", "winning", "champion", "gold", "medal", "trophy", "award", "prize", "recognition", "recognized", "acknowledge", "acknowledged", "honor", "honored"]
+    },
+    {
+      "id": "tbt",
+      "source": "pack-modern-stickers",
+      "description": "Text: TBT (Throwback Thursday)",
+      "keywords": ["throwback", "tbt", "nostalgia", "nostalgic", "retro", "vintage", "old", "classic", "classics", "memory", "memories", "remember", "remembering", "past", "history", "historical", "legacy", "heritage", "tradition", "traditional", "timeless", "eternal", "forever", "flashback", "recall", "recollection", "reminisce", "reminiscing", "back", "day", "days", "time", "times", "era", "period", "generation", "generations", "ancestor", "ancestors", "roots", "origin", "origins", "original", "archive", "archives", "preserved", "preserve", "antique", "antiques", "collectible", "collection", "museum", "exhibit", "photo", "photos", "album", "scrapbook", "diary", "journal", "story", "stories", "tale", "tales", "legend", "legendary", "iconic", "icon", "milestone", "anniversary", "commemorate", "tribute", "homage", "honor"]
+    },
+    {
+      "id": "get-lost",
+      "source": "pack-modern-stickers",
+      "description": "Text: Get Lost",
+      "keywords": ["lost", "lose", "explore", "exploration", "explorer", "adventure", "adventurous", "wander", "wanderer", "wandering", "travel", "traveling", "traveler", "journey", "trip", "voyage", "expedition", "map", "maps", "mapping", "gps", "location", "locations", "navigate", "navigation", "navigator", "discover", "discovery", "find", "finding", "search", "searching", "seek", "seeking", "hike", "hiking", "hiker", "outdoor", "outdoors", "wilderness", "wild", "nature", "natural", "forest", "woods", "mountain", "mountains", "trail", "trails", "path", "paths", "road", "roads", "off", "grid", "offgrid", "remote", "unknown", "uncharted", "new", "places", "destination", "destinations", "roam", "roaming", "nomad", "nomadic", "backpack", "backpacking", "camp", "camping", "geo", "geography", "geographic", "world", "globe", "global"]
+    },
+    {
+      "id": "what-question",
+      "source": "pack-modern-stickers",
+      "description": "Text: What?",
+      "keywords": ["what", "question", "questions", "ask", "asking", "inquiry", "inquire", "curious", "curiosity", "wonder", "wondering", "confused", "confusion", "confusing", "huh", "eh", "unclear", "unsure", "uncertain", "uncertainty", "doubt", "doubtful", "skeptical", "skeptic", "mystery", "mysterious", "puzzle", "puzzled", "puzzling", "unknown", "enigma", "riddle", "query", "investigate", "investigation", "research", "study", "learn", "learning", "understand", "understanding", "comprehend", "explain", "explanation", "clarify", "clarification", "elaborate", "detail", "details", "info", "information", "help", "support", "faq", "faqs", "documentation", "docs", "guide", "tutorial", "how", "why", "when", "where", "who", "which", "think", "thinking", "thought", "ponder", "consider", "contemplate"]
+    },
+    {
+      "id": "take-a-hike",
+      "source": "pack-modern-stickers",
+      "description": "Text: Take a Hike",
+      "keywords": ["hike", "hiking", "hiker", "walk", "walking", "trail", "trails", "mountain", "mountains", "outdoor", "outdoors", "nature", "natural", "trek", "trekking", "backpack", "backpacking", "camping", "camp", "fitness", "fit", "exercise", "workout", "active", "activity", "adventure", "adventurous", "explore", "exploration", "discover", "discovery", "wilderness", "wild", "forest", "woods", "park", "parks", "national", "scenic", "scenery", "view", "views", "vista", "landscape", "terrain", "elevation", "climb", "climbing", "summit", "peak", "top", "boot", "boots", "gear", "equipment", "prepared", "preparation", "journey", "trip", "escape", "getaway", "weekend", "day", "morning", "fresh", "air", "breath", "breathe", "healthy", "health", "wellness", "mental", "peace", "peaceful", "quiet", "tranquil", "serene"]
+    },
+    {
+      "id": "spray-bottle",
+      "source": "sticker-icons-hand-drawn-doodle",
+      "description": "Spray bottle with heart",
+      "keywords": ["spray", "bottle", "clean", "cleaning", "cleaner", "sanitize", "sanitizer", "disinfect", "wash", "washing", "hygiene", "hygienic", "fresh", "freshen", "sparkle", "sparkling", "shine", "shiny", "tidy", "tidying", "organize", "organizing", "organization", "home", "house", "household", "domestic", "chore", "chores", "task", "tasks", "routine", "maintenance", "maintain", "care", "caring", "neat", "orderly", "spotless", "immaculate", "pristine", "polish", "polished", "wipe", "wiping", "scrub", "scrubbing", "dust", "dusting", "mop", "mopping", "vacuum", "spring", "declutter", "minimalist", "minimal", "simple", "simplify", "clear", "clearing", "space", "room", "surface", "counter", "kitchen", "bathroom", "laundry", "product", "products", "supply", "supplies", "tool", "tools"]
+    },
+    {
+      "id": "donut-purple",
+      "source": "sticker-icons-hand-drawn-doodle",
+      "description": "Purple frosted donut",
+      "keywords": ["donut", "doughnut", "donuts", "doughnuts", "sweet", "sweets", "dessert", "desserts", "bakery", "baked", "treat", "treats", "sugar", "sugary", "sprinkles", "frosting", "icing", "glaze", "glazed", "breakfast", "brunch", "snack", "snacks", "coffee", "cafe", "shop", "morning", "delicious", "tasty", "yummy", "indulge", "indulgent", "guilty", "pleasure", "comfort", "food", "junk", "cheat", "day", "reward", "celebrate", "celebration", "party", "purple", "violet", "pink", "colorful", "fun", "playful", "cute", "adorable", "round", "circle", "hole", "ring", "shape", "pattern", "aesthetic", "foodie", "eat", "eating", "crave", "craving", "satisfy", "satisfying", "happiness", "happy", "joy", "simple", "pleasures"]
+    },
+    {
+      "id": "sunflower",
+      "source": "sticker-icons-hand-drawn-doodle",
+      "description": "Yellow sunflower",
+      "keywords": ["sunflower", "sunflowers", "flower", "flowers", "floral", "sun", "sunny", "sunshine", "garden", "gardening", "plant", "plants", "nature", "natural", "yellow", "gold", "golden", "bright", "cheerful", "happy", "happiness", "joy", "joyful", "positive", "positivity", "optimistic", "optimism", "bloom", "blooming", "blossom", "blossoming", "grow", "growing", "growth", "tall", "seed", "seeds", "petal", "petals", "summer", "spring", "warm", "warmth", "beautiful", "beauty", "pretty", "lovely", "gorgeous", "stunning", "vibrant", "vivid", "radiant", "glow", "glowing", "light", "life", "alive", "living", "fresh", "organic", "farm", "field", "meadow", "countryside", "rural", "botanical", "botany", "decoration", "decorative", "art", "artistic", "paint", "painting", "iconic"]
+    },
+    {
+      "id": "tea-cup",
+      "source": "sticker-icons-hand-drawn-doodle",
+      "description": "Tea/coffee cup with lime",
+      "keywords": ["tea", "coffee", "cup", "mug", "drink", "drinks", "beverage", "beverages", "hot", "warm", "cozy", "morning", "afternoon", "break", "cafe", "cafeteria", "shop", "relax", "relaxing", "relaxation", "calm", "calming", "soothing", "comfort", "comfortable", "brew", "brewing", "steep", "steeping", "herbal", "green", "black", "chai", "latte", "espresso", "cappuccino", "americano", "mocha", "caffeine", "energy", "wake", "wakeup", "alert", "focus", "focused", "concentrate", "concentration", "work", "working", "study", "studying", "read", "reading", "book", "books", "conversation", "chat", "chatting", "friend", "friends", "gather", "gathering", "meeting", "meet", "social", "hygge", "lifestyle", "ritual", "routine", "daily", "habit", "habits", "self", "care", "treat", "yourself"]
+    },
+    {
+      "id": "battery-low",
+      "source": "sticker-icons-hand-drawn-doodle",
+      "description": "20% battery indicator",
+      "keywords": ["battery", "batteries", "power", "charge", "charging", "charger", "energy", "low", "drain", "drained", "draining", "electric", "electrical", "phone", "mobile", "device", "devices", "tired", "exhausted", "exhaustion", "fatigue", "fatigued", "burnout", "burned", "out", "recharge", "recharging", "rest", "resting", "sleep", "sleeping", "nap", "break", "breaks", "pause", "recover", "recovery", "restore", "restoration", "refuel", "fuel", "running", "empty", "depleted", "weak", "weaken", "warning", "alert", "indicator", "status", "level", "percentage", "percent", "red", "critical", "urgent", "need", "require", "plug", "outlet", "cable", "cord", "usb", "wireless", "portable", "backup", "reserve", "conserve", "save", "saving", "mode", "efficiency", "efficient", "optimize", "optimization"]
+    },
+    {
+      "id": "sunshine-text",
+      "source": "sticker-icons-hand-drawn-doodle",
+      "description": "Text: You Are My Sunshine",
+      "keywords": ["sunshine", "sun", "sunny", "bright", "happy", "happiness", "positive", "positivity", "cheerful", "warm", "warmth", "light", "morning", "day", "optimistic", "optimism", "love", "loving", "affection", "affectionate", "care", "caring", "sweet", "sweetness", "kind", "kindness", "gentle", "tender", "dear", "darling", "beloved", "precious", "special", "important", "matter", "meaningful", "song", "sing", "singing", "lyric", "lyrics", "music", "musical", "classic", "timeless", "nostalgic", "nostalgia", "memory", "memories", "childhood", "family", "mother", "father", "parent", "parents", "child", "children", "baby", "babies", "friend", "friends", "relationship", "bond", "connection", "heart", "heartfelt", "sincere", "genuine", "true", "truth", "emotion", "emotional", "feel", "feeling", "feelings", "touch", "touching", "moved", "moving", "inspire", "inspiring", "uplift", "uplifting"]
+    },
+    {
+      "id": "worth-it",
+      "source": "sticker-icons-hand-drawn-doodle",
+      "description": "Text: You Are Worth It",
+      "keywords": ["worth", "worthy", "value", "valuable", "deserve", "deserving", "motivational", "motivation", "motivate", "inspire", "inspiring", "inspiration", "encourage", "encouraging", "encouragement", "self", "care", "selfcare", "self-care", "confidence", "confident", "esteem", "self-esteem", "affirmation", "affirm", "positive", "positivity", "believe", "belief", "trust", "faith", "hope", "hopeful", "strength", "strong", "brave", "bravery", "courage", "courageous", "power", "powerful", "empower", "empowering", "empowerment", "growth", "grow", "growing", "mindset", "mental", "health", "wellness", "wellbeing", "well-being", "therapy", "therapist", "healing", "heal", "recover", "recovery", "support", "supportive", "love", "yourself", "accept", "acceptance", "embrace", "matter", "important", "enough", "good", "great", "amazing", "awesome", "incredible", "beautiful", "valid", "validation"]
+    },
+    {
+      "id": "typewriter",
+      "source": "sticker-icons-hand-drawn-doodle",
+      "description": "Vintage typewriter",
+      "keywords": ["typewriter", "type", "typing", "write", "writing", "writer", "author", "authors", "story", "stories", "storytelling", "blog", "blogging", "blogger", "post", "posts", "article", "articles", "text", "document", "documents", "vintage", "retro", "classic", "old", "antique", "journalist", "journalism", "news", "newspaper", "reporter", "report", "novel", "novels", "book", "books", "publish", "publishing", "publisher", "editor", "editing", "edit", "content", "copywriting", "copy", "creative", "creativity", "word", "words", "sentence", "sentences", "paragraph", "draft", "drafting", "manuscript", "literary", "literature", "fiction", "nonfiction", "essay", "essays", "journal", "journaling", "diary", "note", "notes", "markdown", "md", "readme", "documentation", "docs", "technical", "tech", "cms", "medium", "substack", "newsletter", "cli", "terminal", "bash", "shell", "vim", "neovim"]
+    },
+    {
+      "id": "pig-cute",
+      "source": "sticker-icons-hand-drawn-doodle",
+      "description": "Cute pink pig",
+      "keywords": ["pig", "piggy", "pigs", "oink", "farm", "farming", "animal", "animals", "cute", "adorable", "pink", "snout", "bacon", "savings", "save", "saving", "bank", "banking", "piggybank", "piggy-bank", "money", "invest", "investing", "investment", "finance", "financial", "budget", "budgeting", "frugal", "thrifty", "economical", "coin", "coins", "cash", "dollar", "dollars", "fund", "funds", "funding", "rich", "wealth", "wealthy", "fortune", "prosperity", "prosperous", "nest", "egg", "retirement", "future", "goal", "goals", "plan", "planning", "smart", "wise", "responsible", "secure", "security", "stable", "stability", "grow", "growth", "compound", "interest", "return", "returns", "asset", "assets", "portfolio", "diversify", "rainy", "day", "emergency", "reserve"]
+    },
+    {
+      "id": "radioactive",
+      "source": "sticker-icons-hand-drawn-doodle",
+      "description": "Radioactive/nuclear symbol",
+      "keywords": ["radioactive", "radioactivity", "nuclear", "nuke", "hazard", "hazardous", "danger", "dangerous", "warning", "warn", "toxic", "toxicity", "science", "scientific", "scientist", "radiation", "radiate", "atom", "atomic", "atoms", "physics", "physicist", "energy", "power", "powerful", "reactor", "plant", "chemistry", "chemical", "chemicals", "lab", "laboratory", "experiment", "experimental", "research", "researcher", "element", "elements", "isotope", "particle", "particles", "quantum", "fusion", "fission", "decay", "half-life", "symbol", "icon", "sign", "caution", "careful", "safety", "safe", "protect", "protection", "shield", "shielding", "contain", "containment", "fallout", "waste", "disposal", "environment", "environmental", "risk", "risky", "intense", "intensity", "extreme", "hot", "glow", "glowing", "green", "yellow", "trefoil", "python", "rust", "database", "postgres", "sql", "angular"]
+    },
+    {
+      "id": "flying-heart",
+      "source": "love-fashion-stickers-set",
+      "description": "Pink heart with wings",
+      "keywords": ["fly", "flying", "flight", "wing", "wings", "winged", "angel", "angelic", "love", "loving", "heart", "hearts", "freedom", "free", "soar", "soaring", "dream", "dreams", "dreaming", "dreamy", "float", "floating", "heaven", "heavenly", "divine", "spirit", "spiritual", "soul", "souls", "cupid", "romance", "romantic", "valentine", "valentines", "passion", "passionate", "emotion", "emotional", "feel", "feeling", "feelings", "affection", "adore", "adoration", "cherish", "treasure", "precious", "special", "magical", "magic", "fairy", "fairytale", "fantasy", "fantastical", "whimsical", "ethereal", "beautiful", "beauty", "pretty", "lovely", "gorgeous", "stunning", "pink", "feather", "feathers", "soft", "gentle", "tender", "light", "lightweight", "lift", "lifting", "rise", "rising", "ascend", "ascending", "hope", "hopeful", "inspire", "inspiring", "uplift", "uplifting"]
+    },
+    {
+      "id": "cherries",
+      "source": "love-fashion-stickers-set",
+      "description": "Red cherries",
+      "keywords": ["cherry", "cherries", "fruit", "fruits", "sweet", "sweetness", "red", "pair", "pairs", "duo", "couple", "two", "double", "twin", "twins", "slot", "slots", "jackpot", "lucky", "luck", "casino", "gamble", "gambling", "game", "games", "gaming", "win", "winner", "winning", "chance", "odds", "bet", "betting", "prize", "prizes", "reward", "rewards", "bonus", "bonuses", "summer", "summertime", "fresh", "juicy", "delicious", "tasty", "yummy", "dessert", "pie", "tart", "topping", "stem", "stems", "cute", "adorable", "pretty", "retro", "vintage", "classic", "rockabilly", "fifties", "50s", "pinup", "pin-up", "americana", "diner", "nostalgic", "nostalgia", "pop", "culture", "icon", "iconic", "symbol", "pattern", "print", "fabric", "fashion", "style", "emoji"]
+    }
+  ]
+}

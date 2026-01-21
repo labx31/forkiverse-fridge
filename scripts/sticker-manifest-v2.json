@@ -1,0 +1,694 @@
+{
+  "$schema": "sticker-manifest-schema",
+  "version": "2.0",
+  "description": "Enhanced sticker definitions with deduplicated, tech-focused keyword mappings",
+  "stickers": [
+    {
+      "id": "alien-head",
+      "source": "gradient-rave-party-sticker",
+      "description": "Black alien head - THE definitive AI/ML/bot sticker",
+      "keywords": ["ai", "ml", "artificial", "intelligence", "machine-learning", "neural", "llm", "gpt", "chatgpt", "claude", "openai", "anthropic", "gemini", "copilot", "midjourney", "stable-diffusion", "huggingface", "tensorflow", "pytorch", "langchain", "vector", "embedding", "transformer", "rag", "agent", "agentic", "prompt", "model", "alien", "extraterrestrial", "ufo", "robot", "bot"]
+    },
+    {
+      "id": "asterisk-holo",
+      "source": "gradient-rave-party-sticker",
+      "description": "Holographic asterisk - errors, alerts, logging, monitoring",
+      "keywords": ["error", "alert", "warning", "critical", "exception", "crash", "bug", "debug", "troubleshoot", "log", "logging", "monitor", "monitoring", "sentry", "datadog", "observability", "trace", "telemetry", "metrics", "incident", "outage", "status", "health-check", "asterisk", "wildcard", "regex", "pattern"]
+    },
+    {
+      "id": "melted-smiley",
+      "source": "gradient-rave-party-sticker",
+      "description": "Warped melting smiley - glitch art, experimental, creative coding",
+      "keywords": ["glitch", "distort", "warp", "melt", "drip", "surreal", "trippy", "psychedelic", "experimental", "generative", "procedural", "algorithmic", "creative-coding", "p5js", "processing", "openframeworks", "shader", "glsl", "webgl", "canvas", "vfx", "databending", "datamosh", "vaporwave", "cyberpunk"]
+    },
+    {
+      "id": "money-globes",
+      "source": "gradient-rave-party-sticker",
+      "description": "MONEY text - fintech, crypto, payments, trading",
+      "keywords": ["money", "cash", "finance", "fintech", "payment", "transaction", "checkout", "billing", "stripe", "paypal", "plaid", "crypto", "cryptocurrency", "bitcoin", "ethereum", "solana", "blockchain", "web3", "defi", "nft", "wallet", "trading", "exchange", "market", "stock", "forex", "investment", "portfolio", "banking", "budget", "expense"]
+    },
+    {
+      "id": "rave-on-badge",
+      "source": "gradient-rave-party-sticker",
+      "description": "RAVE ON with barbed wire - music production, EDM, audio tech",
+      "keywords": ["rave", "edm", "electronic", "techno", "house", "trance", "dubstep", "bass", "beat", "music-production", "ableton", "fl-studio", "daw", "synthesizer", "synth", "midi", "vst", "audio-engineering", "mixing", "mastering", "dj", "serato", "festival", "concert", "live-music", "nightclub", "barbed"]
+    },
+    {
+      "id": "smiley-rave",
+      "source": "gradient-rave-party-sticker",
+      "description": "Smiley RAVE ON circle - 90s retro nostalgia, side projects",
+      "keywords": ["retro", "90s", "nostalgic", "throwback", "vintage", "acid-house", "smiley-face", "side-project", "hobby", "passion-project", "community", "friendly", "welcoming", "casual", "lighthearted", "playful", "meme", "viral"]
+    },
+    {
+      "id": "say-yes",
+      "source": "gradient-rave-party-sticker",
+      "description": "SAY YES spiral - CI/CD, deployment, DevOps automation",
+      "keywords": ["yes", "commit", "deploy", "ship", "launch", "release", "publish", "push", "merge", "approve", "ci-cd", "continuous-integration", "continuous-deployment", "pipeline", "workflow", "github-actions", "gitlab-ci", "jenkins", "terraform", "ansible", "devops", "sre", "infrastructure-as-code", "gitops", "build", "container"]
+    },
+    {
+      "id": "star-burst",
+      "source": "gradient-rave-party-sticker",
+      "description": "Holographic starburst - new features, product launches",
+      "keywords": ["new", "latest", "fresh", "just-released", "announcing", "feature", "update", "upgrade", "enhancement", "highlight", "showcase", "featured", "spotlight", "premium", "pro", "elite", "exclusive", "vip", "sparkle", "shine", "glow", "launch-week", "product-hunt", "beta", "early-access", "announcement", "reveal"]
+    },
+    {
+      "id": "rings-loop",
+      "source": "gradient-rave-party-sticker",
+      "description": "Interlocking rings - APIs, integrations, webhooks",
+      "keywords": ["api", "rest", "graphql", "grpc", "endpoint", "integration", "connect", "middleware", "webhook", "callback", "event-driven", "trigger", "microservice", "serverless", "lambda", "sync", "real-time", "websocket", "pub-sub", "queue", "kafka", "rabbitmq", "oauth", "auth", "zapier", "ifttt", "etl", "pipeline", "data-flow"]
+    },
+    {
+      "id": "globe-holo",
+      "source": "gradient-rave-party-sticker",
+      "description": "3D wireframe torus - 3D graphics, WebGL, game engines",
+      "keywords": ["3d", "torus", "donut-shape", "geometry", "wireframe", "mesh", "polygon", "threejs", "three.js", "babylonjs", "webgl", "webgpu", "rendering", "graphics", "unity", "unreal", "godot", "game-engine", "blender", "cad", "modeling", "vr", "ar", "xr", "metaverse", "raytracing"]
+    },
+    {
+      "id": "cat-teal",
+      "source": "funny-set-lovely-stickers",
+      "description": "Cute teal cat - curious, exploratory, learning projects",
+      "keywords": ["cat", "kitten", "curious", "explore", "learn", "discover", "experiment", "try", "test", "sandbox", "playground", "tutorial", "beginner", "starter", "onboarding", "kawaii"]
+    },
+    {
+      "id": "cat-purple",
+      "source": "love-fashion-stickers-set",
+      "description": "Grumpy purple cat - frustrated, debugging, error states",
+      "keywords": ["cat", "grumpy", "angry", "frustrated", "annoyed", "debugging", "bug-hunt", "troubleshooting", "error-state", "failed", "broken", "issue", "problem"]
+    },
+    {
+      "id": "cat-stretching",
+      "source": "set-cute-stickers",
+      "description": "Cat stretching - yoga, fitness, flexibility, wellness apps",
+      "keywords": ["cat", "stretch", "yoga", "flexibility", "exercise", "fitness", "wellness", "health", "workout", "mobility", "movement", "meditation", "mindfulness"]
+    },
+    {
+      "id": "watermelon",
+      "source": "funny-set-lovely-stickers",
+      "description": "Watermelon slice - hydration tracking, water, refresh",
+      "keywords": ["watermelon", "hydration", "water", "h2o", "drink", "refresh", "hydrate", "fluid", "moisture", "quench", "liquid"]
+    },
+    {
+      "id": "strawberry",
+      "source": "funny-set-lovely-stickers",
+      "description": "Red strawberry - organic, local-first, farm-to-table",
+      "keywords": ["strawberry", "berry", "organic", "local", "local-first", "farm", "farmer", "agriculture", "harvest", "seasonal", "farm-to-table", "produce", "crm-local"]
+    },
+    {
+      "id": "popsicle",
+      "source": "funny-set-lovely-stickers",
+      "description": "Popsicle - frozen state, caching, cold storage",
+      "keywords": ["popsicle", "frozen", "freeze", "cache", "caching", "cold-storage", "snapshot", "preserve", "persist", "immutable", "redis", "memcached"]
+    },
+    {
+      "id": "donut-purple",
+      "source": "sticker-icons-hand-drawn-doodle",
+      "description": "Purple donut - morning routines, breakfast automation",
+      "keywords": ["donut", "doughnut", "breakfast", "morning", "routine", "daily", "habit", "automation", "cron", "schedule", "recurring", "bakery"]
+    },
+    {
+      "id": "donut-pink",
+      "source": "love-fashion-stickers-set",
+      "description": "Pink donut - inclusive design, accessibility, a11y",
+      "keywords": ["donut", "pink", "inclusive", "accessibility", "a11y", "wcag", "aria", "screen-reader", "contrast", "colorblind", "universal-design"]
+    },
+    {
+      "id": "cherries",
+      "source": "love-fashion-stickers-set",
+      "description": "Cherry pair - pair programming, duos, redundancy",
+      "keywords": ["cherry", "cherries", "pair", "duo", "twin", "double", "redundancy", "failover", "backup", "mirror", "replica", "pair-programming", "mob-programming"]
+    },
+    {
+      "id": "heart-lollipop",
+      "source": "love-fashion-stickers-set",
+      "description": "Heart lollipop - dating apps, matchmaking, romance tech",
+      "keywords": ["lollipop", "dating", "match", "matchmaking", "romance", "valentine", "couples", "relationship", "tinder", "bumble", "connection"]
+    },
+    {
+      "id": "ice-cream-cone",
+      "source": "love-fashion-stickers-set",
+      "description": "Ice cream cone - summer seasonal, vacation, time-off",
+      "keywords": ["ice-cream", "cone", "scoop", "summer-seasonal", "vacation", "holiday", "time-off", "pto", "break", "getaway", "leisure"]
+    },
+    {
+      "id": "candy-wrapper",
+      "source": "love-fashion-stickers-set",
+      "description": "Wrapped candy - bundlers, packaging, webpack, vite",
+      "keywords": ["candy", "wrapper", "wrap", "package", "bundle", "bundler", "webpack", "rollup", "vite", "parcel", "esbuild", "compiler", "transpile", "minify"]
+    },
+    {
+      "id": "ok-bubble",
+      "source": "funny-set-lovely-stickers",
+      "description": "OK speech bubble - confirmation, validation, testing, QA",
+      "keywords": ["ok", "okay", "confirm", "validate", "pass", "success", "approved", "accepted", "verified", "check", "test", "testing", "qa", "quality-assurance", "green-check"]
+    },
+    {
+      "id": "heart-red",
+      "source": "funny-set-lovely-stickers",
+      "description": "Classic red heart - health, wellness, favorites, likes",
+      "keywords": ["heart", "health", "wellness", "fitness", "cardio", "heartbeat", "pulse", "vitals", "medical", "favorite", "like", "love", "bookmark", "star"]
+    },
+    {
+      "id": "flying-heart",
+      "source": "love-fashion-stickers-set",
+      "description": "Heart with wings - freedom, open-source, liberation",
+      "keywords": ["flying", "wing", "soar", "freedom", "free", "libre", "open-source", "oss", "foss", "open", "liberate", "unchain", "unrestricted"]
+    },
+    {
+      "id": "sleepy-heart",
+      "source": "love-fashion-stickers-set",
+      "description": "Sleepy heart - sleep tracking, rest, recovery apps",
+      "keywords": ["sleep", "sleepy", "rest", "dream", "nap", "slumber", "bedtime", "sleep-tracking", "rem", "insomnia", "recovery", "recharge"]
+    },
+    {
+      "id": "arrow-heart",
+      "source": "love-fashion-stickers-set",
+      "description": "Arrow with heart - direction, routing, pathfinding",
+      "keywords": ["arrow", "direction", "point", "route", "routing", "pathfinding", "navigate", "path", "flow", "redirect", "forward", "next"]
+    },
+    {
+      "id": "lightning",
+      "source": "funny-set-lovely-stickers",
+      "description": "Lightning bolt - fast performance, speed, real-time",
+      "keywords": ["lightning", "bolt", "fast", "speed", "quick", "rapid", "instant", "real-time", "performance", "turbo", "accelerate", "optimize", "blazing"]
+    },
+    {
+      "id": "battery-low",
+      "source": "sticker-icons-hand-drawn-doodle",
+      "description": "Low battery - power management, energy, IoT devices",
+      "keywords": ["battery", "power", "energy", "charge", "low-power", "drain", "consumption", "iot", "device", "sensor", "embedded", "electricity"]
+    },
+    {
+      "id": "radioactive",
+      "source": "sticker-icons-hand-drawn-doodle",
+      "description": "Radioactive symbol - Python, nuclear, danger zones",
+      "keywords": ["radioactive", "nuclear", "hazard", "danger", "warning", "toxic", "python", "scientific", "physics", "radiation", "unstable", "experimental"]
+    },
+    {
+      "id": "rainbow-clouds",
+      "source": "funny-set-lovely-stickers",
+      "description": "Rainbow with clouds - CSS, styling, design systems",
+      "keywords": ["rainbow", "color", "colorful", "spectrum", "gradient", "css", "styling", "design-system", "theme", "palette", "pride", "lgbtq", "diversity", "inclusive"]
+    },
+    {
+      "id": "purple-cloud",
+      "source": "love-fashion-stickers-set",
+      "description": "Smiling purple cloud - cloud hosting, AWS, Azure, serverless",
+      "keywords": ["cloud", "hosting", "aws", "azure", "gcp", "server", "infrastructure", "serverless", "paas", "iaas", "deploy", "hosting-provider", "digital-ocean"]
+    },
+    {
+      "id": "skull-cute",
+      "source": "funny-set-lovely-stickers",
+      "description": "Cute skull - Halloween, seasonal, spooky fun events",
+      "keywords": ["skull", "halloween", "spooky", "scary", "october", "seasonal", "event", "holiday", "costume", "trick-or-treat"]
+    },
+    {
+      "id": "skull-retro",
+      "source": "retro-stickers-with-ufo-mushroom-dinosaur",
+      "description": "Retro skull - punk rock, metal, music culture",
+      "keywords": ["skull", "punk", "rock", "metal", "hardcore", "grunge", "alternative", "music-culture", "band", "concert"]
+    },
+    {
+      "id": "just-cool-it",
+      "source": "pack-modern-stickers",
+      "description": "Just Cool It text - temperature, cooling, thermal systems",
+      "keywords": ["cool-it", "temperature", "thermal", "cooling", "hvac", "climate", "air-conditioning", "refrigeration", "heat-management"]
+    },
+    {
+      "id": "chill-out",
+      "source": "hand-drawn-retro-sticker-set",
+      "description": "Chill Out text - mental health, therapy, mindfulness",
+      "keywords": ["chill", "mental-health", "therapy", "mindfulness", "calm", "zen", "peace", "stress-relief", "anxiety", "counseling", "self-care"]
+    },
+    {
+      "id": "cool-shades",
+      "source": "retro-stickers-with-ufo-mushroom-dinosaur",
+      "description": "Character with sunglasses - beach, vacation, travel mode",
+      "keywords": ["sunglasses", "shades", "beach", "vacation", "travel", "trip", "getaway", "resort", "tropical", "summer-vacation"]
+    },
+    {
+      "id": "what-shakin",
+      "source": "pack-modern-stickers",
+      "description": "What Shakin? - greetings, onboarding, welcome screens",
+      "keywords": ["shake", "greeting", "hello", "welcome", "onboarding", "introduction", "first-time", "getting-started", "tour"]
+    },
+    {
+      "id": "what-question",
+      "source": "pack-modern-stickers",
+      "description": "What? - Q&A, help, support, documentation",
+      "keywords": ["what", "question", "help", "support", "faq", "documentation", "docs", "guide", "answer", "ask", "inquiry", "confused"]
+    },
+    {
+      "id": "slightly-censored",
+      "source": "pack-modern-stickers",
+      "description": "Slightly Censored - content moderation, filters, safety",
+      "keywords": ["censored", "moderation", "filter", "content-moderation", "safety", "nsfw", "blur", "redact", "block", "flag"]
+    },
+    {
+      "id": "sorry-not-sorry",
+      "source": "pack-modern-stickers",
+      "description": "Sorry Not Sorry - unapologetic, bold design choices",
+      "keywords": ["sorry-not-sorry", "unapologetic", "bold", "confident", "opinionated", "controversial", "stance", "defiant"]
+    },
+    {
+      "id": "outstanding",
+      "source": "pack-modern-stickers",
+      "description": "Outstanding - code quality, best practices, excellence",
+      "keywords": ["outstanding", "excellent", "quality", "best-practices", "standards", "exceptional", "exemplary", "gold-standard", "benchmark"]
+    },
+    {
+      "id": "tbt",
+      "source": "pack-modern-stickers",
+      "description": "TBT - throwback, legacy systems, archives",
+      "keywords": ["tbt", "throwback", "legacy", "archive", "historical", "old-code", "deprecated", "vintage-tech", "backward-compatible"]
+    },
+    {
+      "id": "get-lost",
+      "source": "pack-modern-stickers",
+      "description": "Get Lost - maps, navigation, GPS, location services",
+      "keywords": ["get-lost", "map", "maps", "navigation", "gps", "location", "geo", "geolocation", "coordinates", "directions", "wayfinding"]
+    },
+    {
+      "id": "take-a-hike",
+      "source": "pack-modern-stickers",
+      "description": "Take a Hike - hiking, trails, outdoor activities",
+      "keywords": ["hike", "hiking", "trail", "trekking", "backpacking", "outdoor", "mountain", "wilderness", "nature-activity", "camping"]
+    },
+    {
+      "id": "spray-bottle",
+      "source": "sticker-icons-hand-drawn-doodle",
+      "description": "Spray bottle - code linting, formatting, cleaning",
+      "keywords": ["spray", "clean", "lint", "linting", "formatter", "prettier", "eslint", "format", "sanitize", "tidy", "organize", "standardize"]
+    },
+    {
+      "id": "sunflower",
+      "source": "sticker-icons-hand-drawn-doodle",
+      "description": "Yellow sunflower - solar, renewable energy, sustainability",
+      "keywords": ["sunflower", "solar", "sun", "renewable", "clean-energy", "sustainability", "green-tech", "eco", "photovoltaic", "solar-panel"]
+    },
+    {
+      "id": "tea-cup",
+      "source": "sticker-icons-hand-drawn-doodle",
+      "description": "Tea cup - coffee/tea tracking, beverages, cafe apps",
+      "keywords": ["tea", "coffee", "beverage", "cafe", "barista", "brew", "caffeine", "espresso", "latte", "cappuccino", "drink-tracking"]
+    },
+    {
+      "id": "sunshine-text",
+      "source": "sticker-icons-hand-drawn-doodle",
+      "description": "You Are My Sunshine - motivational quotes, affirmations",
+      "keywords": ["sunshine", "motivational", "affirmation", "quote", "daily-quote", "inspiration", "encouragement", "uplifting"]
+    },
+    {
+      "id": "worth-it",
+      "source": "sticker-icons-hand-drawn-doodle",
+      "description": "You Are Worth It - self-care, mental health support",
+      "keywords": ["worth-it", "self-worth", "self-care", "mental-health", "confidence", "self-esteem", "validation", "affirmation"]
+    },
+    {
+      "id": "typewriter",
+      "source": "sticker-icons-hand-drawn-doodle",
+      "description": "Vintage typewriter - writing, blogging, CMS, markdown",
+      "keywords": ["typewriter", "write", "writing", "blog", "blogging", "cms", "content", "article", "author", "journalist", "markdown", "editor", "text-editor"]
+    },
+    {
+      "id": "pig-cute",
+      "source": "sticker-icons-hand-drawn-doodle",
+      "description": "Cute pink pig - savings, budgeting, piggy bank",
+      "keywords": ["pig", "piggy-bank", "savings", "save", "budget", "budgeting", "frugal", "thrifty", "money-management", "personal-finance"]
+    },
+    {
+      "id": "speech-bubble-green",
+      "source": "love-fashion-stickers-set",
+      "description": "Green speech bubble - chat, messaging, real-time communication",
+      "keywords": ["chat", "message", "messaging", "talk", "conversation", "im", "instant-message", "sms", "text", "comment", "reply", "discuss", "dialog"]
+    },
+    {
+      "id": "eye-colorful",
+      "source": "love-fashion-stickers-set",
+      "description": "Colorful eye - monitoring dashboards, analytics, visibility",
+      "keywords": ["eye", "see", "watch", "monitor", "dashboard", "analytics", "metrics", "observe", "visibility", "insight", "tracking", "view"]
+    },
+    {
+      "id": "eye-drip",
+      "source": "set-cute-stickers",
+      "description": "Eye with drips - artistic vision, generative art, creative",
+      "keywords": ["eye", "art", "artistic", "vision", "creative", "generative-art", "visual-art", "design", "aesthetic", "abstract"]
+    },
+    {
+      "id": "jellyfish",
+      "source": "love-fashion-stickers-set",
+      "description": "Blue jellyfish - floating, Docker, containerization",
+      "keywords": ["jellyfish", "float", "drift", "container", "docker", "containerization", "kubernetes", "pod", "orchestration", "marine"]
+    },
+    {
+      "id": "music-notes",
+      "source": "love-fashion-stickers-set",
+      "description": "Purple music notes - music apps, audio, playlists",
+      "keywords": ["music", "audio", "song", "melody", "tune", "soundtrack", "playlist", "spotify", "streaming", "listen", "player"]
+    },
+    {
+      "id": "mustache",
+      "source": "love-fashion-stickers-set",
+      "description": "Pink mustache - Movember, men's health, barber apps",
+      "keywords": ["mustache", "movember", "mens-health", "facial-hair", "barber", "grooming", "beard", "style"]
+    },
+    {
+      "id": "crown",
+      "source": "love-fashion-stickers-set",
+      "description": "Orange crown - premium tiers, VIP, elite subscriptions",
+      "keywords": ["crown", "premium", "pro", "vip", "elite", "royal", "king", "queen", "tier", "subscription", "paid", "upgrade"]
+    },
+    {
+      "id": "diamond",
+      "source": "love-fashion-stickers-set",
+      "description": "Pink diamond - luxury, enterprise, high-value",
+      "keywords": ["diamond", "gem", "luxury", "enterprise", "high-value", "precious", "valuable", "expensive", "premium-tier"]
+    },
+    {
+      "id": "shooting-star",
+      "source": "love-fashion-stickers-set",
+      "description": "Rainbow shooting star - wishes, goals, aspirations",
+      "keywords": ["shooting-star", "meteor", "wish", "goal", "aspiration", "dream", "ambition", "target", "objective"]
+    },
+    {
+      "id": "apple-red",
+      "source": "set-cute-stickers",
+      "description": "Red apple - Apple ecosystem, iOS, macOS, Swift",
+      "keywords": ["apple", "ios", "macos", "iphone", "ipad", "mac", "swift", "xcode", "apple-ecosystem", "app-store"]
+    },
+    {
+      "id": "feather",
+      "source": "set-cute-stickers",
+      "description": "Purple feather - lightweight, minimal, tiny apps",
+      "keywords": ["feather", "light", "lightweight", "minimal", "tiny", "small", "micro", "slim", "compact", "efficient"]
+    },
+    {
+      "id": "super-badge",
+      "source": "set-cute-stickers",
+      "description": "Super! badge - achievements, gamification, rewards",
+      "keywords": ["super", "achievement", "badge", "gamification", "reward", "trophy", "accomplish", "milestone", "level-up"]
+    },
+    {
+      "id": "girl-power",
+      "source": "set-cute-stickers",
+      "description": "Girl Power - women in tech, DEI, feminism",
+      "keywords": ["girl-power", "women", "woman", "women-in-tech", "feminist", "dei", "diversity", "inclusion", "equality", "female-founder"]
+    },
+    {
+      "id": "leaf-branch",
+      "source": "set-cute-stickers",
+      "description": "Blue leaf branch - early-stage, seedling, sprouting",
+      "keywords": ["leaf", "branch", "seedling", "sprout", "early-stage", "startup", "beginning", "new-growth", "mvp", "prototype"]
+    },
+    {
+      "id": "flower-simple",
+      "source": "set-cute-stickers",
+      "description": "Simple teal flower - blooming, mature projects, growth",
+      "keywords": ["flower", "bloom", "blooming", "mature", "established", "growth", "flourish", "thrive", "developed"]
+    },
+    {
+      "id": "camera",
+      "source": "set-cute-stickers",
+      "description": "Purple camera - photography, media, galleries",
+      "keywords": ["camera", "photo", "photography", "picture", "image", "gallery", "album", "instagram", "capture", "media"]
+    },
+    {
+      "id": "shot-camera",
+      "source": "retro-stickers-with-ufo-mushroom-dinosaur",
+      "description": "Camera SHOT! - screenshots, captures, screen recording",
+      "keywords": ["shot", "screenshot", "screen-capture", "snap", "snapshot", "record", "recording", "screencast", "demo"]
+    },
+    {
+      "id": "planet-ring",
+      "source": "set-cute-stickers",
+      "description": "Saturn-like planet - space, cosmos, astronomy apps",
+      "keywords": ["planet", "saturn", "space", "cosmos", "astronomy", "orbit", "solar-system", "celestial", "universe"]
+    },
+    {
+      "id": "do-it",
+      "source": "set-cute-stickers",
+      "description": "Do It text - action, execution, just ship it",
+      "keywords": ["do-it", "action", "execute", "ship", "ship-it", "just-do-it", "start", "begin", "go", "launch-now"]
+    },
+    {
+      "id": "melted-globe",
+      "source": "retro-stickers-with-ufo-mushroom-dinosaur",
+      "description": "Melted globe - climate change, environmental, global issues",
+      "keywords": ["melted-globe", "climate", "climate-change", "global-warming", "environment", "carbon", "emissions", "sustainability"]
+    },
+    {
+      "id": "lost-love",
+      "source": "retro-stickers-with-ufo-mushroom-dinosaur",
+      "description": "Lost Love 90s - 404 pages, broken links, deprecation",
+      "keywords": ["lost-love", "404", "not-found", "broken-link", "deprecated", "missing", "gone", "removed"]
+    },
+    {
+      "id": "too-far-lost",
+      "source": "retro-stickers-with-ufo-mushroom-dinosaur",
+      "description": "Too Far Lost - remote work, distributed teams, async",
+      "keywords": ["too-far-lost", "remote", "remote-work", "distributed", "async", "asynchronous", "timezone", "nomad", "work-from-anywhere"]
+    },
+    {
+      "id": "good-night",
+      "source": "retro-stickers-with-ufo-mushroom-dinosaur",
+      "description": "Good Night with moon - dark mode, nighttime, evening",
+      "keywords": ["good-night", "night", "nighttime", "dark-mode", "dark-theme", "moon", "evening", "nocturnal", "midnight"]
+    },
+    {
+      "id": "hate-you",
+      "source": "retro-stickers-with-ufo-mushroom-dinosaur",
+      "description": "Angry Hate You - critical failures, rage-quit worthy bugs",
+      "keywords": ["hate", "angry", "rage", "frustrated", "critical-failure", "major-bug", "disaster", "catastrophic"]
+    },
+    {
+      "id": "goodbye-phone",
+      "source": "retro-stickers-with-ufo-mushroom-dinosaur",
+      "description": "Phone saying Goodbye - digital detox, unplugging, offline",
+      "keywords": ["goodbye", "digital-detox", "unplug", "disconnect", "offline", "phone-free", "screen-free", "break"]
+    },
+    {
+      "id": "game-over",
+      "source": "retro-stickers-with-ufo-mushroom-dinosaur",
+      "description": "Game Over device - gaming, game dev, Unity, Godot",
+      "keywords": ["game-over", "game", "gaming", "gamedev", "game-development", "unity", "unreal", "godot", "pixel-art", "retro-game"]
+    },
+    {
+      "id": "taco-character",
+      "source": "retro-stickers-with-ufo-mushroom-dinosaur",
+      "description": "Happy taco - food delivery, restaurants, recipe apps",
+      "keywords": ["taco", "food", "restaurant", "delivery", "food-delivery", "recipe", "cooking", "meal", "dining"]
+    },
+    {
+      "id": "lucky-rainbow",
+      "source": "retro-stickers-with-ufo-mushroom-dinosaur",
+      "description": "Lucky rainbow - randomness, probability, chance, lotteries",
+      "keywords": ["lucky", "luck", "random", "randomness", "probability", "chance", "lottery", "raffle", "draw"]
+    },
+    {
+      "id": "smile-blob",
+      "source": "hand-drawn-retro-sticker-set",
+      "description": "Purple SMILE blob - general positivity, happy vibes (generic)",
+      "keywords": ["smile", "happy", "joy", "positive", "cheerful", "grin", "emoji", "emoticon", "good-vibes"]
+    },
+    {
+      "id": "omg-rainbow",
+      "source": "hand-drawn-retro-sticker-set",
+      "description": "OMG rainbow letters - surprise, excitement, viral moments",
+      "keywords": ["omg", "wow", "amazing", "surprise", "shocked", "excited", "viral", "trending", "blow-up"]
+    },
+    {
+      "id": "happiness-mushroom",
+      "source": "hand-drawn-retro-sticker-set",
+      "description": "Mushroom HAPPINESS - fungi, foraging, mycology, biology",
+      "keywords": ["mushroom", "fungi", "mycology", "foraging", "biology", "nature-id", "species", "identification"]
+    },
+    {
+      "id": "growing-stronger",
+      "source": "hand-drawn-retro-sticker-set",
+      "description": "Flower Growing Stronger - progressive enhancement, iteration",
+      "keywords": ["growing-stronger", "progressive-enhancement", "iterate", "improve", "evolve", "strengthen", "build-up"]
+    },
+    {
+      "id": "good-luck",
+      "source": "hand-drawn-retro-sticker-set",
+      "description": "Good Luck clover - launch days, ship dates, go-live",
+      "keywords": ["good-luck", "launch-day", "ship-date", "go-live", "deployment-day", "release-day", "clover", "shamrock"]
+    },
+    {
+      "id": "wing-purple",
+      "source": "love-fashion-stickers-set",
+      "description": "Purple wing - flight, aviation, drones, aerospace",
+      "keywords": ["wing", "flight", "fly", "aviation", "drone", "uav", "aircraft", "aerospace", "airborne"]
+    }
+  ],
+  "fallback_stickers": [
+    "lightning",
+    "star-burst",
+    "rainbow-clouds",
+    "do-it",
+    "super-badge",
+    "omg-rainbow",
+    "outstanding",
+    "smile-blob"
+  ],
+  "tech_keyword_overrides": {
+    "ai": "alien-head",
+    "ml": "alien-head",
+    "gpt": "alien-head",
+    "llm": "alien-head",
+    "chatgpt": "alien-head",
+    "claude": "alien-head",
+    "openai": "alien-head",
+    "anthropic": "alien-head",
+    "bot": "alien-head",
+    "tensorflow": "alien-head",
+    "pytorch": "alien-head",
+    "huggingface": "alien-head",
+    
+    "error": "asterisk-holo",
+    "sentry": "asterisk-holo",
+    "datadog": "asterisk-holo",
+    "monitoring": "asterisk-holo",
+    "observability": "asterisk-holo",
+    
+    "glitch": "melted-smiley",
+    "generative": "melted-smiley",
+    "p5js": "melted-smiley",
+    "processing": "melted-smiley",
+    "shader": "melted-smiley",
+    
+    "crypto": "money-globes",
+    "bitcoin": "money-globes",
+    "ethereum": "money-globes",
+    "blockchain": "money-globes",
+    "web3": "money-globes",
+    "nft": "money-globes",
+    "defi": "money-globes",
+    "stripe": "money-globes",
+    "fintech": "money-globes",
+    "payment": "money-globes",
+    
+    "ableton": "rave-on-badge",
+    "daw": "rave-on-badge",
+    "synth": "rave-on-badge",
+    
+    "ci": "say-yes",
+    "cd": "say-yes",
+    "ci-cd": "say-yes",
+    "jenkins": "say-yes",
+    "github-actions": "say-yes",
+    "gitlab-ci": "say-yes",
+    "terraform": "say-yes",
+    "ansible": "say-yes",
+    "devops": "say-yes",
+    
+    "api": "rings-loop",
+    "graphql": "rings-loop",
+    "rest": "rings-loop",
+    "webhook": "rings-loop",
+    "oauth": "rings-loop",
+    "integration": "rings-loop",
+    "zapier": "rings-loop",
+    "microservice": "rings-loop",
+    "kafka": "rings-loop",
+    
+    "threejs": "globe-holo",
+    "three.js": "globe-holo",
+    "webgl": "globe-holo",
+    "3d": "globe-holo",
+    "unity": "globe-holo",
+    "unreal": "globe-holo",
+    "godot": "globe-holo",
+    "blender": "globe-holo",
+    "vr": "globe-holo",
+    "ar": "globe-holo",
+    "xr": "globe-holo",
+    
+    "react": "lightning",
+    "nextjs": "lightning",
+    "svelte": "lightning",
+    "vite": "lightning",
+    "vercel": "lightning",
+    "netlify": "lightning",
+    
+    "vue": "leaf-branch",
+    "node": "leaf-branch",
+    "nodejs": "leaf-branch",
+    
+    "python": "radioactive",
+    "rust": "radioactive",
+    "database": "radioactive",
+    "postgres": "radioactive",
+    
+    "docker": "jellyfish",
+    "kubernetes": "jellyfish",
+    "k8s": "jellyfish",
+    
+    "aws": "purple-cloud",
+    "azure": "purple-cloud",
+    "gcp": "purple-cloud",
+    "cloud": "purple-cloud",
+    
+    "github": "cat-teal",
+    
+    "ios": "apple-red",
+    "swift": "apple-red",
+    "xcode": "apple-red",
+    "macos": "apple-red",
+    
+    "css": "rainbow-clouds",
+    "tailwind": "rainbow-clouds",
+    "sass": "rainbow-clouds",
+    
+    "game": "game-over",
+    "gaming": "game-over",
+    
+    "music": "music-notes",
+    "spotify": "music-notes",
+    "audio": "music-notes",
+    
+    "chat": "speech-bubble-green",
+    "messaging": "speech-bubble-green",
+    
+    "dashboard": "eye-colorful",
+    "analytics": "eye-colorful",
+    
+    "blog": "typewriter",
+    "cms": "typewriter",
+    "markdown": "typewriter",
+    
+    "map": "get-lost",
+    "maps": "get-lost",
+    "gps": "get-lost",
+    
+    "recipe": "taco-character",
+    "food": "taco-character",
+    
+    "eslint": "spray-bottle",
+    "prettier": "spray-bottle",
+    "lint": "spray-bottle",
+    
+    "redis": "popsicle",
+    "cache": "popsicle",
+    
+    "test": "ok-bubble",
+    "testing": "ok-bubble",
+    "qa": "ok-bubble",
+    
+    "404": "lost-love",
+    "deprecated": "lost-love",
+    
+    "remote": "too-far-lost",
+    "async": "too-far-lost",
+    
+    "dark-mode": "good-night",
+    
+    "premium": "crown",
+    "pro": "crown",
+    
+    "webpack": "candy-wrapper",
+    "bundler": "candy-wrapper",
+    
+    "solar": "sunflower",
+    "renewable": "sunflower"
+  }
+}

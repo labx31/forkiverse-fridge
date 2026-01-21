@@ -23,7 +23,7 @@ const CONFIG = {
   fetchBuffer: 120, // Fetch extra to account for filtering
   maxPages: 10,
   outputPath: join(__dirname, '..', 'public', 'data', 'magnets.json'),
-  manifestPath: join(__dirname, 'sticker-manifest.json'),
+  manifestPath: join(__dirname, 'sticker-manifest-v3.json'),
 };
 
 // Load sticker manifest
@@ -302,6 +302,12 @@ function extractTitleFromContent(html) {
 
 /**
  * Assign a sticker to a project based on keyword matching
+ * 
+ * Simple logic:
+ * 1. Collect ALL stickers that match any keyword (case-insensitive)
+ * 2. Short keywords (≤3 chars) require word boundaries to avoid false positives
+ * 3. If multiple match, use seeded random (deterministic per URL)
+ * 4. If none match, fall back to random from fallback list
  */
 function assignSticker(project) {
   const textToSearch = [
@@ -310,23 +316,26 @@ function assignSticker(project) {
     project._card_description,
     project.url.toLowerCase(),
     ...project._hashtags,
-  ].join(' ');
+  ].join(' ').toLowerCase();
 
-  // First check tech keyword overrides (higher priority)
-  for (const [keyword, stickerId] of Object.entries(manifest.tech_keyword_overrides)) {
-    // Match whole word or as part of compound (e.g., "reactjs" matches "react")
-    const regex = new RegExp(`\\b${keyword}\\b|${keyword}(?=js|ts|.js|.ts)`, 'i');
-    if (regex.test(textToSearch)) {
-      return { sticker_id: stickerId, matched_keyword: keyword };
-    }
-  }
-
-  // Then check sticker keywords
+  // Collect all matching stickers
   const matches = [];
   for (const sticker of manifest.stickers) {
     for (const keyword of sticker.keywords) {
-      const regex = new RegExp(`\\b${keyword}\\b`, 'i');
-      if (regex.test(textToSearch)) {
+      const kw = keyword.toLowerCase();
+      let matched = false;
+      
+      if (kw.length <= 3) {
+        // Short keywords need word boundaries to avoid false positives
+        // e.g., "it" shouldn't match "with" or "twitter"
+        const regex = new RegExp(`\\b${kw}\\b`, 'i');
+        matched = regex.test(textToSearch);
+      } else {
+        // Longer keywords can use simple substring match
+        matched = textToSearch.includes(kw);
+      }
+      
+      if (matched) {
         matches.push({ sticker_id: sticker.id, matched_keyword: keyword });
         break; // One match per sticker is enough
       }
@@ -335,6 +344,7 @@ function assignSticker(project) {
 
   if (matches.length > 0) {
     // If multiple matches, use seeded random based on URL hash
+    // This ensures same URL always gets same sticker (deterministic)
     const seed = parseInt(project.id, 16);
     const index = seed % matches.length;
     return matches[index];
