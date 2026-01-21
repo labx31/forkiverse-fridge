@@ -1,7 +1,6 @@
 import { useState, useMemo } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import type { MagnetItem, MagnetPosition } from '../types';
-import { getMagnetStyle, findIconForKeywords, type MagnetShape } from '../config/icons';
+import { getMagnetStyle, type MagnetShape } from '../config/icons';
 import './Magnet.css';
 
 interface MagnetProps {
@@ -43,15 +42,11 @@ export function Magnet({ item, position, onClick, disabled, isPreviewed, onPrevi
     [item.id]
   );
 
-  // Find icon based on keywords in title, url, matched_keyword
-  const icon = useMemo(() => {
-    const searchText = [
-      item.title,
-      item.url,
-      item.matched_keyword || '',
-    ].join(' ');
-    return findIconForKeywords(searchText);
-  }, [item.title, item.url, item.matched_keyword]);
+  // Get sticker image path from sticker_id
+  const stickerPath = useMemo(() => {
+    if (!item.sticker_id) return null;
+    return `/forkiverse-fridge/stickers/${item.sticker_id}.png`;
+  }, [item.sticker_id]);
 
   const clipPath = SHAPE_PATHS[shape];
   const useClipPath = clipPath !== '';
@@ -97,10 +92,16 @@ export function Magnet({ item, position, onClick, disabled, isPreviewed, onPrevi
         className={`magnet-body magnet-shape-${shape}`}
         style={useClipPath ? { clipPath } : undefined}
       >
-        <FontAwesomeIcon
-          icon={icon}
-          className="magnet-icon"
-        />
+        {stickerPath ? (
+          <img
+            src={stickerPath}
+            alt={item.title}
+            className="magnet-icon"
+            loading="lazy"
+          />
+        ) : (
+          <div className="magnet-icon magnet-icon-placeholder">?</div>
+        )}
       </div>
 
       {/* Tooltip on hover or preview (mobile) */}

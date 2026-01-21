@@ -92,12 +92,30 @@
   /* clip-path applied inline */
 }
 
-/* The Font Awesome icon */
+/* The sticker icon/image */
 .magnet-icon {
   font-size: calc(var(--magnet-size) * 0.5);
   color: white;
   transform: rotate(var(--icon-rotation));
   filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.2));
+}
+
+/* Image specific styles */
+.magnet-icon[src] {
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* Placeholder for missing stickers */
+.magnet-icon-placeholder {
+  font-size: calc(var(--magnet-size) * 0.6);
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Hover State */
