@@ -15,17 +15,21 @@ export function Magnet({ item, position, onClick, disabled, isPreviewed, onPrevi
   const [isHovered, setIsHovered] = useState(false);
   const [isPressed, setIsPressed] = useState(false);
   const [isTouchDevice, setIsTouchDevice] = useState(false);
+  const [useSvgFallback, setUseSvgFallback] = useState(false);
 
   // Detect touch device on first touch
   const handleTouchStart = () => {
     setIsTouchDevice(true);
   };
 
-  // Get sticker image path from sticker_id
+  // Get sticker image path from sticker_id (PNG first, SVG fallback)
   const stickerPath = useMemo(() => {
     if (!item.sticker_id) return null;
+    if (useSvgFallback) {
+      return `/forkiverse-fridge/stickers-svg-backup/${item.sticker_id}.svg`;
+    }
     return `/forkiverse-fridge/stickers/${item.sticker_id}.png`;
-  }, [item.sticker_id]);
+  }, [item.sticker_id, useSvgFallback]);
 
   const isFeatured = item.id === 'featured-lab31';
 
@@ -68,6 +72,11 @@ export function Magnet({ item, position, onClick, disabled, isPreviewed, onPrevi
           alt={item.title}
           className="magnet-sticker"
           loading="lazy"
+          onError={() => {
+            if (!useSvgFallback) {
+              setUseSvgFallback(true);
+            }
+          }}
         />
       ) : (
         <div className="magnet-sticker magnet-sticker-placeholder">?</div>
